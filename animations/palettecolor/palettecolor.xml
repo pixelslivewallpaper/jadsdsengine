@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>238</width>
+      <height>207</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>238</maxWidth>
+      <maxHeight>207</maxHeight>
+    </canvasResolution>
+    <bgColor>#00000000</bgColor>
+  </basic>
+  <images>
+    <image>
+      <fileName>house.png</fileName>
+      <applyAlterations>
+        <alterationsToDo>ApplyNewPaletteColor</alterationsToDo>
+        <basicPaletteColor>
+          255,160,128,80-
+          255,112,88,64-
+          255,144,80,80-
+          255,104,56,56
+        </basicPaletteColor>
+        <newPaletteColor>
+          255,113,171,172-
+          255,190,85,44-
+          255,215,7,253-
+          255,230,213,213
+        </newPaletteColor>
+      </applyAlterations>
+    </image>
+  </images>
+</doc>

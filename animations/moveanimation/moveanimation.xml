@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>300</width>
+      <height>300</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>300</maxWidth>
+      <maxHeight>300</maxHeight>
+    </canvasResolution>
+    <bgColor>#ffffffff</bgColor>
+  </basic>
+  <images>
+    <image>
+      <fileName>ball.png</fileName>
+      <moveAnimation>
+        <iniLeft>0</iniLeft>
+        <iniTop>0</iniTop>
+        <maxLeft>227</maxLeft>
+        <maxTop>227</maxTop>
+        <pixelsMoveLeft>4</pixelsMoveLeft>
+        <pixelsMoveTop>0</pixelsMoveTop>
+        <moveAnimationSpeed>1</moveAnimationSpeed>
+        <!--<moveAnimationStop>true</moveAnimationStop>
+        <returnToTheBeginning>true</returnToTheBeginning>-->
+      </moveAnimation>
+      <left>0</left>
+      <top>115</top>
+      <!--<speed>1</speed>-->
+    </image>
+  </images>
+</doc>

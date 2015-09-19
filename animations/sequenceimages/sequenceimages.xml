@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>238</width>
+      <height>207</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>238</maxWidth>
+      <maxHeight>207</maxHeight>
+    </canvasResolution>
+    <bgColor>#00000000</bgColor>
+  </basic>
+  <images>
+    <image>
+      <fileName>house.png</fileName>
+    </image>
+    <image>
+      <frames>
+        <convertImageSequenceInFrames>
+          <filePreName></filePreName>
+          <startNumber>1</startNumber>
+          <endNumber>17</endNumber>
+          <formatNumber>##</formatNumber>
+          <fileNameExtension>png</fileNameExtension>
+        </convertImageSequenceInFrames>
+      </frames>
+      <left>78</left>
+      <top>0</top>
+      <speed>2</speed>
+    </image>
+  </images>
+</doc>

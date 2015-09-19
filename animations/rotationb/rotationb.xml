@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>400</width>
+      <height>250</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>400</maxWidth>
+      <maxHeight>250</maxHeight>
+    </canvasResolution>
+    <bgColor>#ff000000</bgColor>
+  </basic>
+  <images>
+    <image>
+      <fileName>base.png</fileName>
+    </image>
+    <image>
+      <fileName>square.png</fileName>
+      <left>126</left>
+      <top>51</top>
+      <imagePropertiesAnimation>
+        <propetiesToAnimate>
+          <property>
+            <propertyName>Rotation</propertyName>
+
+            <minimumDegreesValue>0</minimumDegreesValue>
+            <maximumDegreesValue>360</maximumDegreesValue>
+            <updateDegreesValue>6</updateDegreesValue>
+            <currentDegreesValue>0</currentDegreesValue>
+            <rotationSpeed>1</rotationSpeed>
+            <!--<pivot>20;20</pivot>-->
+            <animationRotationAction>Increase</animationRotationAction>
+          </property>
+
+          <property>
+            <propertyName>Scale</propertyName>
+
+
+
+            <keepImageInItsPivotWhenScaling>true</keepImageInItsPivotWhenScaling>
+
+
+
+            <minimumWidthValue>10</minimumWidthValue>
+            <maximumWidthValue>147</maximumWidthValue>
+            <updateWidthValue>2</updateWidthValue>
+            <currentWidthValue>74</currentWidthValue>
+            <animationWidthAction>Increase</animationWidthAction>
+            <widthSpeed>1</widthSpeed>
+
+            <!--<minimumHeightValue>10</minimumHeightValue>
+            <maximumHeightValue>147</maximumHeightValue>
+            <updateHeightValue>2</updateHeightValue>
+            <currentHeightValue>74</currentHeightValue>
+            <animationHeightAction>Increase</animationHeightAction>
+            <heightSpeed>1</heightSpeed>-->
+          </property>
+        </propetiesToAnimate>
+      </imagePropertiesAnimation>
+      <events>
+        <event>
+          <eventType>OnClickDown</eventType>
+          <eventActions>
+            <eventAction>ChangePivot</eventAction>
+          </eventActions>
+          <pivot>0;0</pivot>
+        </event>
+        <event>
+          <eventType>MaximumRotationValueReached</eventType>
+          <eventActions>
+            <!--<eventAction>RunJavascriptFunction</eventAction>-->
+            <eventAction>ChangeAnimationRotationAction</eventAction>
+          </eventActions>
+          <runJavascriptFunction>betaTest("Decrease");</runJavascriptFunction>
+          <animationRotationAction>Decrease</animationRotationAction>
+        </event>
+        <event>
+          <eventType>MinimumRotationValueReached</eventType>
+          <eventActions>
+            <!--<eventAction>RunJavascriptFunction</eventAction>-->
+            <eventAction>ChangeAnimationRotationAction</eventAction>
+          </eventActions>
+          <runJavascriptFunction>betaTest("Increase");</runJavascriptFunction>
+          <animationRotationAction>Increase</animationRotationAction>
+        </event>
+
+
+
+        <event>
+          <eventType>MinimumWidthValueReached</eventType>
+          <eventActions>
+            <eventAction>ChangeAnimationWidthAction</eventAction>
+          </eventActions>
+          <animationWidthAction>Increase</animationWidthAction>
+        </event>
+        <event>
+          <eventType>MaximumWidthValueReached</eventType>
+          <eventActions>
+            <eventAction>ChangeAnimationWidthAction</eventAction>
+          </eventActions>
+          <animationWidthAction>Decrease</animationWidthAction>
+        </event>
+        <event>
+          <eventType>MinimumHeightValueReached</eventType>
+          <eventActions>
+            <eventAction>ChangeAnimationHeightAction</eventAction>
+          </eventActions>
+          <animationHeightAction>Increase</animationHeightAction>
+        </event>
+        <event>
+          <eventType>MaximumHeightValueReached</eventType>
+          <eventActions>
+            <eventAction>ChangeAnimationHeightAction</eventAction>
+          </eventActions>
+          <animationHeightAction>Decrease</animationHeightAction>
+        </event>
+      </events>
+    </image>
+  </images>
+</doc>
