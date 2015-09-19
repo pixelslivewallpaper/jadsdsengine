@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>400</width>
+      <height>250</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>400</maxWidth>
+      <maxHeight>250</maxHeight>
+    </canvasResolution>
+    <bgColor>#fffafafa</bgColor>
+  </basic>
+  <images>
+    <image>
+      <fileName>base.png</fileName>
+    </image>
+    <image>
+      <fileName>square.png</fileName>
+      <left>126</left>
+      <top>51</top>
+      <imagePropertiesAnimation>
+        <propetiesToAnimate>
+          <property>
+            <propertyName>Rotation</propertyName>
+            <minimumDegreesValue>0</minimumDegreesValue>
+            <maximumDegreesValue>360</maximumDegreesValue>
+            <updateDegreesValue>6</updateDegreesValue>
+            <currentDegreesValue>0</currentDegreesValue>
+            <rotationSpeed>1</rotationSpeed>
+            <animationRotationAction>Increase</animationRotationAction>
+          </property>
+        </propetiesToAnimate>
+      </imagePropertiesAnimation>
+    </image>
+  </images>
+</doc>

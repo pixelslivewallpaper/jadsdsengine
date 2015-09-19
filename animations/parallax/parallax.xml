@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>240</width>
+      <height>360</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>144</maxWidth>
+      <maxHeight>72</maxHeight>
+    </canvasResolution>
+    <bgColor>#ff000000</bgColor>
+    <camera>
+      <autoHorizontalScroll>true</autoHorizontalScroll>
+      <iniPosition>0;0</iniPosition>
+      <pixelsMove>2</pixelsMove>
+      <cameraSpeed>1</cameraSpeed>
+    </camera>
+  </basic>
+  <images>
+    <image>
+      <fileName>Rushb0.png</fileName>
+      <createBackgroundLayer>
+        <maxWidth>80</maxWidth>
+        <maxHeight>72</maxHeight>
+      </createBackgroundLayer>
+    </image>
+    <image>
+      <fileName>Rushb1.png</fileName>
+    </image>
+  </images>
+</doc>
