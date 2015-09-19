@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>100</width>
+      <height>100</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>100</maxWidth>
+      <maxHeight>100</maxHeight>
+    </canvasResolution>
+    <bgColor>#fffafafa</bgColor>
+  </basic>
+  <images>
+    <image>
+      <fileName>cubemulti.png</fileName>
+      <moveEndLessAnimation>
+        <direction>Backward</direction>
+        <pixelsMove>2</pixelsMove>
+      </moveEndLessAnimation>
+      <left>0</left>
+      <top>25</top>
+      <speed>1</speed>
+    </image>
+  </images>
+</doc>

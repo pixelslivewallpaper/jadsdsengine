@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>100</width>
+      <height>100</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>100</maxWidth>
+      <maxHeight>100</maxHeight>
+    </canvasResolution>
+    <bgColor>#fffafafa</bgColor>
+  </basic>
+  <images>
+    <image>
+      <frames>
+        <convertGifAniToFrames>gifanimated.gif</convertGifAniToFrames>
+      </frames>
+      <left>28</left>
+      <top>26</top>
+    </image>
+  </images>
+</doc>

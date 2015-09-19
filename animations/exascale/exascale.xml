@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>100</width>
+      <height>100</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>100</maxWidth>
+      <maxHeight>100</maxHeight>
+    </canvasResolution>
+    <bgColor>#fffafafa</bgColor>
+  </basic>
+  <images>
+    <image>
+      <fileName from="exarotation">cube.png</fileName>
+      <imagePropertiesAnimation>
+        <propetiesToAnimate>
+          <property>
+            <propertyName>Scale</propertyName>
+            <minimumWidthValue>25</minimumWidthValue>
+            <maximumWidthValue>100</maximumWidthValue>
+            
+            <updateWidthValue>2</updateWidthValue>
+            
+            <currentWidthValue>50</currentWidthValue>
+            
+            <animationWidthAction>Decrease</animationWidthAction>
+            
+            
+            <minimumHeightValue>25</minimumHeightValue>
+            <maximumHeightValue>100</maximumHeightValue>
+            
+            <updateHeightValue>2</updateHeightValue>
+            
+            <currentHeightValue>50</currentHeightValue>
+            
+            <animationHeightAction>Decrease</animationHeightAction>
+            
+            <keepImageInItsPivotWhenScaling>true</keepImageInItsPivotWhenScaling>
+          </property>
+        </propetiesToAnimate>
+      </imagePropertiesAnimation>
+      <events>
+        <event>
+          <eventType>MinimumWidthValueReached</eventType>
+          <eventActions>
+            <eventAction>ChangeAnimationWidthAction</eventAction>
+          </eventActions>
+          <animationWidthAction>Increase</animationWidthAction>
+        </event>
+        <event>
+          <eventType>MaximumWidthValueReached</eventType>
+          <eventActions>
+            <eventAction>ChangeAnimationWidthAction</eventAction>
+          </eventActions>
+          <animationWidthAction>Decrease</animationWidthAction>
+        </event>
+        <event>
+          <eventType>MinimumHeightValueReached</eventType>
+          <eventActions>
+            <eventAction>ChangeAnimationHeightAction</eventAction>
+          </eventActions>
+          <animationHeightAction>Increase</animationHeightAction>
+        </event>
+        <event>
+          <eventType>MaximumHeightValueReached</eventType>
+          <eventActions>
+            <eventAction>ChangeAnimationHeightAction</eventAction>
+          </eventActions>
+          <animationHeightAction>Decrease</animationHeightAction>
+        </event>
+      </events>
+      <left>25</left>
+      <top>25</top>
+      <speed>2</speed>
+    </image>
+  </images>
+</doc>

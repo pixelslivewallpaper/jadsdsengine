@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>100</width>
+      <height>100</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>50</maxWidth>
+      <maxHeight>50</maxHeight>
+    </canvasResolution>
+    <bgColor>#fffafafa</bgColor>
+  </basic>
+  <images>
+    <image>
+      <fileName>minicube.png</fileName>
+      <moveAnimation>
+        <iniLeft>0</iniLeft>
+        <maxLeft>25</maxLeft>
+        <pixelsMoveLeft>1</pixelsMoveLeft>
+      </moveAnimation>
+      <events>
+        <event>
+          <eventType>MoveAnimationMaxLeftReached</eventType>
+          <eventActions>
+            <eventAction>FlipImage</eventAction>
+          </eventActions>
+        </event>
+        <event>
+          <eventType>MoveAnimationMaxRightReached</eventType>
+          <eventActions>
+            <eventAction>FlipImage</eventAction>
+          </eventActions>
+        </event>
+      </events>
+      <left>0</left>
+      <top>13</top>
+      <speed>1</speed>
+  </image>
+  </images>
+</doc>

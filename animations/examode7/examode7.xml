@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>100</width>
+      <height>100</height>
+    </screenCanvasResolution>
+    <!--<canvasResolution>
+      <maxWidth>50</maxWidth>
+      <maxHeight>50</maxHeight>
+    </canvasResolution>-->
+    <bgColor>#ffffffff</bgColor>
+  </basic>
+  <images>
+    <image>
+      <fileName>mode7.png</fileName>
+      <mode7>
+        <mode7Speed>150</mode7Speed>
+        <cameraY>0</cameraY>
+        <cameraX>0</cameraX>
+        <cameraPixelsMoveX>0</cameraPixelsMoveX>
+        <cameraPixelsMoveY>-2</cameraPixelsMoveY>
+        <cameraPixelsMoveMaxX>0</cameraPixelsMoveMaxX>
+        <cameraPixelsMoveMaxY>100</cameraPixelsMoveMaxY>
+        <cameraPixelsMoveIniX>0</cameraPixelsMoveIniX>
+        <cameraPixelsMoveIniY>0</cameraPixelsMoveIniY>
+        <scaleVertical>0</scaleVertical>
+        <scaleHorizontal>60</scaleHorizontal>
+        <boxSizeWidth>100</boxSizeWidth>
+        <boxSizeHeight>50</boxSizeHeight>
+      </mode7>
+      <left>0</left>
+      <top>50</top>
+      <speed>1</speed>
+    </image>
+  </images>
+</doc>

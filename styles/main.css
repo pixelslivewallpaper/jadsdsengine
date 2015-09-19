@@ -1,0 +1,435 @@
+﻿body {
+    background-color: #fafafa;
+    width: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.headerTable {
+    width: 100%;
+    height: 72px;
+    background-color: #40C078;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.headerTableb {
+    background-position: 0%;
+    width: 100%;
+    height: 15px;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    background-image: url('images/border.png');
+    background-repeat: repeat-x;
+}
+
+.tdCircle {
+    background-image: url('images/circle2.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 370px;
+}
+
+.tdCircleB {
+    background-image: url('images/circle1.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 370px;
+}
+
+.tdHeaderCircleA {
+    vertical-align: middle;
+    text-align: center;
+    width: 356px;
+    height: 370px;
+
+    /*border: 1px solid #000000;*/
+}
+
+.tdHeaderCircleB {
+    vertical-align: middle;
+    text-align: left;
+    height: 370px;
+
+    /*border: 1px solid #000000;*/
+}
+
+.tdHeaderCircleC {
+    vertical-align: middle;
+    text-align: right;
+    height: 370px;
+
+    /*border: 1px solid #000000;*/
+}
+
+.tableCircle {
+    padding: 0px;
+    /*border: 1px solid #000000;*/
+    background-position: top;
+    width: 100%;
+}
+
+.mainTable {
+    width: 1210px;
+}
+
+.footer {
+    width: 100%; /*border: 1px solid #40C078;*/
+    background-color: #40C078;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.footerDiv {
+    background-color: #fafafa;
+    width: 100%;
+	position:absolute;
+    /*position:fixed;*/
+	bottom:0;
+}
+
+.canvasDown {
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.tableContext {
+    padding: 5px;
+    /*border: 1px solid #000000;*/
+    background-position: top;
+    width: 100%;
+}
+
+.tableContextB {
+    /*border: 1px solid #000000;*/
+    background-position: top;
+    width: 1200px;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.tableContextC {
+    padding: 5px;
+    /*border: 1px solid #000000;*/
+}
+
+.tdDown {
+    padding: 5px;
+}
+
+.tdHeaderG {
+    vertical-align: middle;
+    text-align: left;
+    width: 50%;
+}
+
+.tdHeaderH {
+    vertical-align: middle;
+    text-align: right;
+    width: 50%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    color: #000000;
+    text-transform: none;
+    font-variant: normal;
+}
+
+.tdHeaderI {
+    vertical-align: middle;
+    text-align: center;
+    width: 40%;
+    height: 300px;
+}
+.tdHeaderJ {
+    vertical-align: top;
+    text-align: left;
+}
+
+.tdHeaderK {
+    vertical-align: middle;
+    text-align: center;
+    width: 200px;
+}
+
+.tdHeaderKlogoA {
+    background-position: center bottom;
+    vertical-align: middle;
+    text-align: center;
+    width: 200px;
+    height: 82px;
+    background-image: url('images/logohd1.png');
+    background-repeat: no-repeat;
+}
+
+.tdHeaderKlogoAndroid {
+    background-position: right bottom;
+    vertical-align: middle;
+    text-align: center;
+    height: 82px;
+    background-image: url('images/android.png');
+    background-repeat: no-repeat;
+}
+
+.tdHeaderKlogoB {
+    background-position: center top;
+    vertical-align: middle;
+    text-align: center;
+    width: 200px;
+    height: 82px;
+    background-image: url('images/logohd2.png');
+    background-repeat: no-repeat;
+}
+
+.tdHeaderLiveMap {
+    vertical-align: middle;
+    text-align: center;
+    width: 250px;
+}
+
+.tdHeaderJ {
+    vertical-align: top;
+    text-align: left;
+}
+
+.tdHeaderL {
+    padding: 0px 2px 2px 2px;
+    margin: 2px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.titles {
+    font-size: large;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.home {
+    /*width: 83px;
+    height: 83px;*/
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    color: #000000;
+    text-transform: none;
+    font-variant: normal;
+}
+
+.buttons {
+    background-color: #FFFFFF;
+    border: thin solid #000000;
+}
+
+.TextAreaCode {
+    width: 700px;
+    height: 700px;
+}
+
+.hrTags {
+    border: 1px solid #40C078;
+}
+
+.zeldamainmap {
+    width: 4096px;
+    height: 4096px;
+}
+
+.divZeldaMainMap {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+.divZelda {
+    position: absolute;
+}
+
+.divIntro {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.license {
+    font-size: xx-small;
+}
+
+.letIMG {
+    width: 333px;
+    height: 24px;
+}
+
+.logoIMG {
+    width: 361px;
+    height: 68px;
+}
+
+.welcomeIMG {
+    width: 186px;
+    height: 24px;
+}
+
+.helpusIMG {
+    width: 171px;
+    height: 24px;
+}
+
+.docIMG {
+    width: 333px;
+    height: 24px;
+}
+
+.playIMG {
+    width: 264px;
+    height: 24px;
+}
+
+.downIMG {
+    width: 213px;
+    height: 24px;
+}
+
+.zeldaMapIMG {
+    width: 348px;
+    height: 24px;
+}
+
+.icons {
+    width: 64px;
+    height: 64px;
+    cursor:pointer;
+    border: 1px solid #40C078;
+}
+
+
+
+
+p.MsoNormal {
+    background: #fafafa;
+    margin-top: 0in;
+    margin-right: 0in;
+    margin-bottom: 8.0pt;
+    margin-left: 0in;
+    line-height: 50%;
+    font-size: 11.0pt;
+    font-family: "Calibri","sans-serif";
+}
+
+.tdPhone1 {
+    background-image: url('images/phone1.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 230px;
+    height: 25px;
+}
+
+.tdPhone2 {
+    background-image: url('images/phone2.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 11px;
+    height: 296px;
+}
+
+.tdPhone3 {
+    background-image: url('images/phone3.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 11px;
+    height: 296px;
+}
+
+.tdPhone4 {
+    background-image: url('images/phone4.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 230px;
+    height: 29px;
+}
+
+.tdPhoneC {
+    width: 208px; 
+    height:296px; 
+    background-color:black;
+}
+
+.tablePhone {
+    padding: 0px;
+    /*border: 1px solid #000000;*/
+    background-position: top;
+}
+
+.tdMyWeb1 {
+    background-image: url('images/myweb1.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 308px;
+    height: 540px;
+}
+
+.tdMyWeb2 {
+    background-image: url('images/myweb2.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 420px;
+    height: 181px;
+}
+
+.tdMyWeb3 {
+    background-image: url('images/myweb3.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 31px;
+    height: 540px;
+}
+
+.tdMyWeb4 {
+    width: 420px;
+    height: 298px;
+    background-color:black;
+}
+
+.tdMyWeb5 {
+    background-image: url('images/myweb4.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 420px;
+    height: 61px;
+}
+
+.tdTextFeatures {
+    padding: 4px;
+    margin: 4px;
+    border-style: none;
+    width: 200px;
+    vertical-align: middle;
+}
+
+.tdIconFeatures {
+    padding: 4px;
+    margin: 4px;
+    border-style: none;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.miniCanvas {
+    border-style: none;
+    border-width: 1px;
+}
+
+.textboxessmall {
+    font-size: small;
+    border-style: solid;
+    border-width: 1px;
+}

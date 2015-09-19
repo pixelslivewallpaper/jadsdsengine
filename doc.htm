@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JADSDS</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="styles/main.css" rel="stylesheet" />
+    <script src="JadsdsEngine_min.js"></script>
+    <script src="basic.js"></script>
+    <script src="doc.js"></script>
+</head>
+<body>
+    <table align="center" cellpadding="0" cellspacing="0" class="headerTable">
+        <tr>
+            <td>
+                <table align="center" cellpadding="0" cellspacing="0" class="mainTable">
+                    <tr style="height: 80px;">
+                        <td class="tdHeaderG">&nbsp;<a href="index.htm" class="home"><img alt="logo" class="logoIMG" src="styles/images/logo.png" /></a></td>
+                        <td class="tdHeaderH">
+                            &nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="headerTableb"></div>
+    <table align="center" cellpadding="0" cellspacing="0" class="mainTable">
+        <tr>
+            <td>
+                <img alt="doc" class="docIMG" src="styles/images/documentationtitle.png" /></td>
+        </tr>
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" class="tableContext">
+                    <tr>
+                        <td class="tdHeaderJ" style="vertical-align: top">
+                            <br />
+                            A pdf file with the complete documentation is available <em><a href="JadsdsEngine.pdf">here</a></em>.
+                                        <br />
+                            <br />
+                            What we are going to learn 
+                            now is just a quick review about how the engine works.
+                                        JADSDS engine is a tag based JavaScript animator and load data reading XML files. 
+                                        <br />
+                            <br />
+                            Remember all the tags are case sensitive.
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <table align="center" cellpadding="0" cellspacing="0" class="mainTable">
+        <tr>
+            <td>
+                <img alt="let" class="letIMG" src="styles/images/lettitle.png" /></td>
+        </tr>
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" class="tableContext">
+                    <tr>
+                        <td class="tdHeaderJ" style="vertical-align: top; font-size:small;">
+                            <table cellpadding="0" cellspacing="0" class="tableHeader">
+                                <tr>
+                                    <td class="tdHeaderI" style="text-align: center">
+                                        <canvas id="mycanvas" width="320" height="480" style="border-style: solid; border-width: 1px"></canvas>
+                                        <br />
+                                        <input id="btnRun" type="button" value="Run xml" onclick="loadNewAnimationA('pr2b');" class="buttons" />
+                                        <input id="btnReset" type="button" value="Reset" onclick="resetA();" class="buttons" /></td>
+                                    <td class="tdHeaderJ" style="vertical-align: top; text-align: center;">
+                                        <textarea id="TextArea1" spellcheck='false' class="TextAreaCode" style="height: 500px;"></textarea><br />
+                                        Play with the values, press “Run xml” and see what happens. If something goes wrong, just press “Reset”. 
+                                    </td>
+                                </tr>
+                            </table>
+                            <br />
+                            The basic area is where the basic settings for your project are configured. Please don’t confuse the tags “screenCanvasResolution” and “canvasResolution”.
+                            <br />
+                            <br />
+                            <strong>screenCanvasResolution</strong>: It is the size of your canvas html object located in your website. Use “0” for default size or add values for change it. If you are planning use the animation in your android phone it needs to be the screen resolution.
+                            <br />
+                            <br />
+                            <strong>canvasResolution</strong>: It’s the resolution for your project. The app will stretch your animation until fit the canvas html object always keeping the aspect ratio.
+                            <hr class="hrTags" />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <br />
+                <br />
+                <table cellpadding="0" cellspacing="0" class="tableContext">
+                    <tr>
+                        <td class="tdHeaderJ" style="vertical-align: top; font-size:small;">
+                            <table cellpadding="0" cellspacing="0" class="tableHeader">
+                                <tr>
+                                    <td class="tdHeaderI" style="text-align: center">
+                                        <canvas id="mycanvasb" width="256" height="224" style="border-style: solid; border-width: 1px"></canvas>
+                                        <br />
+                                        <input id="Button1" type="button" value="Run xml" onclick="loadNewAnimationB('colorcycling');" class="buttons" />
+                                        <input id="Button2" type="button" value="Reset" onclick="resetB();" class="buttons" /></td>
+                                    <td class="tdHeaderJ" style="vertical-align: top; text-align: center;">
+                                        <textarea id="TextArea2" spellcheck='false' class="TextAreaCode" style="height: 400px;"></textarea><br />
+                                        Play with the values, press “Run xml” and see what happens. If something goes wrong, just press “Reset”. 
+                                    </td>
+                                </tr>
+                            </table>
+                            <br />
+                            <strong>colorCycling</strong>: Color Cycling was used in old video games as an alternative for save memory. The technique consists in use only one frame and the code literally “moves the colors” creating a feeling of animation. With imagination you can create really beautiful designs with few lines of code.
+                            <hr class="hrTags" />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <br />
+                <br />
+                <table cellpadding="0" cellspacing="0" class="tableContext">
+                    <tr>
+                        <td class="tdHeaderJ" style="vertical-align: top; font-size:small;">
+                            <table cellpadding="0" cellspacing="0" class="tableHeader">
+                                <tr>
+                                    <td class="tdHeaderI" style="text-align: center">
+                                        <canvas id="mycanvasc" width="400" height="250" style="border-style: solid; border-width: 1px"></canvas>
+                                        <br />
+                                        Click the square.<br />
+                                        <input id="btnRunc" type="button" value="Run xml" onclick="loadNewAnimationC('rotationb');" class="buttons" />
+                                        <input id="btnResetc" type="button" value="Reset" onclick="resetC();" class="buttons" /></td>
+                                    <td class="tdHeaderJ" style="vertical-align: top; text-align: center;">
+                                        <textarea id="TextArea3" spellcheck='false' class="TextAreaCode" style="height: 500px;"></textarea><br />
+                                        Play with the values, press “Run xml” and see what happens. If something goes wrong, just press “Reset”. 
+                                    </td>
+                                </tr>
+                            </table>
+                            <br />
+                            <strong>imagePropertiesAnimation</strong>: It allows you animate the properties Alpha, Scale and Rotation in an image.
+                            <hr class="hrTags" />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <br />
+                <br />
+                <table cellpadding="0" cellspacing="0" class="tableContext">
+                    <tr>
+                        <td class="tdHeaderJ" style="vertical-align: top; font-size:small;">
+                            <table cellpadding="0" cellspacing="0" class="tableHeader">
+                                <tr>
+                                    <td class="tdHeaderI" style="text-align: center">
+                                        <canvas id="mycanvasd" width="400" height="250" style="border-style: solid; border-width: 1px"></canvas>
+                                        <br />
+                                        <input id="btnRund" type="button" value="Run xml" onclick="loadNewAnimationD('audiob');" class="buttons" />
+                                        <input id="btnResetd" type="button" value="Reset" onclick="resetD();" class="buttons" /></td>
+                                    <td class="tdHeaderJ" style="vertical-align: top; text-align: center;">
+                                        <textarea id="TextArea4" spellcheck='false' class="TextAreaCode"></textarea><br />
+                                        Play with the values, press “Run xml” and see what happens. If something goes wrong, just press “Reset”. 
+                                    </td>
+                                </tr>
+                            </table>
+                            <br />
+                            The tag “audioPlayers” allows you play music in your animation.
+                            <hr class="hrTags" />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <br />
+                <br />
+                <table cellpadding="0" cellspacing="0" class="tableContext">
+                    <tr>
+                        <td class="tdHeaderJ" style="vertical-align: top; font-size:small;">
+                            <table cellpadding="0" cellspacing="0" class="tableHeader">
+                                <tr>
+                                    <td class="tdHeaderI" style="text-align: center">
+                                        <canvas id="mycanvase" width="400" height="250" style="border-style: solid; border-width: 1px"></canvas>
+                                        <br />
+                                        <input id="Button3" type="button" value="Run xml" onclick="loadNewAnimationE('parallax');" class="buttons" />
+                                        <input id="Button4" type="button" value="Reset" onclick="resetE();" class="buttons" /></td>
+                                    <td class="tdHeaderJ" style="vertical-align: top; text-align: center;">
+                                        <textarea id="TextArea5" spellcheck='false' class="TextAreaCode" style="height: 500px;"></textarea><br />
+                                        Play with the values, press “Run xml” and see what happens. If something goes wrong, just press “Reset”. 
+                                    </td>
+                                </tr>
+                            </table>
+                            <br />
+                            <strong>createBackgroundLayer</strong>: If you are working with a camera and scrolling you can create multiple layers with this tag for a nice parallax effect. 
+                            <br /><br />
+                            This tag creates an alternative “canvasResolution”. If you are planning create a background layer you must use a resolution smaller than the main “canvasResolution”, thereby the background layer will move slower when the scrolling happens.
+                            <hr class="hrTags" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;">
+                            <a href="docb.htm">
+                            <img alt="next" src="styles/images/next.png" style="border-width: 0px" /></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br /><br /><br />
+    <table align="center" cellpadding="0" cellspacing="0" class="footer" style="background-color: #fafafa">
+        <tr>
+            <td>
+                <table cellpadding="0" align="center" cellspacing="0" class="tableContextB" style="cursor:pointer;" onclick="window.location.assign('https://play.google.com/store/apps/details?id=com.jadsds.retropixels');">
+                    <tr>
+                        <td class="tdHeaderKlogoA" style="text-align: center">&nbsp;</td>
+                        <td class="tdHeaderKlogoAndroid" style="vertical-align: top">&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table align="center" cellpadding="0" cellspacing="0" class="footer">
+        <tr>
+            <td>
+                <table cellpadding="0" align="center" cellspacing="0" class="tableContextB">
+                    <tr>
+                        <td class="tdHeaderKlogoB" style="text-align: center; cursor:pointer;" onclick="window.location.assign('https://play.google.com/store/apps/details?id=com.jadsds.retropixels');">&nbsp;</td>
+                        <td class="tdHeaderJ" style="vertical-align: top">
+                            <a href="https://play.google.com/store/apps/details?id=com.jadsds.retropixels" class="home">
+                                <strong><span class="titles">Android Pixels Live Wallpaper</span></strong><br />
+                            </a>
+                            <br />
+                            Pixels Live Wallpaper is an application that allows you use your projects created with JADSDS engine as live wallpaper in your smartphone.
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

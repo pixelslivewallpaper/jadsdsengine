@@ -1,11 +1,643 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <title>JADSDS</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href="styles/main.css" rel="stylesheet" />
+    <script src="JadsdsEngine_min.js"></script>
+    <script src="basic.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
-    Hello world
+    <table align="center" cellpadding="0" cellspacing="0" class="headerTable">
+        <tr>
+            <td>
+                <table align="center" cellpadding="0" cellspacing="0" class="mainTable">
+                    <tr style="height: 80px;">
+                        <td class="tdHeaderG">&nbsp;<a href="index.htm" class="home"><img alt="logo" class="logoIMG" src="styles/images/logo.png" /></a></td>
+                        <td class="tdHeaderH">
+                            &nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="headerTableb"></div>
+    <table align="center" cellpadding="0" cellspacing="0" class="mainTable">
+        <tr>
+            <td style="text-align: center">
+                <br />
+                <img alt="" src="styles/images/logo.png" /><br />
+                JADSDS engine is a friendly tag based JavaScript animator created to make easier web projects using the power of HTML5
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <br />
+                <br />
+                <canvas id="mycanvas" width="1083" height="391" style="border-style: solid; border-width: 1px"></canvas>
+                <br />
+                <br />
+                <br />
+                <br />
+                <img alt="" src="styles/images/linejadsds.png" />
+                <br />
+                <br />
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="center" cellpadding="0" cellspacing="0" class="tableCircle">
+                    <tr>
+                        <td>
+                            <img alt="" src="styles/images/ttagbased.png" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>All the animations are built using intuitive tags easy to remember.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table align="center" cellpadding="0" cellspacing="0" class="tableCircle" style="width: 90%;">
+                                <tr>
+                                    <td style="width: 50%;">
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&lt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">property</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&gt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white"><o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white"><span style="mso-spacerun: yes">&nbsp; </span>&lt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">propertyName</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&gt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">Rotation</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&lt;/</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">propertyName</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&gt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white"><o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white"><span style="mso-spacerun: yes">&nbsp; </span>&lt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">minimumDegreesValue</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&gt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">0</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&lt;/</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">minimumDegreesValue</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&gt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white"><o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white"><span style="mso-spacerun: yes">&nbsp; </span>&lt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">maximumDegreesValue</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&gt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">360</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&lt;/</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">maximumDegreesValue</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&gt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white"><o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white"><span style="mso-spacerun: yes">&nbsp; </span>&lt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">updateDegreesValue</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&gt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">6</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&lt;/</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">updateDegreesValue</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&gt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white"><o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white"><span style="mso-spacerun: yes">&nbsp; </span>&lt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">currentDegreesValue</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&gt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">0</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&lt;/</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">currentDegreesValue</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&gt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white"><o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white"><span style="mso-spacerun: yes">&nbsp; </span>&lt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">rotationSpeed</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&gt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">1</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&lt;/</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">rotationSpeed</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&gt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white"><o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white"><span style="mso-spacerun: yes">&nbsp; </span>&lt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">animationRotationAction</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&gt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">Increase</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&lt;/</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">animationRotationAction</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">&gt;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white"><o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; line-height: 107%; font-family: Consolas; color: blue; mso-highlight: white">&lt;/</span><span style="font-size: 9.5pt; line-height: 107%; font-family: Consolas; color: #A31515; mso-highlight: white">property</span><span style="font-size: 9.5pt; line-height: 107%; font-family: Consolas; color: blue; mso-highlight: white">&gt;</span><o:p></o:p>
+                                        </p>
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <canvas id="mycanvasR" width="400" height="250"></canvas>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img alt="" src="styles/images/teasy.png" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>You do not need be a programmer, just the basics about html and JavaScript will allow you to create amazing animations.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table align="center" cellpadding="0" cellspacing="0" class="tableCircle" style="width: 90%;">
+                                <tr>
+                                    <td style="width: 50%;">
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">var</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white"> jadsdsEngine = </span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">new</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white"> JadsdsEngine(</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">&#39;canvasID&#39;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">);<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; line-height: 107%; font-family: Consolas; color: black; mso-highlight: white">jadsdsEngine.loadAnimation(</span><span style="font-size: 9.5pt; line-height: 107%; font-family: Consolas; color: #A31515; mso-highlight: white">&#39;animationName&#39;</span><span style="font-size: 9.5pt; line-height: 107%; font-family: Consolas; color: black; mso-highlight: white">);</span><o:p></o:p>
+                                        </p>
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: #A6A6A6; mso-themecolor: background1; mso-themeshade: 166; mso-style-textfill-fill-color: #A6A6A6; mso-style-textfill-fill-themecolor: background1; mso-style-textfill-fill-alpha: 100.0%; mso-style-textfill-fill-colortransforms: lumm=65000; mso-highlight: white">&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;tableHeader&quot;&gt;<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: #A6A6A6; mso-themecolor: background1; mso-themeshade: 166; mso-style-textfill-fill-color: #A6A6A6; mso-style-textfill-fill-themecolor: background1; mso-style-textfill-fill-alpha: 100.0%; mso-style-textfill-fill-colortransforms: lumm=65000; mso-highlight: white"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>&lt;tr&gt;<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: #A6A6A6; mso-themecolor: background1; mso-themeshade: 166; mso-style-textfill-fill-color: #A6A6A6; mso-style-textfill-fill-themecolor: background1; mso-style-textfill-fill-alpha: 100.0%; mso-style-textfill-fill-colortransforms: lumm=65000; mso-highlight: white"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;td class=&quot;tdHeaderI&quot; style=&quot;text-align: center&quot;&gt;<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: #A6A6A6; mso-themecolor: background1; mso-themeshade: 166; mso-style-textfill-fill-color: #A6A6A6; mso-style-textfill-fill-themecolor: background1; mso-style-textfill-fill-alpha: 100.0%; mso-style-textfill-fill-colortransforms: lumm=65000; mso-highlight: white"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;canvas </span><span style="font-size: 9.5pt; font-family: Consolas; color: red; mso-highlight: white">id</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue; mso-highlight: white">=&quot;</span><span style="font-size: 9.5pt; font-family: Consolas; color: blue">canvasID</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A6A6A6; mso-themecolor: background1; mso-themeshade: 166; mso-style-textfill-fill-color: #A6A6A6; mso-style-textfill-fill-themecolor: background1; mso-style-textfill-fill-alpha: 100.0%; mso-style-textfill-fill-colortransforms: lumm=65000; mso-highlight: white">&quot; 
+                                            width=&quot;320&quot; height=&quot;480&quot;&gt;&lt;/canvas&gt;<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: #A6A6A6; mso-themecolor: background1; mso-themeshade: 166; mso-style-textfill-fill-color: #A6A6A6; mso-style-textfill-fill-themecolor: background1; mso-style-textfill-fill-alpha: 100.0%; mso-style-textfill-fill-colortransforms: lumm=65000; mso-highlight: white"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;input id=&quot;btnRun&quot; type=&quot;button&quot; value=&quot;Run xml&quot; /&gt;<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: #A6A6A6; mso-themecolor: background1; mso-themeshade: 166; mso-style-textfill-fill-color: #A6A6A6; mso-style-textfill-fill-themecolor: background1; mso-style-textfill-fill-alpha: 100.0%; mso-style-textfill-fill-colortransforms: lumm=65000; mso-highlight: white"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;input id=&quot;btnReset&quot; type=&quot;button&quot; value=&quot;Reset&quot; /&gt;<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: #A6A6A6; mso-themecolor: background1; mso-themeshade: 166; mso-style-textfill-fill-color: #A6A6A6; mso-style-textfill-fill-themecolor: background1; mso-style-textfill-fill-alpha: 100.0%; mso-style-textfill-fill-colortransforms: lumm=65000; mso-highlight: white"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;/td&gt;<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: #A6A6A6; mso-themecolor: background1; mso-themeshade: 166; mso-style-textfill-fill-color: #A6A6A6; mso-style-textfill-fill-themecolor: background1; mso-style-textfill-fill-alpha: 100.0%; mso-style-textfill-fill-colortransforms: lumm=65000; mso-highlight: white"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>&lt;/tr&gt;<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; line-height: 107%; font-family: Consolas; color: #A6A6A6; mso-themecolor: background1; mso-themeshade: 166; mso-style-textfill-fill-color: #A6A6A6; mso-style-textfill-fill-themecolor: background1; mso-style-textfill-fill-alpha: 100.0%; mso-style-textfill-fill-colortransforms: lumm=65000; mso-highlight: white">&lt;/table&gt;</span><span style="color: #A6A6A6; mso-themecolor: background1; mso-themeshade: 166; mso-style-textfill-fill-color: #A6A6A6; mso-style-textfill-fill-themecolor: background1; mso-style-textfill-fill-alpha: 100.0%; mso-style-textfill-fill-colortransforms: lumm=65000"><o:p></o:p></span>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img alt="" src="styles/images/tcpu.png" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Run multiple projects at the same time without cause any heavy impact in your CPU.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table align="center" cellpadding="0" cellspacing="0" class="tableCircle" style="width: 90%;">
+                                <tr>
+                                    <td style="width: 50%;">
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">jadsdsEngineA.loadAnimation(</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">&#39;animationA&#39;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">);<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">jadsdsEngineB.loadAnimation(</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">&#39;animationB&#39;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">);<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">jadsdsEngineC.loadAnimation(</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">&#39;animationC&#39;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">);<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">jadsdsEngineD.loadAnimation(</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">&#39;animationD&#39;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">);<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">jadsdsEngineE.loadAnimation(</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">&#39;animationE&#39;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">);<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; line-height: 107%; font-family: Consolas; color: black; mso-highlight: white">jadsdsEngineF.loadAnimation(</span><span style="font-size: 9.5pt; line-height: 107%; font-family: Consolas; color: #A31515; mso-highlight: white">&#39;animationF&#39;</span><span style="font-size: 9.5pt; line-height: 107%; font-family: Consolas; color: black; mso-highlight: white">);</span><span style="font-size: 9.5pt; line-height: 107%; font-family: Consolas; color: black"><br />
+                                                ...</span><o:p></o:p>
+                                        </p>
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <table cellpadding="0" cellspacing="0" align="center">
+                                            <tr>
+                                                <td class="tdDown">
+                                                    <canvas id="mycanvas1" width="160" height="240" ></canvas>
+                                                </td>
+                                                <td class="tdDown">
+                                                    <canvas id="mycanvas2" width="160" height="240" ></canvas>
+                                                </td>
+                                                <td class="tdDown">
+                                                    <canvas id="mycanvas3" width="160" height="240" ></canvas>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img alt="" src="styles/images/tandroid.png" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>All your web projects run in Android as well.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table align="center" cellpadding="0" cellspacing="0" class="tableCircle" style="width: 90%;">
+                                <tr>
+                                    <td style="width: 30%; text-align: center;">
+                                        <table align="center" cellpadding="0" cellspacing="0" class="tablePhone">
+                                            <tr>
+                                                <td colspan="3" class="tdPhone1">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tdPhone2">&nbsp;</td>
+                                                <td class="tdPhoneC">
+                                                   <canvas id="phoneAni" width="204" height="290" ></canvas>
+                                                </td>
+                                                <td class="tdPhone3">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="tdPhone4">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <table align="center" cellpadding="0" cellspacing="0" class="tablePhone">
+                                            <tr>
+                                                <td class="tdMyWeb1" rowspan="3">&nbsp;</td>
+                                                <td class="tdMyWeb2">&nbsp;</td>
+                                                <td class="tdMyWeb3" rowspan="3">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tdMyWeb4">
+                                                   <canvas id="webAni" width="416" height="290" ></canvas>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tdMyWeb5">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <br />
+                <br />
+                <br />
+                <img alt="" src="styles/images/linejadsds.png" />
+                <br />
+                <br />
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="center" cellpadding="0" cellspacing="0" class="tableCircle">
+                    <tr>
+                        <td>
+                            <img alt="" src="styles/images/features.png" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br /><br />
+                            <table align="center" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasRotation" width="100" height="100" class="miniCanvas"></canvas>
+                                    </td>
+                                    <td class="tdTextFeatures">Rotation</td>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasScale" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Scale</td>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasFlipImage" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Flip image</td>
+                                </tr>
+                                <tr>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasColorC" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Color cycling</td>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasGif" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Gifs animated support</td>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasMove" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Move animation</td>
+                                </tr>
+                                <tr>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasPath" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Path animation</td>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasAudio" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Audio</td>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasAlpha" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Alpha compositing</td>
+                                </tr>
+                                <tr>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasPa" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Custom color palettes</td>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasEndless" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Endless animation</td>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasEvents" width="100" height="100" class="miniCanvas" title="Click me!">
+                                    </td>
+                                    <td class="tdTextFeatures">Events & Actions</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6" style="text-align:center;">
+                                        <br />
+                                        and much more. Jadsds has more than 100 tags available.</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <br />
+                <br />
+                <br />
+                <img alt="" src="styles/images/linejadsds.png" />
+                <br />
+                <br />
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="center" cellpadding="0" cellspacing="0" class="tableCircle">
+                    <tr>
+                        <td>
+                            <img alt="" src="styles/images/lettitle.png" />
+                            <br /><br /><br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top; font-size: small;">
+                            <table cellpadding="0" cellspacing="0" class="tableHeader">
+                                <tr>
+                                    <td class="tdHeaderI" style="text-align: center">
+                                        <canvas id="mycanvase" width="400" height="250" style="border-style: solid; border-width: 1px"></canvas>
+                                        <br />
+                                        <input id="Button3" type="button" value="Run xml" onclick="loadNewAnimationE('parallax');" class="buttons" />
+                                        <input id="Button4" type="button" value="Reset" onclick="resetE();" class="buttons" /></td>
+                                    <td class="tdHeaderJ" style="vertical-align: top; text-align: center;">
+                                        <textarea id="TextArea5" spellcheck='false' class="TextAreaCode" style="height: 500px;"></textarea><br />
+                                        Play with the values, press “Run xml” and see what happens. If something goes wrong, just press “Reset”. 
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <br />
+                <br />
+                <br />
+                <img alt="" src="styles/images/linejadsds.png" />
+                <br />
+                <br />
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="center" cellpadding="0" cellspacing="0" class="tableCircle">
+                    <tr>
+                        <td>
+                            <img alt="" src="styles/images/documentationtitle.png" />
+                            <br />
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            A pdf file with the complete documentation is available <a href="JadsdsEngine.pdf">here</a>.
+                            <br />
+                            <br />
+                            This <a href="doc.htm">site</a> will give you access to interactive documentation.</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <br />
+                <br />
+                <br />
+                <img alt="" src="styles/images/linejadsds.png" />
+                <br />
+                <br />
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="center" cellpadding="0" cellspacing="0" class="tableCircle">
+                    <tr>
+                        <td>
+                            <img alt="" src="styles/images/downloadtitle.png" />
+                            <br />
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellpadding="0" cellspacing="0" class="tableHeader" style="width:100%">
+                                <tr>
+                                    <td>
+                                        JADSDS engine is completely free. However, you can not edit the file “JadsdsEngine_min.js”<br />
+                                        <br />
+                                        <img src="styles/images/zip.png" />
+                                        <a href="JadsdsEngine.zip" style="text-decoration: none; color: #000000">Engine and documentation</a>
+                                        <br />
+                                        <br />
+                                        <br />
+                                        Thank you!
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align:bottom;">
+                                        <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">
+                                            <!--<img alt="Creative Commons License" style="border-width: 0" src="https://i.creativecommons.org/l/by-nd/4.0/88x31.png" />--></a>
+                                        <a xmlns:cc="http://creativecommons.org/ns#" href="http://jadsdsengine.com/" property="cc:attributionName" rel="cc:attributionURL">
+                                            <span class="license">Jadsds engine</span>
+                                        </a>
+                                        <span class="license">is licensed under a </span>
+                                        <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">
+                                            <span class="license">Creative Commons Attribution-NoDerivatives 4.0 International License</span>
+                                        </a>
+                                        <span class="license">.</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <br />
+                <br />
+                <br />
+                <img alt="" src="styles/images/linejadsds.png" />
+                <br />
+                <br />
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="center" cellpadding="0" cellspacing="0" class="tableCircle">
+                    <tr>
+                        <td>
+                            <img alt="" src="styles/images/helpustitle.png" />
+                            <br />
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table align="center" cellpadding="0" cellspacing="0" class="tableCircle" style="width: 90%;">
+                                <tr>
+                                    <td style="width: 30%; text-align: center;">
+                                        <table align="center" cellpadding="0" cellspacing="0" class="tablePhone">
+                                            <tr>
+                                                <td colspan="3" class="tdPhone1">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tdPhone2">&nbsp;</td>
+                                                <td class="tdPhoneC">
+                                                    <canvas id="canvasHelp" width="204" height="290"></canvas>
+                                                </td>
+                                                <td class="tdPhone3">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="tdPhone4">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" >
+                                                    <select id="aniSelect" name="aniSelect" class="textboxessmall" style="width:100%;" onchange="loadHelpUS();">
+                                                        <option value="sgag">sgag</option>
+                                                        <option value="sgagb" selected="selected">sgagb</option>
+                                                        <option value="pp">pp</option>
+                                                        <option value="dx">dx</option>
+                                                        <option value="elenascroll" >elena</option>
+                                                        <option value="sf2" >sf2</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td style="text-align: left;">
+                                        Pixels Live Wallpaper is an application that allows you use your projects created with Jadsds engine as live wallpaper in your smartphone.<br />
+                                        <br />
+                                        Available on:<br />
+                                        <a href="https://play.google.com/store/apps/details?id=com.jadsds.retropixels" target="_blank">
+                                        <img alt="" src="styles/images/googleplay.png" style="border-width: 0px" /></a> <a href="http://www.amazon.com/gp/product/B013PLM6CU" target="_blank"> <img alt="" src="styles/images/amazon.png" style="border-width: 0px" /></a><br />
+                                        <br />
+                                        The app includes: <br />
+                                        <br />
+                                        • Development kit (use your PC as development platform).
+                                        <br />
+                                        • Jadsds engine.
+                                        <br />
+                                        • A quick guide about how to convert gifs animated in live wallpapers.<br />
+                                        • Lots of live wallpapers.<br />
+                                        <br />
+                                        <br />
+                                        <br />
+                                        or helping us with PayPal:<br />
+                                        <br />
+                                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="2UZUFLTCXDSC2">
+                                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <table align="center" cellpadding="0" cellspacing="0" class="footer" style="background-color: #fafafa">
+        <tr>
+            <td>
+                <table cellpadding="0" align="center" cellspacing="0" class="tableContextB" style="cursor: pointer;" onclick="window.location.assign('https://play.google.com/store/apps/details?id=com.jadsds.retropixels');">
+                    <tr>
+                        <td class="tdHeaderKlogoA" style="text-align: center">&nbsp;</td>
+                        <td class="tdHeaderKlogoAndroid" style="vertical-align: top">&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table align="center" cellpadding="0" cellspacing="0" class="footer">
+        <tr>
+            <td>
+                <table cellpadding="0" align="center" cellspacing="0" class="tableContextB">
+                    <tr>
+                        <td class="tdHeaderKlogoB" style="text-align: center; cursor: pointer;" onclick="window.location.assign('https://play.google.com/store/apps/details?id=com.jadsds.retropixels');">&nbsp;</td>
+                        <td class="tdHeaderJ" style="vertical-align: top">
+                            <a href="https://play.google.com/store/apps/details?id=com.jadsds.retropixels" class="home">
+                                <strong><span class="titles">Android Pixels Live Wallpaper</span></strong><br />
+                            </a>
+                            <br />
+                            Pixels Live Wallpaper is an application that allows you use your projects created with Jadsds engine as live wallpaper in your smartphone.
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

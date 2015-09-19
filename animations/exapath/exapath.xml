@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>100</width>
+      <height>100</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>50</maxWidth>
+      <maxHeight>50</maxHeight>
+    </canvasResolution>
+    <bgColor>#fffafafa</bgColor>
+  </basic>
+  <images>
+    <image>
+      <fileName>path.png</fileName>
+      <pathAnimation>
+        <pathAnimationCoordinates>
+          <customCoordinates>18;10,17;10,16;10,15;10,13;11,12;12,11;12,11;13,10;14,9;14,9;15,8;15,8;16,7;17,7;18,7;19,7;20,7;21,7;22,8;22,9;23,9;24,10;24,10;25,11;25,11;26,12;26,14;27,14;28,15;28,17;28,17;29,18;29,18;30,19;31,20;31,20;32,21;32,22;32,23;32,24;32,25;32,26;32,27;32,28;32,29;32,30;31,30;30,30;29,30;28,30;27,30;26,30;25,29;24,28;24,28;23,27;22,26;22,25;21,25;20,25;19,25;18,26;17,26;16,26;15,27;15,27;14,27;13,27;12,27;11,27;10,25;10,23;9,22;9,21;9,20;9,19;9,18;9,17;9</customCoordinates>
+        </pathAnimationCoordinates>
+        <pixelsMove>1</pixelsMove>
+        <pathAnimationSpeed>1</pathAnimationSpeed>
+        <returnBackwardToTheBeginning>false</returnBackwardToTheBeginning>
+      </pathAnimation>
+    </image>
+  </images>
+</doc>
