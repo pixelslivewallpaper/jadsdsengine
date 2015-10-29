@@ -12,11 +12,18 @@
     <bgColor>#ffff9c35</bgColor>
   </basic>
   <audioPlayers>
+    <!--<audioPlayer>
+      <playerID>backgroundAudio</playerID>
+      --><!--<audioFile>sound.m4a</audioFile>--><!--
+      --><!--<audioAutoPlay>true</audioAutoPlay>--><!--
+      --><!--<audioVolume>0.1</audioVolume>--><!--
+    </audioPlayer>-->
     <audioPlayer>
       <playerID>backgroundAudio</playerID>
-      <!--<audioFile>sound.m4a</audioFile>-->
-      <!--<audioAutoPlay>true</audioAutoPlay>-->
-      <!--<audioVolume>0.1</audioVolume>-->
+      <audioFile>sound.m4a</audioFile>
+      <autoPlay>false</autoPlay>
+      <!--<volume>0.1</volume>-->
+      <!--<loop>false</loop>-->
     </audioPlayer>
   </audioPlayers>
   <images>
@@ -30,7 +37,9 @@
           <eventActions>
             <eventAction>StopAudio</eventAction>
           </eventActions>
-          <audioPlayerID>backgroundAudio</audioPlayerID>
+          <audioPlayer>
+            <playerID>backgroundAudio</playerID>
+          </audioPlayer>          
         </event>
       </events>
     </image>
@@ -44,10 +53,13 @@
           <eventActions>
             <eventAction>PlayAudio</eventAction>
           </eventActions>
-          <audioPlayerID>backgroundAudio</audioPlayerID>
-          <audioFileToLoad>f.m4a</audioFileToLoad>
-          <audioLoopToUpdate>true</audioLoopToUpdate>
-          <!--<audioVolumeToUpdate>0.7</audioVolumeToUpdate>-->
+          <audioPlayer>
+            <playerID>backgroundAudio</playerID>
+            <!--<audioFile from="audio">A-Bit of Daft Punk.m4a</audioFile>-->
+            <!--<autoPlay>true</autoPlay>-->
+            <!--<loop>true</loop>-->
+            <!--<volume>0.7</volume>-->
+          </audioPlayer>
         </event>
       </events>
     </image>
@@ -61,7 +73,9 @@
           <eventActions>
             <eventAction>PauseAudio</eventAction>
           </eventActions>
-          <audioPlayerID>backgroundAudio</audioPlayerID>
+          <audioPlayer>
+            <playerID>backgroundAudio</playerID>
+          </audioPlayer>  
         </event>
       </events>
     </image>

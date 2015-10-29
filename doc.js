@@ -12,7 +12,7 @@ var animationXMLCpartB = "%20%20%20%20%3Cimage%3E%0A%20%20%20%20%20%20%3CfileNam
 var animationXMLCpartC = "%20%20%3C%2Fimages%3E%0A%3C%2Fdoc%3E";
 
 var animationXMLDpartA = "%3C%3Fxml%20version%3D%221.0%22%3F%3E%0A%3Cdoc%3E%0A%20%20%3Cbasic%20type%3D%22animations%22%3E%0A%20%20%20%20%3CscreenCanvasResolution%3E%0A%20%20%20%20%20%20%3Cwidth%3E400%3C%2Fwidth%3E%0A%20%20%20%20%20%20%3Cheight%3E250%3C%2Fheight%3E%0A%20%20%20%20%3C%2FscreenCanvasResolution%3E%0A%20%20%20%20%3CcanvasResolution%3E%0A%20%20%20%20%20%20%3CmaxWidth%3E400%3C%2FmaxWidth%3E%0A%20%20%20%20%20%20%3CmaxHeight%3E250%3C%2FmaxHeight%3E%0A%20%20%20%20%3C%2FcanvasResolution%3E%0A%20%20%20%20%3CbgColor%3E%23ffff9c35%3C%2FbgColor%3E%0A%20%20%3C%2Fbasic%3E";
-var animationXMLDpartB = "%20%20%3CaudioPlayers%3E%0A%20%20%20%20%3CaudioPlayer%3E%0A%20%20%20%20%20%20%3CplayerID%3EbackgroundAudio%3C%2FplayerID%3E%0A%20%20%20%20%20%20%3C!--%3CaudioFile%3Esound.m4a%3C%2FaudioFile%3E--%3E%0A%20%20%20%20%20%20%3C!--%3CaudioAutoPlay%3Etrue%3C%2FaudioAutoPlay%3E--%3E%0A%20%20%20%20%20%20%3C!--%3CaudioVolume%3E0.1%3C%2FaudioVolume%3E--%3E%0A%20%20%20%20%3C%2FaudioPlayer%3E%0A%20%20%3C%2FaudioPlayers%3E%0A%20%20%3Cimages%3E%0A%20%20%20%20%3Cimage%3E%0A%20%20%20%20%20%20%3CfileName%3Estop.png%3C%2FfileName%3E%0A%20%20%20%20%20%20%3Cleft%3E60%3C%2Fleft%3E%0A%20%20%20%20%20%20%3Ctop%3E85%3C%2Ftop%3E%0A%20%20%20%20%20%20%3Cevents%3E%0A%20%20%20%20%20%20%20%20%3Cevent%3E%0A%20%20%20%20%20%20%20%20%20%20%3CeventType%3EOnClickDown%3C%2FeventType%3E%0A%20%20%20%20%20%20%20%20%20%20%3CeventActions%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3CeventAction%3EStopAudio%3C%2FeventAction%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2FeventActions%3E%0A%20%20%20%20%20%20%20%20%20%20%3CaudioPlayerID%3EbackgroundAudio%3C%2FaudioPlayerID%3E%0A%20%20%20%20%20%20%20%20%3C%2Fevent%3E%0A%20%20%20%20%20%20%3C%2Fevents%3E%0A%20%20%20%20%3C%2Fimage%3E%0A%20%20%20%20%3Cimage%3E%0A%20%20%20%20%20%20%3CfileName%3Eplay.png%3C%2FfileName%3E%0A%20%20%20%20%20%20%3Cleft%3E160%3C%2Fleft%3E%0A%20%20%20%20%20%20%3Ctop%3E85%3C%2Ftop%3E%0A%20%20%20%20%20%20%3Cevents%3E%0A%20%20%20%20%20%20%20%20%3Cevent%3E%0A%20%20%20%20%20%20%20%20%20%20%3CeventType%3EOnClickDown%3C%2FeventType%3E%0A%20%20%20%20%20%20%20%20%20%20%3CeventActions%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3CeventAction%3EPlayAudio%3C%2FeventAction%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2FeventActions%3E%0A%20%20%20%20%20%20%20%20%20%20%3CaudioPlayerID%3EbackgroundAudio%3C%2FaudioPlayerID%3E%0A%20%20%20%20%20%20%20%20%20%20%3CaudioFileToLoad%3Esound.m4a%3C%2FaudioFileToLoad%3E%0A%20%20%20%20%20%20%20%20%20%20%3C!--%3CaudioVolumeToUpdate%3E0.7%3C%2FaudioVolumeToUpdate%3E--%3E%0A%20%20%20%20%20%20%20%20%3C%2Fevent%3E%0A%20%20%20%20%20%20%3C%2Fevents%3E%0A%20%20%20%20%3C%2Fimage%3E%0A%20%20%20%20%3Cimage%3E%0A%20%20%20%20%20%20%3CfileName%3Epause.png%3C%2FfileName%3E%0A%20%20%20%20%20%20%3Cleft%3E260%3C%2Fleft%3E%0A%20%20%20%20%20%20%3Ctop%3E85%3C%2Ftop%3E%0A%20%20%20%20%20%20%3Cevents%3E%0A%20%20%20%20%20%20%20%20%3Cevent%3E%0A%20%20%20%20%20%20%20%20%20%20%3CeventType%3EOnClickDown%3C%2FeventType%3E%0A%20%20%20%20%20%20%20%20%20%20%3CeventActions%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3CeventAction%3EPauseAudio%3C%2FeventAction%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2FeventActions%3E%0A%20%20%20%20%20%20%20%20%20%20%3CaudioPlayerID%3EbackgroundAudio%3C%2FaudioPlayerID%3E%0A%20%20%20%20%20%20%20%20%3C%2Fevent%3E%0A%20%20%20%20%20%20%3C%2Fevents%3E%0A%20%20%20%20%3C%2Fimage%3E%0A%20%20%3C%2Fimages%3E";
+var animationXMLDpartB = "%20%20%3CaudioPlayers%3E%0A%20%20%20%20%3CaudioPlayer%3E%0A%20%20%20%20%20%20%3CplayerID%3EbackgroundAudio%3C%2FplayerID%3E%0A%20%20%20%20%20%20%3CaudioFile%3Esound.m4a%3C%2FaudioFile%3E%0A%20%20%20%20%20%20%3CautoPlay%3Efalse%3C%2FautoPlay%3E%0A%20%20%20%20%3C%2FaudioPlayer%3E%0A%20%20%3C%2FaudioPlayers%3E%0A%20%20%3Cimages%3E%0A%20%20%20%20%3Cimage%3E%0A%20%20%20%20%20%20%3CfileName%3Estop.png%3C%2FfileName%3E%0A%20%20%20%20%20%20%3Cleft%3E60%3C%2Fleft%3E%0A%20%20%20%20%20%20%3Ctop%3E85%3C%2Ftop%3E%0A%20%20%20%20%20%20%3Cevents%3E%0A%20%20%20%20%20%20%20%20%3Cevent%3E%0A%20%20%20%20%20%20%20%20%20%20%3CeventType%3EOnClickDown%3C%2FeventType%3E%0A%20%20%20%20%20%20%20%20%20%20%3CeventActions%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3CeventAction%3EStopAudio%3C%2FeventAction%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2FeventActions%3E%0A%20%20%20%20%20%20%20%20%20%20%3CaudioPlayer%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3CplayerID%3EbackgroundAudio%3C%2FplayerID%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2FaudioPlayer%3E%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3C%2Fevent%3E%0A%20%20%20%20%20%20%3C%2Fevents%3E%0A%20%20%20%20%3C%2Fimage%3E%0A%20%20%20%20%3Cimage%3E%0A%20%20%20%20%20%20%3CfileName%3Eplay.png%3C%2FfileName%3E%0A%20%20%20%20%20%20%3Cleft%3E160%3C%2Fleft%3E%0A%20%20%20%20%20%20%3Ctop%3E85%3C%2Ftop%3E%0A%20%20%20%20%20%20%3Cevents%3E%0A%20%20%20%20%20%20%20%20%3Cevent%3E%0A%20%20%20%20%20%20%20%20%20%20%3CeventType%3EOnClickDown%3C%2FeventType%3E%0A%20%20%20%20%20%20%20%20%20%20%3CeventActions%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3CeventAction%3EPlayAudio%3C%2FeventAction%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2FeventActions%3E%0A%20%20%20%20%20%20%20%20%20%20%3CaudioPlayer%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3CplayerID%3EbackgroundAudio%3C%2FplayerID%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2FaudioPlayer%3E%0A%20%20%20%20%20%20%20%20%3C%2Fevent%3E%0A%20%20%20%20%20%20%3C%2Fevents%3E%0A%20%20%20%20%3C%2Fimage%3E%0A%20%20%20%20%3Cimage%3E%0A%20%20%20%20%20%20%3CfileName%3Epause.png%3C%2FfileName%3E%0A%20%20%20%20%20%20%3Cleft%3E260%3C%2Fleft%3E%0A%20%20%20%20%20%20%3Ctop%3E85%3C%2Ftop%3E%0A%20%20%20%20%20%20%3Cevents%3E%0A%20%20%20%20%20%20%20%20%3Cevent%3E%0A%20%20%20%20%20%20%20%20%20%20%3CeventType%3EOnClickDown%3C%2FeventType%3E%0A%20%20%20%20%20%20%20%20%20%20%3CeventActions%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3CeventAction%3EPauseAudio%3C%2FeventAction%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2FeventActions%3E%0A%20%20%20%20%20%20%20%20%20%20%3CaudioPlayer%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3CplayerID%3EbackgroundAudio%3C%2FplayerID%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2FaudioPlayer%3E%20%20%0A%20%20%20%20%20%20%20%20%3C%2Fevent%3E%0A%20%20%20%20%20%20%3C%2Fevents%3E%0A%20%20%20%20%3C%2Fimage%3E%0A%20%20%3C%2Fimages%3E";
 var animationXMLDpartC = "%3C%2Fdoc%3E";
 
 var animationXMLEpartA = "%3C%3Fxml%20version%3D%221.0%22%3F%3E%0A%3Cdoc%3E";
@@ -46,6 +46,7 @@ function loadNewAnimationA(nameAni) {
     //jadsdsEngine.renderMode = RenderMode.Advanced;
     //jadsdsEngine.antiAlias = true;
     //jadsdsEngine.showFrameRate = true;
+    jadsdsEngine.stopAnimationWhenIsNotVisible = true;
     jadsdsEngine.loadAnimation(nameAni);
 }
 
@@ -56,6 +57,7 @@ function loadNewAnimationB(nameAni) {
     //jadsdsEngineB.renderMode = RenderMode.Advanced;
     //jadsdsEngineB.antiAlias = true;
     //jadsdsEngineB.showFrameRate = true;
+    jadsdsEngineB.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineB.loadAnimation(nameAni);
 }
 
@@ -66,6 +68,7 @@ function loadNewAnimationC(nameAni) {
     //jadsdsEngineC.renderMode = RenderMode.Advanced;
     //jadsdsEngineC.antiAlias = true;
     //jadsdsEngineC.showFrameRate = true;
+    jadsdsEngineC.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineC.loadAnimation(nameAni);
 }
 
@@ -76,6 +79,7 @@ function loadNewAnimationD(nameAni) {
     //jadsdsEngineC.renderMode = RenderMode.Advanced;
     //jadsdsEngineC.antiAlias = true;
     //jadsdsEngineC.showFrameRate = true;
+    jadsdsEngineD.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineD.loadAnimation(nameAni);
 }
 
@@ -86,6 +90,7 @@ function loadNewAnimationE(nameAni) {
     //jadsdsEngineE.renderMode = RenderMode.Advanced;
     //jadsdsEngineE.antiAlias = true;
     //jadsdsEngineE.showFrameRate = true;
+    jadsdsEngineE.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineE.loadAnimation(nameAni);
 }
 

@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>540</width>
+      <height>413</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>540</maxWidth>
+      <maxHeight>413</maxHeight>
+    </canvasResolution>
+    <bgColor>#ffffffff</bgColor>
+  </basic>
+  <images>
+    <image>
+      <video>
+        <videoFile streamed="false" from="videoexample3">azu.mp4</videoFile>
+        <!--<forceType>video/mp4</forceType>-->
+        <autoPlay>true</autoPlay>
+        <volume>0</volume>
+        <currentTime>0</currentTime>
+        <playerID>videoPlayerAzu1</playerID>
+        <loop>true</loop>
+      </video>
+      <left>6</left>
+      <top>6</top>
+      <width>169</width>
+      <height>127</height>
+    </image>
+  
+    <image>
+      <video>
+        <videoFile streamed="false" from="videoexample3">azu.mp4</videoFile>
+        <!--<forceType>video/mp4</forceType>-->
+        <autoPlay>true</autoPlay>
+        <volume>0</volume>
+        <currentTime>21</currentTime>
+        <playerID>videoPlayerAzu2</playerID>
+        <loop>true</loop>
+      </video>
+      <left>185</left>
+      <top>6</top>
+      <width>169</width>
+      <height>127</height>
+    </image>
+
+    <image>
+      <video>
+        <videoFile streamed="false" from="videoexample3">azu.mp4</videoFile>
+        <!--<forceType>video/mp4</forceType>-->
+        <autoPlay>true</autoPlay>
+        <volume>0</volume>
+        <currentTime>42</currentTime>
+        <playerID>videoPlayerAzu3</playerID>
+        <loop>true</loop>
+      </video>
+      <left>364</left>
+      <top>6</top>
+      <width>169</width>
+      <height>127</height>
+    </image>
+
+    <image>
+      <video>
+        <videoFile streamed="false" from="videoexample3">azu.mp4</videoFile>
+        <!--<forceType>video/mp4</forceType>-->
+        <autoPlay>true</autoPlay>
+        <volume>0</volume>
+        <currentTime>63</currentTime>
+        <playerID>videoPlayerAzu4</playerID>
+        <loop>true</loop>
+      </video>
+      <left>6</left>
+      <top>143</top>
+      <width>169</width>
+      <height>127</height>
+    </image>
+  
+    <image>
+      <video>
+        <videoFile streamed="false" from="videoexample3">azu.mp4</videoFile>
+        <forceType>video/mp4</forceType>
+        <autoPlay>true</autoPlay>
+        <volume>0</volume>
+        <currentTime>84</currentTime>
+        <playerID>videoPlayerAzu5</playerID>
+        <loop>true</loop>
+      </video>
+      <left>185</left>
+      <top>143</top>
+      <width>169</width>
+      <height>127</height>
+    </image>
+
+    <image>
+      <video>
+        <videoFile streamed="false" from="videoexample3">azu.mp4</videoFile>
+        <forceType>video/mp4</forceType>
+        <autoPlay>true</autoPlay>
+        <volume>0</volume>
+        <currentTime>105</currentTime>
+        <playerID>videoPlayerAzu6</playerID>
+        <loop>true</loop>
+      </video>
+      <left>364</left>
+      <top>143</top>
+      <width>169</width>
+      <height>127</height>
+    </image>  
+  
+    
+    <image>
+      <video>
+        <videoFile streamed="false" from="videoexample3">azu.mp4</videoFile>
+        <!--<forceType>video/mp4</forceType>-->
+        <autoPlay>true</autoPlay>
+        <volume>0</volume>
+        <currentTime>126</currentTime>
+        <playerID>videoPlayerAzu7</playerID>
+        <loop>true</loop>
+      </video>
+      <left>6</left>
+      <top>280</top>
+      <width>169</width>
+      <height>127</height>
+    </image>
+  
+    <image>
+      <video>
+        <videoFile streamed="false" from="videoexample3">azu.mp4</videoFile>
+        <forceType>video/mp4</forceType>
+        <autoPlay>true</autoPlay>
+        <volume>0</volume>
+        <currentTime>147</currentTime>
+        <playerID>videoPlayerAzu8</playerID>
+        <loop>true</loop>
+      </video>
+      <left>185</left>
+      <top>280</top>
+      <width>169</width>
+      <height>127</height>
+    </image>
+
+    <image>
+      <video>
+        <videoFile streamed="false" from="videoexample3">azu.mp4</videoFile>
+        <forceType>video/mp4</forceType>
+        <autoPlay>true</autoPlay>
+        <volume>0</volume>
+        <currentTime>168</currentTime>
+        <playerID>videoPlayerAzu9</playerID>
+        <loop>true</loop>
+      </video>
+      <left>364</left>
+      <top>280</top>
+      <width>169</width>
+      <height>127</height>
+    </image> 
+  </images>
+</doc>

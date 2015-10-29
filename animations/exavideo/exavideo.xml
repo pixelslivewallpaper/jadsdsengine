@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>100</width>
+      <height>100</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>100</maxWidth>
+      <maxHeight>100</maxHeight>
+    </canvasResolution>
+    <bgColor>#fffafafa</bgColor>
+  </basic>
+  <images>
+    <image>
+      <video>
+        <videoFile streamed="true" from="videoexample3">azu.mp4</videoFile>
+        <!--<forceType>video/mp4</forceType>-->
+        <autoPlay>true</autoPlay>
+        <volume>0</volume>
+        <currentTime>60</currentTime>
+        <playerID>videoPlayerAzu1</playerID>
+        <loop>true</loop>
+      </video>
+      <imagePropertiesAnimation>
+        <propetiesToAnimate>
+          <property>
+            <propertyName>Rotation</propertyName>
+            <minimumDegreesValue>0</minimumDegreesValue>
+            <maximumDegreesValue>360</maximumDegreesValue>
+            <updateDegreesValue>2</updateDegreesValue>
+            <currentDegreesValue>0</currentDegreesValue>
+            <rotationSpeed>1</rotationSpeed>
+            <animationRotationAction>Increase</animationRotationAction>
+          </property>
+        </propetiesToAnimate>
+      </imagePropertiesAnimation>
+      <left>0</left>
+      <top>0</top>
+      <width>100</width>
+      <height>100</height>
+    </image>
+  </images>
+</doc>

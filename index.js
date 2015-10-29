@@ -100,13 +100,13 @@ function examples() {
     jadsdsEngineExaB.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineExaB.loadAnimation('exascale');
 
-    var jadsdsEngineExaC = new JadsdsEngine('canvasFlipImage');
+    var jadsdsEngineExaC = new JadsdsEngine('canvasVideo');
     jadsdsEngineExaC.fixCanvasSize = false;
     jadsdsEngineExaC.renderMode = RenderMode.Advanced;
     //jadsdsEngineExaC.antiAlias = true;
-    jadsdsEngineExaC.fpsToUse = 2;
+    jadsdsEngineExaC.fpsToUse = 20;
     jadsdsEngineExaC.stopAnimationWhenIsNotVisible = true;
-    jadsdsEngineExaC.loadAnimation('exaflipimage');
+    jadsdsEngineExaC.loadAnimation('exavideo');
 
     var jadsdsEngineExaD = new JadsdsEngine('canvasColorC');
     jadsdsEngineExaD.fixCanvasSize = false;
