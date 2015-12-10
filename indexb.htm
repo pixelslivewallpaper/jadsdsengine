@@ -7,7 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="styles/images/favicon.ico" />
     <script src="JadsdsEngine_min.js"></script>
     <script src="basic.js"></script>
-    <script src="index.js"></script>
+    <script src="indexb.js"></script>
 </head>
 <body>
     <table align="center" cellpadding="0" cellspacing="0" class="headerTable">
@@ -45,19 +45,7 @@
             <td style="text-align: center">
                 <br />
                 <br />
-                <table align="center" cellpadding="0" cellspacing="0" class="tableCircle" style="width: 90%;">
-                    <tr>
-                        <td style="width: 40%;">
-                            <img alt="" src="styles/images/intro1.png" />
-                        </td>
-                        <td style="text-align: center;">
-                            <canvas id="miniA" width="140" height="186"></canvas>
-                        </td>
-                        <td style="text-align: center;">
-                            <canvas id="miniB" width="140" height="186"></canvas>
-                        </td>
-                    </tr>
-                </table>
+                <canvas id="mycanvas" width="1083" height="391" style="border-style: solid; border-width: 1px"></canvas>
                 <br />
                 <br />
                 <br />
@@ -204,6 +192,50 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
+                        <td>
+                            <table align="center" cellpadding="0" cellspacing="0" class="tableCircle" style="width: 90%;">
+                                <tr>
+                                    <td style="width: 50%;">
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">jadsdsEngineA.loadAnimation(</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">&#39;animationA&#39;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">);<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">jadsdsEngineB.loadAnimation(</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">&#39;animationB&#39;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">);<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">jadsdsEngineC.loadAnimation(</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">&#39;animationC&#39;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">);<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">jadsdsEngineD.loadAnimation(</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">&#39;animationD&#39;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">);<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">jadsdsEngineE.loadAnimation(</span><span style="font-size: 9.5pt; font-family: Consolas; color: #A31515; mso-highlight: white">&#39;animationE&#39;</span><span style="font-size: 9.5pt; font-family: Consolas; color: black; mso-highlight: white">);<o:p></o:p></span>
+                                        </p>
+                                        <p class="MsoNormal">
+                                            <span style="font-size: 9.5pt; line-height: 107%; font-family: Consolas; color: black; mso-highlight: white">jadsdsEngineF.loadAnimation(</span><span style="font-size: 9.5pt; line-height: 107%; font-family: Consolas; color: #A31515; mso-highlight: white">&#39;animationF&#39;</span><span style="font-size: 9.5pt; line-height: 107%; font-family: Consolas; color: black; mso-highlight: white">);</span><span style="font-size: 9.5pt; line-height: 107%; font-family: Consolas; color: black"><br />
+                                                ...</span><o:p></o:p>
+                                        </p>
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <table cellpadding="0" cellspacing="0" align="center">
+                                            <tr>
+                                                <td class="tdDown">
+                                                    <canvas id="mycanvas1" width="160" height="240" ></canvas>
+                                                </td>
+                                                <td class="tdDown">
+                                                    <canvas id="mycanvas2" width="160" height="240" ></canvas>
+                                                </td>
+                                                <td class="tdDown">
+                                                    <canvas id="mycanvas3" width="160" height="240" ></canvas>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
@@ -219,9 +251,60 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
+                        <td>
+                            <table align="center" cellpadding="0" cellspacing="0" class="tableCircle" style="width: 90%;">
+                                <tr>
+                                    <td style="width: 30%; text-align: center;">
+                                        <table align="center" cellpadding="0" cellspacing="0" class="tablePhone">
+                                            <tr>
+                                                <td colspan="3" class="tdPhone1">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tdPhone2">&nbsp;</td>
+                                                <td class="tdPhoneC">
+                                                   <canvas id="phoneAni" width="204" height="290" ></canvas>
+                                                </td>
+                                                <td class="tdPhone3">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="tdPhone4">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <table align="center" cellpadding="0" cellspacing="0" class="tablePhone">
+                                            <tr>
+                                                <td class="tdMyWeb1" rowspan="3">&nbsp;</td>
+                                                <td class="tdMyWeb2">&nbsp;</td>
+                                                <td class="tdMyWeb3" rowspan="3">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tdMyWeb4">
+                                                   <canvas id="webAni" width="416" height="290" ></canvas>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tdMyWeb5">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
                     </tr>
                 </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <br />
+                <br />
+                <br />
+                <img alt="" src="styles/images/linejadsds.png" />
+                <br />
+                <br />
+                <br />
+                <br />
             </td>
         </tr>
         <tr>
@@ -234,12 +317,71 @@
                     </tr>
                     <tr>
                         <td>
-                            Rotation, Scale, Video, Color cycling, Animated GIFs support, Move animation, Path animation, Audio, Alpha compositing, 
-                            Color palettes, Endless animation, Events & Actions and much more. Jadsds has more than 100 tags available.
+                            <br /><br />
+                            <table align="center" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasRotation" width="100" height="100" class="miniCanvas"></canvas>
+                                    </td>
+                                    <td class="tdTextFeatures">Rotation</td>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasScale" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Scale</td>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasVideo" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Video</td>
+                                </tr>
+                                <tr>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasColorC" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Color cycling</td>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasGif" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Animated GIFs support</td>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasMove" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Move animation</td>
+                                </tr>
+                                <tr>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasPath" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Path animation</td>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasAudio" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Audio</td>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasAlpha" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Alpha compositing</td>
+                                </tr>
+                                <tr>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasPa" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Color palettes</td>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasEndless" width="100" height="100" class="miniCanvas">
+                                    </td>
+                                    <td class="tdTextFeatures">Endless animation</td>
+                                    <td class="tdIconFeatures">
+                                        <canvas id="canvasEvents" width="100" height="100" class="miniCanvas" title="Click me!">
+                                    </td>
+                                    <td class="tdTextFeatures">Events & Actions</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6" style="text-align:center;">
+                                        <br />
+                                        and much more. Jadsds has more than 100 tags available.</td>
+                                </tr>
+                            </table>
                         </td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
                     </tr>
                 </table>
             </td>
@@ -313,9 +455,7 @@
                             A pdf file with the complete documentation is available <a href="JadsdsEngine.pdf">here</a>.
                             <br />
                             <br />
-                            This <a href="doc.htm">site</a> will give you access to interactive documentation.<br />
-                            <br />
-                            More examples can be found <a href="indexb.htm">here</a>.</td>
+                            This <a href="doc.htm">site</a> will give you access to interactive documentation.</td>
                     </tr>
                 </table>
             </td>

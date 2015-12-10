@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>400</width>
+      <height>250</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>400</maxWidth>
+      <maxHeight>250</maxHeight>
+    </canvasResolution>
+    <bgColor>#ff000000</bgColor>
+  </basic>
+  <images>
+    <image>
+      <fileName from="loading">loading.png</fileName>
+      <left>149</left>
+      <top>114</top>
+    </image>
+  </images>
+</doc>

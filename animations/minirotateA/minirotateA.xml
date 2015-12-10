@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>140</width>
+      <height>186</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>140</maxWidth>
+      <maxHeight>186</maxHeight>
+    </canvasResolution>
+    <bgColor>#00000000</bgColor>
+  </basic>
+  <images>
+    <image>
+      <fileName>back.png</fileName>
+    </image>
+    <image>
+      <fileName>ob1.png</fileName>
+      <left>17</left>
+      <top>40</top>
+    </image>
+    <image>
+      <fileName>ob2.png</fileName>
+      <left>32</left>
+      <top>55</top>
+      <imagePropertiesAnimation>
+        <propetiesToAnimate>
+          <property>
+            <propertyName>Rotation</propertyName>
+            <minimumDegreesValue>0</minimumDegreesValue>
+            <maximumDegreesValue>360</maximumDegreesValue>
+            <updateDegreesValue>6</updateDegreesValue>
+            <currentDegreesValue>0</currentDegreesValue>
+            <rotationSpeed>1</rotationSpeed>
+            <animationRotationAction>Increase</animationRotationAction>
+          </property>
+        </propetiesToAnimate>
+      </imagePropertiesAnimation>
+    </image>
+  </images>
+</doc>
