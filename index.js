@@ -10,8 +10,6 @@ window.onload = function () {
     miniB();
 };
 
-
-
 function rotationAni() {
     var jadsdsEngineR = new JadsdsEngine('mycanvasR');
     jadsdsEngineR.fixCanvasSize = false;
@@ -47,7 +45,7 @@ var animationXMLEpartC = "%3C%2Fdoc%3E";
 
 function loadNewAnimationE() {
     jadsdsEngineE.unloadAnimation();
-    //jadsdsEngineE.loadAnimationByString = decodeURIComponent(animationXMLEpartA) + document.getElementById("TextArea5").value + decodeURIComponent(animationXMLEpartC);
+    jadsdsEngineE.loadAnimationByString = decodeURIComponent(animationXMLEpartA) + document.getElementById("TextArea5").value + decodeURIComponent(animationXMLEpartC);
     jadsdsEngineE.fixCanvasSize = false;
     //jadsdsEngineE.renderMode = RenderMode.Advanced;
     //jadsdsEngineE.antiAlias = true;
