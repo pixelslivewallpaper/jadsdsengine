@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>140</width>
+      <height>186</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>140</maxWidth>
+      <maxHeight>186</maxHeight>
+    </canvasResolution>
+    <bgColor>#00000000</bgColor>
+  </basic>
+  <images>
+    <image>
+      <fileName>code.png</fileName>
+      <moveEndLessAnimation>
+        <direction>Up</direction>
+        <pixelsMove>1</pixelsMove>
+      </moveEndLessAnimation>
+      <left>0</left>
+      <top>25</top>
+      <speed>1</speed>
+    </image>    
+    <image>
+      <fileName>ba1.png</fileName>
+    </image>
+    <image>
+      <fileName>ba2.png</fileName>
+      <left>0</left>
+      <top>168</top>
+    </image>
+  </images>
+</doc>

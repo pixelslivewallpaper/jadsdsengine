@@ -8,6 +8,7 @@ window.onload = function () {
     loadHelpUS();
     miniA();
     miniB();
+    miniC();
 };
 
 function rotationAni() {
@@ -23,8 +24,6 @@ function rotationAni() {
 function miniA() {
     var jadsdsEngineR = new JadsdsEngine('miniA');
     jadsdsEngineR.fixCanvasSize = false;
-    jadsdsEngineR.renderMode = RenderMode.Advanced;
-    jadsdsEngineR.antiAlias = true;
     jadsdsEngineR.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineR.loadAnimation('minirotateA');
 }
@@ -32,10 +31,15 @@ function miniA() {
 function miniB() {
     var jadsdsEngineR = new JadsdsEngine('miniB');
     jadsdsEngineR.fixCanvasSize = false;
-    jadsdsEngineR.renderMode = RenderMode.Advanced;
-    jadsdsEngineR.antiAlias = true;
     jadsdsEngineR.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineR.loadAnimation('minirotateB');
+}
+
+function miniC() {
+    var jadsdsEngineR = new JadsdsEngine('miniC');
+    jadsdsEngineR.fixCanvasSize = false;
+    jadsdsEngineR.stopAnimationWhenIsNotVisible = true;
+    jadsdsEngineR.loadAnimation('minirotateC');
 }
 
 var jadsdsEngineE = new JadsdsEngine('mycanvase');
