@@ -1,0 +1,24 @@
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>101</width>
+      <height>152</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>288</maxWidth>
+      <maxHeight>144</maxHeight>
+    </canvasResolution>
+    <bgColor>#ffffffff</bgColor>
+    <camera>
+      <!--<align>Custom</align>
+      <customAlignLeft>-500</customAlignLeft>-->      
+      <!--<customAlignTop>60</customAlignTop>-->
+      <addBlackLines>
+        <blackLinesHeight>4</blackLinesHeight>
+        <blackLinesLowerTop>144</blackLinesLowerTop>
+      </addBlackLines>
+      <autoHorizontalScroll>true</autoHorizontalScroll>
+      <iniPosition>0;0</iniPosition>
+      <pixelsMove>2</pixelsMove>
+      <cameraSpeed>1</cameraSpeed>
+    </camera>    
+  </basic>
