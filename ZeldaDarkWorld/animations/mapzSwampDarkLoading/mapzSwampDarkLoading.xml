@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>880</width>
+      <height>894</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>880</maxWidth>
+      <maxHeight>894</maxHeight>
+    </canvasResolution>
+    <bgColor>#00000000</bgColor>
+  </basic>
+  <images>
+    <image>
+      <!--<frames>
+        <convertGifAniToFrames from="loading">loading.gif</convertGifAniToFrames>
+      </frames>-->
+      <frames>
+        <convertImageSequenceInFrames from="loading">
+          <filePreName>l</filePreName>
+          <startNumber>1</startNumber>
+          <endNumber>8</endNumber>
+          <!--<formatNumber>##</formatNumber>-->
+          <fileNameExtension>png</fileNameExtension>
+        </convertImageSequenceInFrames>
+      </frames>
+      <left>373</left>
+      <top>436</top>
+    </image>
+  </images>
+</doc>

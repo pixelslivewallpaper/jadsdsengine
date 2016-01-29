@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>179</width>
+      <height>240</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>179</maxWidth>
+      <maxHeight>240</maxHeight>
+    </canvasResolution>
+    <bgColor>#00000000</bgColor>
+  </basic>
+  <images>
+  </images>
+</doc>

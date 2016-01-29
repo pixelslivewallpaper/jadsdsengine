@@ -1,0 +1,827 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>1033</width>
+      <height>499</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>1033</maxWidth>
+      <maxHeight>499</maxHeight>
+    </canvasResolution>
+    <bgColor>#00000000</bgColor>
+  </basic>
+  <images>
+    <!--<image>
+      <fileName>map.png</fileName>
+    </image>-->
+    <image>
+      <frames>
+        <frame>
+          <fileName>mapa1.png</fileName>
+        </frame>
+        <frame>
+          <fileName>mapb1.png</fileName>
+        </frame>
+        <frame>
+          <fileName></fileName>
+        </frame>
+        <currentFrame>2</currentFrame>
+      </frames>
+      <left>0</left>
+      <top>0</top>
+      <speed>5</speed>
+    </image>
+    <image>
+      <frames>
+        <frame>
+          <fileName>mapa2.png</fileName>
+        </frame>
+        <frame>
+          <fileName>mapb2.png</fileName>
+        </frame>
+        <frame>
+          <fileName></fileName>
+        </frame>
+        <currentFrame>2</currentFrame>
+      </frames>
+      <left>327</left>
+      <top>248</top>
+      <speed>5</speed>
+    </image>
+    <image>
+      <frames>
+        <frame>
+          <fileName>mapa3.png</fileName>
+        </frame>
+        <frame>
+          <fileName>mapb3.png</fileName>
+        </frame>
+        <frame>
+          <fileName></fileName>
+        </frame>
+        <currentFrame>2</currentFrame>
+      </frames>
+      <left>801</left>
+      <top>414</top>
+      <speed>5</speed>
+    </image>
+    <image>
+      <frames>
+        <frame>
+          <fileName>bush2.png</fileName>
+        </frame>
+        <frame>
+          <fileName>bush3.png</fileName>
+        </frame>
+        <frame>
+          <fileName></fileName>
+        </frame>
+        <currentFrame>2</currentFrame>
+      </frames>
+      <left>641</left>
+      <top>15</top>
+      <speed>5</speed>
+    </image>
+    <image>
+      <frames>
+        <frame>
+          <fileName from="mapzCastle">flower1.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzCastle">flower2.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzCastle">flower3.png</fileName>
+        </frame>
+        <currentFrame>2</currentFrame>
+      </frames>
+      <coordinates>
+        289;415,306;415,297;423,
+        305;175,497;175
+      </coordinates>
+      <speed>5</speed>
+    </image>
+    <image>
+      <frames>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzLake">ball1.png</fileName>
+          </frame>
+        </frameCollection>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzLake">ball2.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzLake">ball3.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzLake">ball4.png</fileName>
+          </frame>
+        </frameCollection>
+      </frames>
+      <disableImage>true</disableImage>
+      <moveAnimation>
+        <iniTop>204</iniTop>
+        <maxTop>274</maxTop>
+        <pixelsMoveTop>-4</pixelsMoveTop>
+      </moveAnimation>
+      <events>
+        <event>
+          <eventType>MoveAnimationMaxTopReached</eventType>
+          <eventActions>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <changeFrameCollectionIndexTo>1</changeFrameCollectionIndexTo>
+          <newSpeedAnimation>2</newSpeedAnimation>
+        </event>
+        <event>
+          <eventType>FrameAnimationLoopEnds</eventType>
+          <eventActions>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+            <eventAction>ResumeMove</eventAction>
+            <eventAction>DisableImage</eventAction>
+            <eventAction>EditPosition</eventAction>
+          </eventActions>
+          <changeFrameCollectionIndexTo>0</changeFrameCollectionIndexTo>
+          <newSpeedAnimation>1</newSpeedAnimation>
+          <newCoordinates>907;274</newCoordinates>
+          <whenFrameCollectionIndexIs>1</whenFrameCollectionIndexIs>
+        </event>
+      </events>
+      <speed>1</speed>
+      <id>ballb</id>
+      <left>907</left>
+      <top>274</top>
+    </image>
+    <image>
+      <frames>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzLake">enedown1.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzLake">enedown2.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzLake">enedown3.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzLake">enedown2.png</fileName>
+          </frame>
+        </frameCollection>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzLake">eneup1.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzLake">eneup2.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzLake">eneup3.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzLake">eneup2.png</fileName>
+          </frame>
+        </frameCollection>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzLake">eneup1.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzLake">eneup2.png</fileName>
+          </frame>
+        </frameCollection>
+        <framesAnimationSpeed>2</framesAnimationSpeed>
+      </frames>
+      <moveAnimation>
+        <iniTop>294</iniTop>
+        <maxTop>464</maxTop>
+        <pixelsMoveTop>4</pixelsMoveTop>
+      </moveAnimation>
+      <events>
+        <event>
+          <eventType>MoveAnimationMaxBottomReached</eventType>
+          <eventActions>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <!--<eventAction>ChangeSpeedAnimation</eventAction>-->
+          </eventActions>
+          <!--<newSpeedAnimation>4</newSpeedAnimation>-->
+          <whenFrameCollectionIndexIs>0</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>1</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>MoveAnimationMaxTopReached</eventType>
+          <eventActions>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <!--<eventAction>ChangeSpeedAnimation</eventAction>-->
+          </eventActions>
+          <!--<newSpeedAnimation>4</newSpeedAnimation>-->
+          <whenFrameCollectionIndexIs>1</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>2</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>FrameAnimationLoopEnds</eventType>
+          <eventActions>
+            <eventAction>ResumeMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <!--<eventAction>ChangeSpeedAnimation</eventAction>-->
+          </eventActions>
+          <!--<newSpeedAnimation>1</newSpeedAnimation>-->
+          <whenFrameCollectionIndexIs>2</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>0</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>TriggerActionByCurrentFrame</eventType>
+          <eventActions>
+            <eventAction>EnableByID</eventAction>
+          </eventActions>
+          <whenFrameCollectionIndexIs>2</whenFrameCollectionIndexIs>
+          <whenCurrentFrameIndexIs>1</whenCurrentFrameIndexIs>
+          <ids>ballb</ids>
+        </event>
+      </events>
+      <left>914</left>
+      <top>304</top>
+      <speed>1</speed>
+    </image>
+
+    <image>
+      <frames>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzForest">soldierarrow8.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierarrow9.png</fileName>
+          </frame>
+        </frameCollection>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzForest">soldierarrow8.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierarrow10.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierarrow8.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierarrow11.png</fileName>
+          </frame>
+          <repeatThisLoopForTimes>2</repeatThisLoopForTimes>
+        </frameCollection>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzForest">soldierarrow5.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierarrow6.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierarrow5.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierarrow7.png</fileName>
+          </frame>
+          <repeatThisLoopForTimes>2</repeatThisLoopForTimes>
+        </frameCollection>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzForest">soldierarrow4.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierarrow5.png</fileName>
+          </frame>
+        </frameCollection>
+      </frames>
+      <moveAnimation>
+        <iniTop>146</iniTop>
+        <maxTop>416</maxTop>
+        <pixelsMoveTop>2</pixelsMoveTop>
+      </moveAnimation>
+      <events>
+        <event>
+          <eventType>MoveAnimationMaxTopReached</eventType>
+          <eventActions>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>24</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>3</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>2</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>FrameAnimationRepeatLoopEnds</eventType>
+          <eventActions>
+            <eventAction>ResumeMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>4</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>2</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>0</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>FrameAnimationRepeatLoopEnds</eventType>
+          <eventActions>
+            <eventAction>ResumeMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>4</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>1</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>3</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>MoveAnimationMaxBottomReached</eventType>
+          <eventActions>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>24</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>0</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>1</changeFrameCollectionIndexTo>
+        </event>
+      </events>
+      <left>243</left>
+      <top>200</top>
+      <speed>4</speed>
+    </image>
+
+    <image>
+      <frames>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzForest">soldierbwalk1.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierbwalk2.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierbwalk3.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierbwalk4.png</fileName>
+          </frame>
+        </frameCollection>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzForest">soldierbturn1l.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierbturn2l.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierbturn3l.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierbturn2l.png</fileName>
+          </frame>
+          <repeatThisLoopForTimes>2</repeatThisLoopForTimes>
+        </frameCollection>
+      </frames>
+      <moveAnimation>
+        <iniLeft>452</iniLeft>
+        <maxLeft>612</maxLeft>
+        <pixelsMoveLeft>2</pixelsMoveLeft>
+      </moveAnimation>
+      <events>
+        <event>
+          <eventType>MoveAnimationMaxLeftReached</eventType>
+          <eventActions>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>24</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>0</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>1</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>FrameAnimationRepeatLoopEnds</eventType>
+          <eventActions>
+            <eventAction>ResumeMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+            <eventAction>FlipImage</eventAction>
+          </eventActions>
+          <newSpeedAnimation>4</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>1</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>0</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>MoveAnimationMaxRightReached</eventType>
+          <eventActions>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>24</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>0</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>1</changeFrameCollectionIndexTo>
+        </event>
+      </events>
+      <left>500</left>
+      <top>164</top>
+      <speed>4</speed>
+    </image>
+    <image>
+      <frames>
+        <reUseTagFramesFromPreviousImage>true</reUseTagFramesFromPreviousImage>
+      </frames>
+      <moveAnimation>
+        <iniLeft>644</iniLeft>
+        <maxLeft>844</maxLeft>
+        <pixelsMoveLeft>-2</pixelsMoveLeft>
+      </moveAnimation>
+      <events>
+        <event>
+          <eventType>MoveAnimationMaxLeftReached</eventType>
+          <eventActions>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>24</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>0</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>1</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>FrameAnimationRepeatLoopEnds</eventType>
+          <eventActions>
+            <eventAction>ResumeMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+            <eventAction>FlipImage</eventAction>
+          </eventActions>
+          <newSpeedAnimation>4</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>1</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>0</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>MoveAnimationMaxRightReached</eventType>
+          <eventActions>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>24</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>0</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>1</changeFrameCollectionIndexTo>
+        </event>
+      </events>
+      <left>700</left>
+      <top>211</top>
+      <speed>4</speed>
+      <flipImage>Horizontal</flipImage>
+    </image>
+    <image>
+      <frames>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzCastle">soldierbwalkdown1.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzCastle">soldierbwalkdown2.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzCastle">soldierbwalkdown3.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzCastle">soldierbwalkdown4.png</fileName>
+          </frame>
+        </frameCollection>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzCastle">soldierbturndown1.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzCastle">soldierbturndown2.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzCastle">soldierbturndown1.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzCastle">soldierbturndown3.png</fileName>
+          </frame>
+          <repeatThisLoopForTimes>2</repeatThisLoopForTimes>
+        </frameCollection>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzCastle">soldierbturnup1.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzCastle">soldierbturnup2.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzCastle">soldierbturnup1.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzCastle">soldierbturnup3.png</fileName>
+          </frame>
+          <repeatThisLoopForTimes>2</repeatThisLoopForTimes>
+        </frameCollection>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzCastle">soldierbwalkup1.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzCastle">soldierbwalkup2.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzCastle">soldierbwalkup3.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzCastle">soldierbwalkup4.png</fileName>
+          </frame>
+        </frameCollection>
+        <defaultFrameCollection>3</defaultFrameCollection>
+      </frames>
+      <moveAnimation>
+        <iniTop>212</iniTop>
+        <maxTop>382</maxTop>
+        <pixelsMoveTop>-2</pixelsMoveTop>
+      </moveAnimation>
+      <events>
+        <event>
+          <eventType>MoveAnimationMaxTopReached</eventType>
+          <eventActions>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>24</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>3</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>2</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>FrameAnimationRepeatLoopEnds</eventType>
+          <eventActions>
+            <eventAction>ResumeMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>4</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>2</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>0</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>FrameAnimationRepeatLoopEnds</eventType>
+          <eventActions>
+            <eventAction>ResumeMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>4</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>1</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>3</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>MoveAnimationMaxBottomReached</eventType>
+          <eventActions>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>24</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>0</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>1</changeFrameCollectionIndexTo>
+        </event>
+      </events>
+      <left>275</left>
+      <top>300</top>
+      <speed>4</speed>
+    </image>
+    <image>
+      <frames>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzCastle">soldiergwalk1.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzCastle">soldiergwalk2.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzCastle">soldiergwalk3.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzCastle">soldiergwalk4.png</fileName>
+          </frame>
+        </frameCollection>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzCastle">soldiergturn1l.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzCastle">soldiergturn2l.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzCastle">soldiergturn1l.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzCastle">soldiergturn3l.png</fileName>
+          </frame>
+          <repeatThisLoopForTimes>2</repeatThisLoopForTimes>
+        </frameCollection>
+      </frames>
+      <moveAnimation>
+        <iniLeft>148</iniLeft>
+        <maxLeft>508</maxLeft>
+        <pixelsMoveLeft>2</pixelsMoveLeft>
+      </moveAnimation>
+      <events>
+        <event>
+          <eventType>MoveAnimationMaxLeftReached</eventType>
+          <eventActions>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>24</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>0</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>1</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>FrameAnimationRepeatLoopEnds</eventType>
+          <eventActions>
+            <eventAction>ResumeMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+            <eventAction>FlipImage</eventAction>
+          </eventActions>
+          <newSpeedAnimation>4</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>1</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>0</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>MoveAnimationMaxRightReached</eventType>
+          <eventActions>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>24</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>0</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>1</changeFrameCollectionIndexTo>
+        </event>
+      </events>
+      <left>148</left>
+      <top>106</top>
+      <speed>4</speed>
+    </image>
+    <image>
+      <frames>
+        <frame>
+          <fileName from="mapzLake">sora1.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">sora2.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">sora3.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">sora2.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">sora3.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">sora2.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">sora3.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">sora4.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">sora5.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">sora6.png</fileName>
+          <delay>20</delay>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">sora7.png</fileName>
+          <delay>6</delay>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">sora8.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">sora7.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">sora6.png</fileName>
+          <delay>14</delay>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">sora9.png</fileName>
+          <delay>3</delay>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">sora10.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">sora11.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">sora12.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">sora0.png</fileName>
+        </frame>
+      </frames>
+      <events>
+        <event>
+          <eventType>TriggerActionByCurrentFrame</eventType>
+          <eventActions>
+            <eventAction>EditAnimationByID</eventAction>
+          </eventActions>
+          <whenCurrentFrameIndexIs>12</whenCurrentFrameIndexIs>
+          <editAnimationByIDOptions>
+            <option>
+              <imageID>Ball3</imageID>
+              <editActions>
+                <editAction>ResumeMove</editAction>
+                <editAction>ChangeVisibleValue</editAction>
+              </editActions>
+              <newVisibleValue>true</newVisibleValue>
+            </option>
+          </editAnimationByIDOptions>
+        </event>
+        <event>
+          <eventType>TriggerActionByCurrentFrame</eventType>
+          <eventActions>
+            <eventAction>StopAnimation</eventAction>
+          </eventActions>
+          <whenCurrentFrameIndexIs>18</whenCurrentFrameIndexIs>
+        </event>
+      </events>
+      <left>576</left>
+      <top>328</top>
+      <speed>3</speed>
+      <id>Zora3</id>
+    </image>
+    <image>
+      <frames>
+        <frame>
+          <fileName from="mapzLake">ballsora1.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">ballsora2.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">ballsora3.png</fileName>
+        </frame>
+      </frames>
+      <moveAnimation>
+        <iniTop>0</iniTop>
+        <maxTop>499</maxTop>
+        <iniLeft>0</iniLeft>
+        <maxLeft>1033</maxLeft>
+        <pixelsMoveTop>-4</pixelsMoveTop>
+        <pixelsMoveLeft>4</pixelsMoveLeft>
+        <moveAnimationStop>true</moveAnimationStop>
+        <returnToTheBeginning>true</returnToTheBeginning>
+      </moveAnimation>
+      <applyAlterations>
+        <alterationsToDo>FlipHorizontal</alterationsToDo>
+      </applyAlterations>
+      <events>
+        <event>
+          <eventType>MoveAnimationMaxTopReached</eventType>
+          <eventActions>
+            <eventAction>EditAnimationByID</eventAction>
+            <eventAction>ChangeVisibleValue</eventAction>
+            <eventAction>StopMove</eventAction>
+          </eventActions>
+          <newVisibleValue>false</newVisibleValue>
+          <editAnimationByIDOptions>
+            <option>
+              <imageID>Zora3</imageID>
+              <editActions>
+                <editAction>ResumeAnimation</editAction>
+              </editActions>
+            </option>
+          </editAnimationByIDOptions>
+        </event>
+      </events>
+      <visible>false</visible>
+      <left>589</left>
+      <top>325</top>
+      <speed>1</speed>
+      <id>Ball3</id>
+      <flipImage>Vertical</flipImage>
+    </image>
+  </images>
+</doc>

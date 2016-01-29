@@ -1,0 +1,681 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>833</width>
+      <height>525</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>833</maxWidth>
+      <maxHeight>525</maxHeight>
+    </canvasResolution>
+    <bgColor>#00000000</bgColor>
+  </basic>
+  <images>
+    <!--<image>
+      <fileName>map.png</fileName>
+    </image>-->
+    <image>
+      <frames>
+        <frame>
+          <fileName>w3a.png</fileName>
+        </frame>
+        <frame>
+          <fileName>w3b.png</fileName>
+        </frame>
+        <frame>
+          <name></name>
+        </frame>
+        <currentFrame>2</currentFrame>
+      </frames>
+      <left>62</left>
+      <top>205</top>
+      <speed>5</speed>
+    </image>
+    <image>
+      <frames>
+        <frame>
+          <fileName>w1a.png</fileName>
+        </frame>
+        <frame>
+          <fileName>w1b.png</fileName>
+        </frame>
+        <frame>
+          <name></name>
+        </frame>
+        <currentFrame>2</currentFrame>
+      </frames>
+      <left>384</left>
+      <top>365</top>
+      <speed>5</speed>
+    </image>
+    <image>
+      <frames>
+        <frame>
+          <fileName>w2a.png</fileName>
+        </frame>
+        <frame>
+          <fileName>w2b.png</fileName>
+        </frame>
+        <frame>
+          <name></name>
+        </frame>
+        <currentFrame>2</currentFrame>
+      </frames>
+      <left>144</left>
+      <top>413</top>
+      <speed>5</speed>
+    </image>
+    <image>
+      <frames>
+        <frame>
+          <fileName from="mapzMountain">portal1.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzMountain">portal2.png</fileName>
+        </frame>
+        <frame>
+          <fileName></fileName>
+        </frame>
+        <currentFrame>2</currentFrame>
+      </frames>
+      <left>94</left>
+      <top>92</top>
+      <speed>5</speed>
+    </image>
+    <image>
+      <frames>
+        <frame>
+          <fileName from="mapzFTeller">whirlpool1.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzFTeller">whirlpool2.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzFTeller">whirlpool3.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzFTeller">whirlpool4.png</fileName>
+        </frame>
+      </frames>
+      <left>136</left>
+      <top>300</top>
+      <speed>4</speed>
+    </image>
+    <image>
+      <frames>
+        <frame>
+          <fileName from="mapzCastle">flower1.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzCastle">flower2.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzCastle">flower3.png</fileName>
+        </frame>
+      </frames>
+      <coordinates>319;172,511;44,511;60,511;76,519;52,519;68,519;84,527;28,527;44,527;60,527;76,535;52,535;68</coordinates>
+      <speed>5</speed>
+    </image>
+    <image>
+      <frames>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzForest">soldierarrow8.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierarrow9.png</fileName>
+          </frame>
+        </frameCollection>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzForest">soldierarrow8.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierarrow10.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierarrow8.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierarrow11.png</fileName>
+          </frame>
+          <repeatThisLoopForTimes>2</repeatThisLoopForTimes>
+        </frameCollection>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzForest">soldierarrow5.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierarrow6.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierarrow5.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierarrow7.png</fileName>
+          </frame>
+          <repeatThisLoopForTimes>2</repeatThisLoopForTimes>
+        </frameCollection>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzForest">soldierarrow4.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzForest">soldierarrow5.png</fileName>
+          </frame>
+        </frameCollection>
+      </frames>
+      <moveAnimation>
+        <iniTop>272</iniTop>
+        <maxTop>482</maxTop>
+        <pixelsMoveTop>2</pixelsMoveTop>
+      </moveAnimation>
+      <events>
+        <event>
+          <eventType>MoveAnimationMaxTopReached</eventType>
+          <eventActions>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>24</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>3</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>2</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>FrameAnimationRepeatLoopEnds</eventType>
+          <eventActions>
+            <eventAction>ResumeMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>4</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>2</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>0</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>FrameAnimationRepeatLoopEnds</eventType>
+          <eventActions>
+            <eventAction>ResumeMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>4</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>1</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>3</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>MoveAnimationMaxBottomReached</eventType>
+          <eventActions>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>24</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>0</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>1</changeFrameCollectionIndexTo>
+        </event>
+      </events>
+      <left>438</left>
+      <top>272</top>
+      <speed>4</speed>
+    </image>
+    <image>
+      <frames>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzPalaceb">soldierarrow0w.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzPalaceb">soldierarrow1w.png</fileName>
+          </frame>
+        </frameCollection>
+        <frameCollection>
+          <frame>
+            <fileName from="mapzPalaceb">soldierarrow1.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzPalaceb">soldierarrow2.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzPalaceb">soldierarrow1.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="mapzPalaceb">soldierarrow3.png</fileName>
+          </frame>
+          <repeatThisLoopForTimes>2</repeatThisLoopForTimes>
+        </frameCollection>
+      </frames>
+      <moveAnimation>
+        <iniLeft>456</iniLeft>
+        <maxLeft>596</maxLeft>
+        <pixelsMoveLeft>-2</pixelsMoveLeft>
+      </moveAnimation>
+      <events>
+        <event>
+          <eventType>MoveAnimationMaxLeftReached</eventType>
+          <eventActions>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>24</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>0</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>1</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>FrameAnimationRepeatLoopEnds</eventType>
+          <eventActions>
+            <eventAction>ResumeMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+            <eventAction>FlipImage</eventAction>
+          </eventActions>
+          <newSpeedAnimation>4</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>1</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>0</changeFrameCollectionIndexTo>
+        </event>
+        <event>
+          <eventType>MoveAnimationMaxRightReached</eventType>
+          <eventActions>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeFrameCollection</eventAction>
+            <eventAction>ChangeSpeedAnimation</eventAction>
+          </eventActions>
+          <newSpeedAnimation>24</newSpeedAnimation>
+          <whenFrameCollectionIndexIs>0</whenFrameCollectionIndexIs>
+          <changeFrameCollectionIndexTo>1</changeFrameCollectionIndexTo>
+        </event>
+      </events>
+      <left>456</left>
+      <top>208</top>
+      <speed>4</speed>
+      <flipImage>Horizontal</flipImage>
+    </image>
+    <image>
+      <frames>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow1.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow2.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow3.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow4.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow5.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow6.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow7.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow8.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow9.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow10w14.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow11.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow12.png</fileName>
+          <delay>3</delay>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow13.png</fileName>
+          <delay>25</delay>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow10w14.png</fileName>
+          <delay>1</delay>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow15.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow16.png</fileName>
+        </frame>
+        <frame>
+          <name></name>
+        </frame>
+      </frames>
+      <events>
+        <event>
+          <eventType>TriggerActionByCurrentFrame</eventType>
+          <eventActions>
+            <eventAction>EditAnimationByID</eventAction>
+          </eventActions>
+          <editAnimationByIDOptions>
+            <option>
+              <imageID>arrow1</imageID>
+              <editActions>
+                <editAction>ResumeMove</editAction>
+                <editAction>ChangeVisibleValue</editAction>
+              </editActions>
+              <newVisibleValue>true</newVisibleValue>
+            </option>
+          </editAnimationByIDOptions>
+          <whenCurrentFrameIndexIs>12</whenCurrentFrameIndexIs>
+        </event>
+        <event>
+          <eventType>TriggerActionByCurrentFrame</eventType>
+          <eventActions>
+            <eventAction>StopAnimation</eventAction>
+          </eventActions>
+          <whenCurrentFrameIndexIs>16</whenCurrentFrameIndexIs>
+        </event>
+      </events>
+      <left>550</left>
+      <top>272</top>
+      <speed>1</speed>
+      <id>knight3</id>
+    </image>
+    <image>
+      <frames>
+        <reUseTagFramesFromPreviousImage>true</reUseTagFramesFromPreviousImage>
+      </frames>
+      <events>
+        <event>
+          <eventType>TriggerActionByCurrentFrame</eventType>
+          <eventActions>
+            <eventAction>EditAnimationByID</eventAction>
+          </eventActions>
+          <editAnimationByIDOptions>
+            <option>
+              <imageID>arrow2</imageID>
+              <editActions>
+                <editAction>ResumeMove</editAction>
+                <editAction>ChangeVisibleValue</editAction>
+              </editActions>
+              <newVisibleValue>true</newVisibleValue>
+            </option>
+          </editAnimationByIDOptions>
+          <whenCurrentFrameIndexIs>12</whenCurrentFrameIndexIs>
+        </event>
+        <event>
+          <eventType>TriggerActionByCurrentFrame</eventType>
+          <eventActions>
+            <eventAction>StopAnimation</eventAction>
+          </eventActions>
+          <whenCurrentFrameIndexIs>16</whenCurrentFrameIndexIs>
+        </event>
+      </events>
+      <left>642</left>
+      <top>344</top>
+      <speed>1</speed>
+      <flipImage>Horizontal</flipImage>
+      <id>knight4</id>
+    </image>
+    <image>
+      <fileName from="mapzSwamp">soldierarrowyellow17.png</fileName>
+      <moveAnimation>
+        <iniLeft>550</iniLeft>
+        <maxLeft>700</maxLeft>
+        <pixelsMoveLeft>4</pixelsMoveLeft>
+        <returnToTheBeginning>true</returnToTheBeginning>
+        <moveAnimationStop>true</moveAnimationStop>
+      </moveAnimation>
+      <events>
+        <event>
+          <eventType>MoveAnimationMaxRightReached</eventType>
+          <eventActions>
+            <eventAction>EditAnimationByID</eventAction>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeVisibleValue</eventAction>
+          </eventActions>
+          <editAnimationByIDOptions>
+            <option>
+              <imageID>knight3</imageID>
+              <editActions>
+                <editAction>ResumeAnimation</editAction>
+              </editActions>
+            </option>
+          </editAnimationByIDOptions>
+          <newVisibleValue>false</newVisibleValue>
+        </event>
+      </events>
+      <visible>false</visible>
+      <left>550</left>
+      <top>272</top>
+      <speed>1</speed>
+      <id>arrow1</id>
+    </image>
+    <image>
+      <reUseImageFromPreviousImage>true</reUseImageFromPreviousImage>
+      <moveAnimation>
+        <iniLeft>502</iniLeft>
+        <maxLeft>642</maxLeft>
+        <pixelsMoveLeft>-4</pixelsMoveLeft>
+        <returnToTheBeginning>true</returnToTheBeginning>
+        <moveAnimationStop>true</moveAnimationStop>
+      </moveAnimation>
+      <events>
+        <event>
+          <eventType>MoveAnimationMaxLeftReached</eventType>
+          <eventActions>
+            <eventAction>EditAnimationByID</eventAction>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeVisibleValue</eventAction>
+          </eventActions>
+          <editAnimationByIDOptions>
+            <option>
+              <imageID>knight4</imageID>
+              <editActions>
+                <editAction>ResumeAnimation</editAction>
+              </editActions>
+            </option>
+          </editAnimationByIDOptions>
+          <newVisibleValue>false</newVisibleValue>
+        </event>
+      </events>
+      <visible>false</visible>
+      <left>642</left>
+      <top>344</top>
+      <speed>1</speed>
+      <flipImage>Horizontal</flipImage>
+      <id>arrow2</id>
+    </image>
+    <image>
+      <frames>
+        <frame>
+          <name></name>
+          <delay>20</delay>
+        </frame>
+        <frame>
+          <name></name>
+          <delay>2</delay>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">usagi1.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">usagi2.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">usagi3.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">usagi4.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">usagi5.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">usagi6.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">usagi7.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">usagi8.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">usagi9.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">usagi10.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">usagi11.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">usagi12.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">usagi13.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">usagi14.png</fileName>
+        </frame>
+        <returnBackwardToFirstFrame>true</returnBackwardToFirstFrame>
+      </frames>
+      <events>
+        <event>
+          <eventType>FrameAnimationReturnBackwardToFirstFrameEnds</eventType>
+          <eventActions>
+            <eventAction>CreateRandomCoordinates</eventAction>
+          </eventActions>
+          <parametersForRandomCoordinates>673,732,132,183</parametersForRandomCoordinates>
+        </event>
+      </events>
+      <left>700</left>
+      <top>140</top>
+      <speed>2</speed>
+    </image>
+    <image>
+      <frames>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow1.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow2.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow3.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow4.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow5.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow6.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow7.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow8.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow9.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow10w14.png</fileName>
+        </frame>
+        <frame>
+          <fileName>soldierarrowyellow11d.png</fileName>
+        </frame>
+        <frame>
+          <fileName>soldierarrowyellow12d.png</fileName>
+          <delay>3</delay>
+        </frame>
+        <frame>
+          <fileName>soldierarrowyellow13d.png</fileName>
+          <delay>25</delay>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow10w14.png</fileName>
+          <delay>1</delay>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow15.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzSwamp">soldierarrowyellow16.png</fileName>
+        </frame>
+        <frame>
+          <name></name>
+        </frame>
+      </frames>
+      <events>
+        <event>
+          <eventType>TriggerActionByCurrentFrame</eventType>
+          <eventActions>
+            <eventAction>EditAnimationByID</eventAction>
+          </eventActions>
+          <editAnimationByIDOptions>
+            <option>
+              <imageID>arrowd</imageID>
+              <editActions>
+                <editAction>ResumeMove</editAction>
+                <editAction>ChangeVisibleValue</editAction>
+              </editActions>
+              <newVisibleValue>true</newVisibleValue>
+            </option>
+          </editAnimationByIDOptions>
+          <whenCurrentFrameIndexIs>12</whenCurrentFrameIndexIs>
+        </event>
+        <event>
+          <eventType>TriggerActionByCurrentFrame</eventType>
+          <eventActions>
+            <eventAction>StopAnimation</eventAction>
+          </eventActions>
+          <whenCurrentFrameIndexIs>16</whenCurrentFrameIndexIs>
+        </event>
+      </events>
+      <left>101</left>
+      <top>172</top>
+      <speed>1</speed>
+      <id>knightd</id>
+    </image>
+    <image>
+      <fileName>soldierarrowyellow17d.png</fileName>
+      <moveAnimation>
+        <iniTop>172</iniTop>
+        <maxTop>462</maxTop>
+        <pixelsMoveTop>4</pixelsMoveTop>
+        <returnToTheBeginning>true</returnToTheBeginning>
+        <moveAnimationStop>true</moveAnimationStop>
+      </moveAnimation>
+      <events>
+        <event>
+          <eventType>MoveAnimationMaxBottomReached</eventType>
+          <eventActions>
+            <eventAction>EditAnimationByID</eventAction>
+            <eventAction>StopMove</eventAction>
+            <eventAction>ChangeVisibleValue</eventAction>
+          </eventActions>
+          <editAnimationByIDOptions>
+            <option>
+              <imageID>knightd</imageID>
+              <editActions>
+                <editAction>ResumeAnimation</editAction>
+              </editActions>
+            </option>
+          </editAnimationByIDOptions>
+          <newVisibleValue>false</newVisibleValue>
+        </event>
+      </events>
+      <visible>false</visible>
+      <left>101</left>
+      <top>172</top>
+      <speed>1</speed>
+      <id>arrowd</id>
+    </image>
+
+
+  </images>
+</doc>

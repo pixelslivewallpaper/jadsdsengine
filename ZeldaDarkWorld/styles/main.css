@@ -1,0 +1,26 @@
+﻿body {
+    background-color: #fafafa;
+    width: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.zeldamainmap {
+    width: 4096px;
+    height: 4096px;
+}
+
+.divZeldaMainMap {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+.divZelda {
+    position: absolute;
+}
+
+.jadsdsText {
+    font-size: x-small;
+}
+

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>946</width>
+      <height>495</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>946</maxWidth>
+      <maxHeight>495</maxHeight>
+    </canvasResolution>
+    <bgColor>#00000000</bgColor>
+  </basic>
+  <images>
+    <!--<image>
+      <fileName>map4.png</fileName>
+    </image>-->
+    <image>
+      <frames>
+        <frame>
+          <fileName from="mapzCastle">flower1.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzCastle">flower2.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzCastle">flower3.png</fileName>
+        </frame>
+      </frames>
+      <coordinates>67;384,67;400,75;392,75;408,83;384,83;400,91;392,91;408,99;384,99;416,107;392,115;384,179;400,563;271,627;335,691;176,787;80,899;352,907;360,915;336,915;352</coordinates>
+      <speed>5</speed>
+    </image>
+    <image>
+      <frames>
+        <frame>
+          <fileName>libraryladyleft.png</fileName>
+        </frame>
+        <frame>
+          <fileName>libraryladyfront.png</fileName>
+        </frame>
+        <frame>
+          <fileName>libraryladyright.png</fileName>
+        </frame>
+        <frame>
+          <fileName>libraryladyfront.png</fileName>
+        </frame>
+      </frames>
+      <left>338</left>
+      <top>376</top>
+      <speed>66</speed>
+    </image>
+  </images>
+</doc>

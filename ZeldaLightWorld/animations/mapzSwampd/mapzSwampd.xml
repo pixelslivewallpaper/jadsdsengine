@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>172</width>
+      <height>367</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>172</maxWidth>
+      <maxHeight>367</maxHeight>
+    </canvasResolution>
+    <bgColor>#00000000</bgColor>
+  </basic>
+  <images>
+    <!--<image>
+      <fileName>map.png</fileName>
+    </image>-->
+    <image>
+      <frames>
+        <frame>
+          <fileName from="mapzCastle">flower1.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzCastle">flower2.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzCastle">flower3.png</fileName>
+        </frame>
+      </frames>
+      <coordinates>66;3,2;83,2;163,130;163,18;243,34;243,26;251,162;355</coordinates>
+      <speed>5</speed>
+    </image>
+  </images>
+</doc>

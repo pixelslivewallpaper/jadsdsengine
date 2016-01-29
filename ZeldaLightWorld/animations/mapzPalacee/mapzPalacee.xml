@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>179</width>
+      <height>240</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>179</maxWidth>
+      <maxHeight>240</maxHeight>
+    </canvasResolution>
+    <bgColor>#00000000</bgColor>
+  </basic>
+  <images>
+    <!--<image>
+      <fileName>map.png</fileName>
+    </image>-->
+    <image>
+      <frames>
+        <frame>
+          <fileName from="mapzCastle">flower1.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzCastle">flower2.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzCastle">flower3.png</fileName>
+        </frame>
+      </frames>
+      <coordinates>105;2,169;98,41;194</coordinates>
+      <speed>5</speed>
+    </image>
+    <image>
+      <frames>
+        <frame>
+          <fileName from="mapzLake">eneleft1.png</fileName>
+        </frame>
+        <frame>
+          <fileName from="mapzLake">eneleft2.png</fileName>
+        </frame>
+        <framesAnimationSpeed>2</framesAnimationSpeed>
+      </frames>
+      <moveAnimation>
+        <iniLeft>6</iniLeft>
+        <maxLeft>146</maxLeft>
+        <pixelsMoveLeft>-4</pixelsMoveLeft>
+      </moveAnimation>
+      <events>
+        <event>
+          <eventType>MoveAnimationMaxLeftReached</eventType>
+          <eventActions>
+            <eventAction>FlipImage</eventAction>
+          </eventActions>
+        </event>
+        <event>
+          <eventType>MoveAnimationMaxRightReached</eventType>
+          <eventActions>
+            <eventAction>FlipImage</eventAction>
+          </eventActions>
+        </event>
+      </events>
+      <left>140</left>
+      <top>207</top>
+      <speed>1</speed>
+      <flipImage>Horizontal</flipImage>
+    </image>    
+  </images>
+</doc>

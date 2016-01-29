@@ -5,7 +5,7 @@ window.onload = function () {
 
     document.getElementById("TextArea5").value = decodeURIComponent(animationXMLEpartB);
     loadNewAnimationE();
-    loadHelpUS();
+    loadHelpUS("sgagb");
     miniA();
     miniB();
     miniC();
@@ -69,8 +69,8 @@ jadsdsEngineHelp.renderMode = RenderMode.Advanced;
 jadsdsEngineHelp.antiAlias = true;
 jadsdsEngineHelp.stopAnimationWhenIsNotVisible = true;
 
-function loadHelpUS() {
+function loadHelpUS(ani) {
     jadsdsEngineHelp.unloadAnimation();
-    jadsdsEngineHelp.loadAnimation(document.getElementById("aniSelect").value);
+    jadsdsEngineHelp.loadAnimation(ani);
 }
 

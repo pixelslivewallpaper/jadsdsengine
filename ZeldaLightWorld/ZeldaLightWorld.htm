@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="JadsdsEngine_min.js"></script>
+    <script src="zeldalivemap.js"></script>
+    <link href="styles/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div style="position: absolute; left: 20px; top: 10px; width: 470px; height: 34px;">
+        <img src="styles/images/zeldat.png" />
+    </div>
+
+<!--    <div class="divZelda" id="divmapzAudioL" style="position: absolute; left: 550px; top: 12px; width: 23px; height: 25px; cursor:pointer;">
+        <canvas id="zAudioL" width="23" height="25" style="border-style: solid; border-width: 0px"></canvas>
+    </div>-->
+
+    <div class="divZeldaMainMap" id="divMainMap">
+        <img src="styles/images/zeldamainmap.png" class="zeldamainmap" />
+    </div>
+
+    <div class="divZelda" id="divzGraveyard">
+        <canvas id="zGraveyard" width="1354" height="512" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzCastle">
+        <canvas id="zCastle" width="1024" height="1024" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzSwamp">
+        <canvas id="zSwamp" width="1298" height="492" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzLost">
+        <canvas id="zLost" width="819" height="480" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzKakariko">
+        <canvas id="zKakariko" width="974" height="1019" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzFTeller">
+        <canvas id="zFTeller" width="1106" height="482" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzMagic">
+        <canvas id="zMagic" width="1122" height="496" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzLibrary">
+        <canvas id="zLibrary" width="946" height="495" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzLink">
+        <canvas id="zLink" width="1024" height="492" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzDesert">
+        <canvas id="zDesert" width="985" height="1031" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzSwampb">
+        <canvas id="zSwampb" width="466" height="491" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzSwampc">
+        <canvas id="zSwampc" width="833" height="525" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzLake">
+        <canvas id="zLake" width="1307" height="491" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzLakeb">
+        <canvas id="zLakeb" width="999" height="525" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzLakec">
+        <canvas id="zLakec" width="502" height="1024" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzPalace">
+        <canvas id="zPalace" width="1033" height="499" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzPalaceb">
+        <canvas id="zPalaceb" width="512" height="1024" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzPalacec">
+        <canvas id="zPalacec" width="628" height="372" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzPalaced">
+        <canvas id="zPalaced" width="316" height="482" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzForest">
+        <canvas id="zForest" width="526" height="889" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzKakarikob">
+        <canvas id="zKakarikob" width="562" height="986" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzLostb">
+        <canvas id="zLostb" width="401" height="930" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzMagicb">
+        <canvas id="zMagicb" width="512" height="520" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzMountain">
+        <canvas id="zMountain" width="880" height="1024" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzMountainc">
+        <canvas id="zMountainc" width="512" height="512" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzMountainb">
+        <canvas id="zMountainb" width="1168" height="1024" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzLostc">
+        <canvas id="zLostc" width="549" height="1033" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzPalacee">
+        <canvas id="zPalacee" width="179" height="240" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div class="divZelda" id="divzSwampd">
+        <canvas id="zSwampd" width="172" height="367" style="border-style: solid; border-width: 0px"></canvas>
+    </div>
+
+    <div style="position:absolute; left:3960px; top:4144px; width:130px; height:20px;">
+        <span class="jadsdsText">Powered by <a href="http://pixelslivewallpaper.github.io/jadsdsengine/indexb.htm" target="_blank">Jadsds Engine</a></span>
+    </div>
+</body>
+</html>

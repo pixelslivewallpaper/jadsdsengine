@@ -117,7 +117,7 @@
 }
 
 .tdDown {
-    padding: 5px;
+    padding: 2px;
 }
 
 .tdHeaderG {
@@ -429,7 +429,20 @@ p.MsoNormal {
 }
 
 .textboxessmall {
+    border-color: #000000;
     font-size: small;
     border-style: solid;
     border-width: 1px;
+    background-color: #FFFFFF;
+}
+
+.jadsdsText {
+    font-size: x-small;
+}
+
+.linksToDownload {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
 }
