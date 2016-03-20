@@ -446,3 +446,11 @@ p.MsoNormal {
     text-decoration: none;
     color: #000000;
 }
+
+.chest {
+    background-image: url('images/chest1.png');
+    background-repeat: no-repeat; background-position: right center;
+    width: 30px; 
+    height: 30px;
+}
+
