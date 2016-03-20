@@ -38,3 +38,7 @@ function loadHow() {
     jadsdsEngineHowC.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineHowC.loadAnimation("howitworksc");
 }
+
+function openChest(tdc) {
+    document.getElementById(tdc).style.backgroundImage = "url('styles/images/chest2.png')";
+}
