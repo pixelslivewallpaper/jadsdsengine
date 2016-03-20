@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>200</width>
+      <height>60</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>200</maxWidth>
+      <maxHeight>60</maxHeight>
+    </canvasResolution>
+    <bgColor>#fffafafa</bgColor>
+    <grid>
+      <addGrid>false</addGrid>
+    </grid>
+  </basic>
+  <images>
+    <image>
+      <frames>
+          <frame>
+            <fileName from="howitworks">soldierbwalk1.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="howitworks">soldierbwalk2.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="howitworks">soldierbwalk3.png</fileName>
+          </frame>
+          <frame>
+            <fileName from="howitworks">soldierbwalk4.png</fileName>
+          </frame>
+      </frames>
+      <moveAnimation>
+        <iniLeft>0</iniLeft>
+        <maxLeft>134</maxLeft>
+        <pixelsMoveLeft>2</pixelsMoveLeft>
+        <pixelsMoveTop>0</pixelsMoveTop>
+      </moveAnimation>
+      <left>76</left>
+      <top>10</top>
+      <speed>4</speed>
+    </image>
+  </images>
+</doc>
