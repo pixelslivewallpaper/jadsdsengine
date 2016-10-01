@@ -14,7 +14,6 @@ window.onload = function () {
 function rotationAni() {
     var jadsdsEngineR = new JadsdsEngine('mycanvasR');
     jadsdsEngineR.fixCanvasSize = false;
-    //jadsdsEngineR.renderMode = RenderMode.Advanced;
     jadsdsEngineR.antiAlias = true;
     jadsdsEngineR.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineR.loadAnimationScreen = "loadingforrotate";
@@ -51,8 +50,7 @@ function loadNewAnimationE() {
     jadsdsEngineE.unloadAnimation();
     jadsdsEngineE.loadAnimationByString = decodeURIComponent(animationXMLEpartA) + document.getElementById("TextArea5").value + decodeURIComponent(animationXMLEpartC);
     jadsdsEngineE.fixCanvasSize = false;
-    //jadsdsEngineE.renderMode = RenderMode.Advanced;
-    //jadsdsEngineE.antiAlias = true;
+    jadsdsEngineE.antiAlias = true;
     jadsdsEngineE.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineE.loadAnimationScreen = "loadingforrotate";
     jadsdsEngineE.loadAnimation('rotatione');
@@ -65,7 +63,6 @@ function resetE() {
 
 var jadsdsEngineHelp = new JadsdsEngine('canvasHelp');
 jadsdsEngineHelp.fixCanvasSize = false;
-jadsdsEngineHelp.renderMode = RenderMode.Advanced;
 jadsdsEngineHelp.antiAlias = true;
 jadsdsEngineHelp.stopAnimationWhenIsNotVisible = true;
 

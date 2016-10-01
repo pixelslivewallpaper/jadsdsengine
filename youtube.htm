@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JADSDS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="styles/images/favicon.ico" />
+
+
+    <!--<script src="../Util.js"></script>
+    <script src="../ColorData.js"></script>
+    <script src="../framecount.js"></script>
+    <script src="../InputStream.js"></script>
+    <script src="../Actors.js"></script>
+    <script src="../AniBasics.js"></script>
+    <script src="../AniDrawOnly.js"></script>
+    <script src="../AniHorizontalVerticalAnimation.js"></script>
+    <script src="../AniLayer.js"></script>
+    <script src="../AniMainClass.js"></script>
+    <script src="../Animation27.js"></script>
+    <script src="../AnimationTypes.js"></script>
+    <script src="../AniMode7.js"></script>
+    <script src="../AniMoveAnimation.js"></script>
+    <script src="../AniPathAnimation.js"></script>
+    <script src="../AniPropertiesAnimation.js"></script>
+    <script src="../AniSelfAnimation.js"></script>
+    <script src="../AniSnowAnimation.js"></script>
+    <script src="../AniText.js"></script>
+    <script src="../AudioPlayer.js"></script>
+    <script src="../AudioProperties.js"></script>
+    <script src="../BitmapCollection.js"></script>
+    <script src="../BitmapCustom.js"></script>
+    <script src="../BitmapFactoryCustom.js"></script>
+    <script src="../Camera.js"></script>
+    <script src="../CardinalPoints.js"></script>
+    <script src="../CircleOvalData.js"></script>
+    <script src="../Coordinates.js"></script>
+    <script src="../DrawOnlyBasic.js"></script>
+    <script src="../EditActor.js"></script>
+    <script src="../EditAnimations.js"></script>
+    <script src="../EditEvents.js"></script>
+    <script src="../Events.js"></script>
+    <script src="../EventsEngine.js"></script>
+    <script src="../EventTime.js"></script>
+    <script src="../FileCollection.js"></script>
+    <script src="../FileCustom.js"></script>
+    <script src="../GifDecoder.js"></script>
+    <script src="../GlobalVariables.js"></script>
+    <script src="../HorizontalVerticalAnimationBasic.js"></script>
+    <script src="../ImageManipulation.js"></script>
+    <script src="../ImageManipulationBasic.js"></script>
+    <script src="../LayerBasic.js"></script>
+    <script src="../Mode7Basic.js"></script>
+    <script src="../MoveAnimationBasic.js"></script>
+    <script src="../PaintForText.js"></script>
+    <script src="../ParallaxEffect.js"></script>
+    <script src="../PathAnimationBasic.js"></script>
+    <script src="../PathAnimationLineData.js"></script>
+    <script src="../PropertiesAnimationBasic.js"></script>
+    <script src="../SelfAnimationBasic.js"></script>
+    <script src="../SelfAnimationFrames.js"></script>
+    <script src="../SnowAnimationBasic.js"></script>
+    <script src="../TextBasic.js"></script>
+    <script src="../TextToPrint.js"></script>
+    <script src="../TouchEvents.js"></script>
+    <script src="../TouchEventsBasic.js"></script>
+    <script src="../Xmlreader.js"></script>
+    <script src="../XmlSharedValues.js"></script>
+    <script src="../XmlToEvents.js"></script>
+    <script src="../XmlToAnimations.js"></script>
+    <script src="../VideoAnimationBasic.js"></script>
+    <script src="../VideoPlayer.js"></script>
+    <script src="../AniVideoAnimation.js"></script>
+    <script src="../VideoProperties.js"></script>
+    <script src="../jadsdsEngine.js"></script>-->
+
+
+
+
+    <script src="JadsdsEngine_min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            load('contra', 'zZora', 'dx', 'zswampdark', 'dc', 'zSwampb', 'elena', 'zMountain', 'goemon', 'zmagicdark');
+
+            window.onkeydown = function (event) {
+                switch (event.keyCode) {
+                    case 65:
+                        unload();
+                        load('contra', 'zZora', 'dx', 'zswampdark', 'dc', 'zSwampb', 'elena', 'zMountain', 'goemon', 'zmagicdark');
+                        break;
+                    case 83:
+                        unload();
+                        load('ng3', 'zMagic', 'pp', 'zLost', 'pr2b', 'zkakarikodark', 'Rush', 'zgraveyarddark', 'sai', 'zGraveyard');
+                        break;
+                    case 68:
+                        unload();
+                        load('sf2', 'zFTeller', 'sf2ryu', 'zDarkMountain', 'smwghost', 'zdarkforest', 'toads', 'zCastle', 'sgag', 'zdarkf');
+                        break;
+                    case 70:
+                        unload();
+                        load('sgagb', 'zSwamp', 'smrpg', 'zLink', 'smwaqua', 'zKakariko', 'smwghostb', 'sf3c', 'jamr2', 'pp3');
+                        break;
+                }
+            };
+        }
+
+        function unload() {
+            jadsdsEngineR.unloadAnimation();
+            jadsdsEngineB.unloadAnimation();
+            jadsdsEngineC.unloadAnimation();
+            jadsdsEngineD.unloadAnimation();
+            jadsdsEngineE.unloadAnimation();
+            jadsdsEngineF.unloadAnimation();
+            jadsdsEngineG.unloadAnimation();
+            jadsdsEngineH.unloadAnimation();
+            jadsdsEngineI.unloadAnimation();
+            jadsdsEngineJ.unloadAnimation();
+        }
+
+        function load(a, b, c, d, e, f, g, h, i, k) {
+            jadsdsEngineR.loadAnimation(a);
+            jadsdsEngineB.loadAnimation(b);
+            jadsdsEngineC.loadAnimation(c);
+            jadsdsEngineD.loadAnimation(d);
+            jadsdsEngineE.loadAnimation(e);
+            jadsdsEngineF.loadAnimation(f);
+            jadsdsEngineG.loadAnimation(g);
+            jadsdsEngineH.loadAnimation(h);
+            jadsdsEngineI.loadAnimation(i);
+            jadsdsEngineJ.loadAnimation(k);
+        }
+
+        //function loadAni() {
+        var jadsdsEngineR = new JadsdsEngine('canvasA');
+        jadsdsEngineR.fixCanvasSize = false;
+        jadsdsEngineR.renderMode = RenderMode.Advanced;
+        jadsdsEngineR.antiAlias = true;
+        jadsdsEngineR.stopAnimationWhenIsNotVisible = true;
+        jadsdsEngineR.loadAnimationScreen = "loadingblack";
+
+
+        var jadsdsEngineB = new JadsdsEngine('canvasB');
+        jadsdsEngineB.fixCanvasSize = false;
+        jadsdsEngineB.renderMode = RenderMode.Advanced;
+        jadsdsEngineB.antiAlias = true;
+        jadsdsEngineB.stopAnimationWhenIsNotVisible = true;
+        jadsdsEngineB.loadAnimationScreen = "loadingblack";
+
+
+        var jadsdsEngineC = new JadsdsEngine('canvasC');
+        jadsdsEngineC.fixCanvasSize = false;
+        jadsdsEngineC.renderMode = RenderMode.Advanced;
+        jadsdsEngineC.antiAlias = true;
+        jadsdsEngineC.stopAnimationWhenIsNotVisible = true;
+        jadsdsEngineC.loadAnimationScreen = "loadingblack";
+
+
+        var jadsdsEngineD = new JadsdsEngine('canvasD');
+        jadsdsEngineD.fixCanvasSize = false;
+        jadsdsEngineD.renderMode = RenderMode.Advanced;
+        jadsdsEngineD.antiAlias = true;
+        jadsdsEngineD.stopAnimationWhenIsNotVisible = true;
+        jadsdsEngineD.loadAnimationScreen = "loadingblack";
+
+
+        var jadsdsEngineE = new JadsdsEngine('canvasE');
+        jadsdsEngineE.fixCanvasSize = false;
+        jadsdsEngineE.renderMode = RenderMode.Advanced;
+        jadsdsEngineE.antiAlias = true;
+        jadsdsEngineE.stopAnimationWhenIsNotVisible = true;
+        jadsdsEngineE.loadAnimationScreen = "loadingblack";
+
+
+        var jadsdsEngineF = new JadsdsEngine('canvasF');
+        jadsdsEngineF.fixCanvasSize = false;
+        jadsdsEngineF.renderMode = RenderMode.Advanced;
+        jadsdsEngineF.antiAlias = true;
+        jadsdsEngineF.stopAnimationWhenIsNotVisible = true;
+        jadsdsEngineF.loadAnimationScreen = "loadingblack";
+
+
+        var jadsdsEngineG = new JadsdsEngine('canvasG');
+        jadsdsEngineG.fixCanvasSize = false;
+        jadsdsEngineG.renderMode = RenderMode.Advanced;
+        jadsdsEngineG.antiAlias = true;
+        jadsdsEngineG.stopAnimationWhenIsNotVisible = true;
+        jadsdsEngineG.loadAnimationScreen = "loadingblack";
+
+
+        var jadsdsEngineH = new JadsdsEngine('canvasH');
+        jadsdsEngineH.fixCanvasSize = false;
+        jadsdsEngineH.renderMode = RenderMode.Advanced;
+        jadsdsEngineH.antiAlias = true;
+        jadsdsEngineH.stopAnimationWhenIsNotVisible = true;
+        jadsdsEngineH.loadAnimationScreen = "loadingblack";
+
+
+        var jadsdsEngineI = new JadsdsEngine('canvasI');
+        jadsdsEngineI.fixCanvasSize = false;
+        jadsdsEngineI.renderMode = RenderMode.Advanced;
+        jadsdsEngineI.antiAlias = true;
+        jadsdsEngineI.stopAnimationWhenIsNotVisible = true;
+        jadsdsEngineI.loadAnimationScreen = "loadingblack";
+
+
+        var jadsdsEngineJ = new JadsdsEngine('canvasJ');
+        jadsdsEngineJ.fixCanvasSize = false;
+        jadsdsEngineJ.renderMode = RenderMode.Advanced;
+        jadsdsEngineJ.antiAlias = true;
+        jadsdsEngineJ.stopAnimationWhenIsNotVisible = true;
+        jadsdsEngineJ.loadAnimationScreen = "loadingblack";
+
+        //}
+    </script>
+</head>
+<body>
+    <br />
+    <table align="center" cellpadding="0" cellspacing="0" border="0" style="height: 720px; width: 1280px; text-align: center; background-image: url('styles/images/backimage.png');">
+        <tr>
+            <td style="width: 256px; height: 360px;">
+                <canvas id="canvasA" width="250" height="350"></canvas>
+            </td>
+            <td style="width: 256px; height: 360px;">
+                <canvas id="canvasB" width="250" height="350"></canvas>
+            </td>
+            <td style="width: 256px; height: 360px;">
+                <canvas id="canvasC" width="250" height="350"></canvas>
+            </td>
+            <td style="width: 256px; height: 360px;">
+                <canvas id="canvasD" width="250" height="350"></canvas>
+            </td>
+            <td style="width: 256px; height: 360px;">
+                <canvas id="canvasE" width="250" height="350"></canvas>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 256px; height: 360px;">
+                <canvas id="canvasF" width="250" height="350"></canvas>
+            </td>
+            <td style="width: 256px; height: 360px;">
+                <canvas id="canvasG" width="250" height="350"></canvas>
+            </td>
+            <td style="width: 256px; height: 360px;">
+                <canvas id="canvasH" width="250" height="350"></canvas>
+            </td>
+            <td style="width: 256px; height: 360px;">
+                <canvas id="canvasI" width="250" height="350"></canvas>
+            </td>
+            <td style="width: 256px; height: 360px;">
+                <canvas id="canvasJ" width="250" height="350"></canvas>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

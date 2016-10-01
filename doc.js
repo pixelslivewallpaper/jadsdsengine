@@ -43,8 +43,7 @@ function loadNewAnimationA(nameAni) {
     jadsdsEngine.unloadAnimation();
     jadsdsEngine.loadAnimationByString = decodeURIComponent(animationXMLpartA) + document.getElementById("TextArea1").value + decodeURIComponent(animationXMLpartC);
     //jadsdsEngine.fixCanvasSize = false;
-    //jadsdsEngine.renderMode = RenderMode.Advanced;
-    //jadsdsEngine.antiAlias = true;
+    jadsdsEngine.antiAlias = true;
     //jadsdsEngine.showFrameRate = true;
     jadsdsEngine.stopAnimationWhenIsNotVisible = true;
     jadsdsEngine.loadAnimation(nameAni);
@@ -54,8 +53,7 @@ function loadNewAnimationB(nameAni) {
     jadsdsEngineB.unloadAnimation();
     jadsdsEngineB.loadAnimationByString = decodeURIComponent(animationXMLBpartA) + document.getElementById("TextArea2").value + decodeURIComponent(animationXMLBpartC);
     //jadsdsEngineB.fixCanvasSize = false;
-    //jadsdsEngineB.renderMode = RenderMode.Advanced;
-    //jadsdsEngineB.antiAlias = true;
+    jadsdsEngineB.antiAlias = true;
     //jadsdsEngineB.showFrameRate = true;
     jadsdsEngineB.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineB.loadAnimation(nameAni);
@@ -65,8 +63,7 @@ function loadNewAnimationC(nameAni) {
     jadsdsEngineC.unloadAnimation();
     jadsdsEngineC.loadAnimationByString = decodeURIComponent(animationXMLCpartA) + document.getElementById("TextArea3").value + decodeURIComponent(animationXMLCpartC);
     //jadsdsEngineC.fixCanvasSize = false;
-    //jadsdsEngineC.renderMode = RenderMode.Advanced;
-    //jadsdsEngineC.antiAlias = true;
+    jadsdsEngineC.antiAlias = true;
     //jadsdsEngineC.showFrameRate = true;
     jadsdsEngineC.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineC.loadAnimation(nameAni);
@@ -76,8 +73,7 @@ function loadNewAnimationD(nameAni) {
     jadsdsEngineD.unloadAnimation();
     jadsdsEngineD.loadAnimationByString = decodeURIComponent(animationXMLDpartA) + document.getElementById("TextArea4").value + decodeURIComponent(animationXMLDpartC);
     //jadsdsEngineC.fixCanvasSize = false;
-    //jadsdsEngineC.renderMode = RenderMode.Advanced;
-    //jadsdsEngineC.antiAlias = true;
+    jadsdsEngineC.antiAlias = true;
     //jadsdsEngineC.showFrameRate = true;
     jadsdsEngineD.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineD.loadAnimation(nameAni);
@@ -87,8 +83,7 @@ function loadNewAnimationE(nameAni) {
     jadsdsEngineE.unloadAnimation();
     jadsdsEngineE.loadAnimationByString = decodeURIComponent(animationXMLEpartA) + document.getElementById("TextArea5").value + decodeURIComponent(animationXMLEpartC);
     //jadsdsEngineE.fixCanvasSize = false;
-    //jadsdsEngineE.renderMode = RenderMode.Advanced;
-    //jadsdsEngineE.antiAlias = true;
+    jadsdsEngineE.antiAlias = true;
     //jadsdsEngineE.showFrameRate = true;
     jadsdsEngineE.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineE.loadAnimation(nameAni);

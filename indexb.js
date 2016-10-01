@@ -17,7 +17,6 @@ window.onload = function () {
 function loadNewAnimation(nameAni) {
     jadsdsEngine = new JadsdsEngine('mycanvas');
     jadsdsEngine.fixCanvasSize = false;
-    jadsdsEngine.renderMode = RenderMode.Advanced;
     jadsdsEngine.antiAlias = true;
     jadsdsEngine.stopAnimationWhenIsNotVisible = true;
     jadsdsEngine.loadAnimationScreen = "loadingindex";
@@ -33,7 +32,6 @@ function getRandomAnimation() {
 function rotationAni() {
     var jadsdsEngineR = new JadsdsEngine('mycanvasR');
     jadsdsEngineR.fixCanvasSize = false;
-    //jadsdsEngineR.renderMode = RenderMode.Advanced;
     jadsdsEngineR.antiAlias = true;
     jadsdsEngineR.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineR.loadAnimationScreen = "loadingforrotate";
@@ -43,8 +41,7 @@ function rotationAni() {
 function multiAni() {
     var jadsdsEnginemycanvas1 = new JadsdsEngine('mycanvas1');
     jadsdsEnginemycanvas1.fixCanvasSize = false;
-    //jadsdsEnginemycanvas1.renderMode = RenderMode.Advanced;
-    //jadsdsEnginemycanvas1.antiAlias = true;
+    jadsdsEnginemycanvas1.antiAlias = true;
     jadsdsEnginemycanvas1.stopAnimationWhenIsNotVisible = true;
     jadsdsEnginemycanvas1.loadAnimationScreen = "loadingsmall";
     jadsdsEnginemycanvas1.loadAnimation('sgag');
@@ -52,8 +49,7 @@ function multiAni() {
     //-----------------------------------------------------------------------------------------------------
     var jadsdsEnginemycanvas2 = new JadsdsEngine('mycanvas2');
     jadsdsEnginemycanvas2.fixCanvasSize = false;
-    //jadsdsEnginemycanvas2.renderMode = RenderMode.Advanced;
-    //jadsdsEnginemycanvas2.antiAlias = true;
+    jadsdsEnginemycanvas2.antiAlias = true;
     jadsdsEnginemycanvas2.stopAnimationWhenIsNotVisible = true;
     jadsdsEnginemycanvas2.loadAnimationScreen = "loadingsmall";
     jadsdsEnginemycanvas2.loadAnimation('sgagb');
@@ -61,8 +57,7 @@ function multiAni() {
     //-----------------------------------------------------------------------------------------------------
     var jadsdsEnginemycanvas3 = new JadsdsEngine('mycanvas3');
     jadsdsEnginemycanvas3.fixCanvasSize = false;
-    //jadsdsEnginemycanvas3.renderMode = RenderMode.Advanced;
-    //jadsdsEnginemycanvas3.antiAlias = true;
+    jadsdsEnginemycanvas3.antiAlias = true;
     jadsdsEnginemycanvas3.stopAnimationWhenIsNotVisible = true;
     jadsdsEnginemycanvas3.loadAnimationScreen = "loadingsmall";
     jadsdsEnginemycanvas3.loadAnimation('dc');
@@ -73,14 +68,12 @@ function multiAni() {
 function phoneAnimation() {
     var jadsdsEnginephoneAnimation = new JadsdsEngine('phoneAni');
     jadsdsEnginephoneAnimation.fixCanvasSize = false;
-    jadsdsEnginephoneAnimation.renderMode = RenderMode.Advanced;
     jadsdsEnginephoneAnimation.antiAlias = true;
     jadsdsEnginephoneAnimation.stopAnimationWhenIsNotVisible = true;
     jadsdsEnginephoneAnimation.loadAnimation('sgag');
 
     var jadsdsEnginewebAni = new JadsdsEngine('webAni');
     jadsdsEnginewebAni.fixCanvasSize = false;
-    jadsdsEnginewebAni.renderMode = RenderMode.Advanced;
     jadsdsEnginewebAni.antiAlias = true;
     jadsdsEnginewebAni.stopAnimationWhenIsNotVisible = true;
     jadsdsEnginewebAni.loadAnimation('sgagweb');
@@ -89,87 +82,75 @@ function phoneAnimation() {
 function examples() {
     var jadsdsEngineExaA = new JadsdsEngine('canvasRotation');
     jadsdsEngineExaA.fixCanvasSize = false;
-    jadsdsEngineExaA.renderMode = RenderMode.Advanced;
     jadsdsEngineExaA.antiAlias = true;
     jadsdsEngineExaA.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineExaA.loadAnimation('exarotation');
 
     var jadsdsEngineExaB = new JadsdsEngine('canvasScale');
     jadsdsEngineExaB.fixCanvasSize = false;
-    jadsdsEngineExaB.renderMode = RenderMode.Advanced;
-    //jadsdsEngineExaB.antiAlias = true;
+    jadsdsEngineExaB.antiAlias = true;
     jadsdsEngineExaB.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineExaB.loadAnimation('exascale');
 
     var jadsdsEngineExaC = new JadsdsEngine('canvasVideo');
     jadsdsEngineExaC.fixCanvasSize = false;
-    jadsdsEngineExaC.renderMode = RenderMode.Advanced;
-    //jadsdsEngineExaC.antiAlias = true;
+    jadsdsEngineExaC.antiAlias = true;
     jadsdsEngineExaC.fpsToUse = 20;
     jadsdsEngineExaC.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineExaC.loadAnimation('exavideo');
 
     var jadsdsEngineExaD = new JadsdsEngine('canvasColorC');
     jadsdsEngineExaD.fixCanvasSize = false;
-    jadsdsEngineExaD.renderMode = RenderMode.Advanced;
-    //jadsdsEngineExaD.antiAlias = true;
+    jadsdsEngineExaD.antiAlias = true;
     jadsdsEngineExaD.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineExaD.loadAnimation('exacolorc');
 
     var jadsdsEngineExaE = new JadsdsEngine('canvasGif');
     jadsdsEngineExaE.fixCanvasSize = false;
-    jadsdsEngineExaE.renderMode = RenderMode.Advanced;
-    //jadsdsEngineExaE.antiAlias = true;
+    jadsdsEngineExaE.antiAlias = true;
     jadsdsEngineExaE.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineExaE.loadAnimation('exagif');
 
     var jadsdsEngineExaF = new JadsdsEngine('canvasMove');
     jadsdsEngineExaF.fixCanvasSize = false;
-    jadsdsEngineExaF.renderMode = RenderMode.Advanced;
-    //jadsdsEngineExaF.antiAlias = true;
+    jadsdsEngineExaF.antiAlias = true;
     jadsdsEngineExaF.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineExaF.loadAnimation('examove');
 
     var jadsdsEngineExaG = new JadsdsEngine('canvasPath');
     jadsdsEngineExaG.fixCanvasSize = false;
-    jadsdsEngineExaG.renderMode = RenderMode.Advanced;
-    //jadsdsEngineExaG.antiAlias = true;
+    jadsdsEngineExaG.antiAlias = true;
     jadsdsEngineExaG.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineExaG.loadAnimation('exapath');
 
     var jadsdsEngineExaH = new JadsdsEngine('canvasAudio');
     jadsdsEngineExaH.fixCanvasSize = false;
-    jadsdsEngineExaH.renderMode = RenderMode.Advanced;
-    //jadsdsEngineExaH.antiAlias = true;
+    jadsdsEngineExaH.antiAlias = true;
     jadsdsEngineExaH.fpsToUse = 2;
     jadsdsEngineExaH.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineExaH.loadAnimation('exasound');
 
-    var jadsdsEngineExaI = new JadsdsEngine('canvasAlpha');
+    var jadsdsEngineExaI = new JadsdsEngine('canvasDrag');
     jadsdsEngineExaI.fixCanvasSize = false;
-    jadsdsEngineExaI.renderMode = RenderMode.Advanced;
-    //jadsdsEngineExaI.antiAlias = true;
+    jadsdsEngineExaI.antiAlias = true;
     jadsdsEngineExaI.stopAnimationWhenIsNotVisible = true;
-    jadsdsEngineExaI.loadAnimation('exaalpha');
+    jadsdsEngineExaI.loadAnimation('exadrag');
 
     var jadsdsEngineExaJ = new JadsdsEngine('canvasPa');
     jadsdsEngineExaJ.fixCanvasSize = false;
-    jadsdsEngineExaJ.renderMode = RenderMode.Advanced;
-    //jadsdsEngineExaJ.antiAlias = true;
+    jadsdsEngineExaJ.antiAlias = true;
     jadsdsEngineExaJ.fpsToUse = 2;
     jadsdsEngineExaJ.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineExaJ.loadAnimation('exacolorp');
 
     var jadsdsEngineExaK = new JadsdsEngine('canvasEndless');
     jadsdsEngineExaK.fixCanvasSize = false;
-    jadsdsEngineExaK.renderMode = RenderMode.Advanced;
-    //jadsdsEngineExaK.antiAlias = true;
+    jadsdsEngineExaK.antiAlias = true;
     jadsdsEngineExaK.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineExaK.loadAnimation('exaendless');
 
     var jadsdsEngineExaL = new JadsdsEngine('canvasEvents');
     jadsdsEngineExaL.fixCanvasSize = false;
-    jadsdsEngineExaL.renderMode = RenderMode.Advanced;
     jadsdsEngineExaL.antiAlias = true;
     jadsdsEngineExaL.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineExaL.loadAnimation('exaevents');
@@ -185,8 +166,7 @@ function loadNewAnimationE() {
     jadsdsEngineE.unloadAnimation();
     jadsdsEngineE.loadAnimationByString = decodeURIComponent(animationXMLEpartA) + document.getElementById("TextArea5").value + decodeURIComponent(animationXMLEpartC);
     //jadsdsEngineE.fixCanvasSize = false;
-    //jadsdsEngineE.renderMode = RenderMode.Advanced;
-    //jadsdsEngineE.antiAlias = true;
+    jadsdsEngineE.antiAlias = true;
     jadsdsEngineE.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineE.loadAnimation('parallax');
 }
@@ -198,7 +178,6 @@ function resetE() {
 
 var jadsdsEngineHelp = new JadsdsEngine('canvasHelp');
 jadsdsEngineHelp.fixCanvasSize = false;
-jadsdsEngineHelp.renderMode = RenderMode.Advanced;
 jadsdsEngineHelp.antiAlias = true;
 jadsdsEngineHelp.stopAnimationWhenIsNotVisible = true;
 
