@@ -1,0 +1,42 @@
+﻿body {
+    background-color: #fafafa;
+    width: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.divZelda {
+    position: absolute;
+    background-color: aqua;
+}
+
+.divZeldaGameBoy {
+    position: absolute;
+    background-color: aqua;
+    -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1);
+}
+
+.jadsdsText {
+    font-size: x-small;
+}
+
+.gameBoy {
+    width: 2560px;
+    height: 2048px;
+    background-color: #ffff00;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    z-index: 100;
+    opacity: 0.5;
+    /*display: none;*/
+}
+
+.canvasClass {
+    border-style: solid;
+    border-width: 0px
+}
+
+
