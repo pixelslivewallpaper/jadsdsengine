@@ -11,28 +11,6 @@
     </canvasResolution>
     <bgColor>#00000000</bgColor>
   </basic>
-  <javaScriptActions>
-    <javaScriptAction>
-      <id>Secret</id>
-      <events>
-        <event>
-          <eventActions>
-            <eventAction>EnableByID</eventAction>
-          </eventActions>
-          <ids>extradummy,extrase</ids>
-        </event>
-      </events>
-    </javaScriptAction>
-  </javaScriptActions>
-  <audioPlayers>
-    <audioPlayer>
-      <playerID>secretAudio</playerID>
-      <audioFile from="loading">secretfound.m4a</audioFile>
-      <autoPlay>false</autoPlay>
-      <volume>1</volume>
-      <loop>false</loop>
-    </audioPlayer>
-  </audioPlayers>  
   <images>
     <image>
       <fileName>map.png</fileName>
@@ -2019,98 +1997,6 @@
       <top>396</top>
       <speed>1</speed>
       <flipImage>Horizontal</flipImage>
-    </image>
-    <image>
-      <frames>
-        <frame>
-          <fileName>extra1.png</fileName>
-        </frame>
-        <frame>
-          <fileName>extra2.png</fileName>
-        </frame>
-        <framesAnimationSpeed>3</framesAnimationSpeed>
-      </frames>
-      <moveAnimation>
-        <iniLeft>149</iniLeft>
-        <maxLeft>187</maxLeft>
-        <pixelsMoveLeft>2</pixelsMoveLeft>
-      </moveAnimation>
-      <imageTimer>
-        <timerDelay>1500</timerDelay>
-      </imageTimer>
-      <events>
-        <event>
-          <eventType>MoveAnimationMaxLeftReached</eventType>
-          <eventType>MoveAnimationMaxRightReached</eventType>
-          <eventActions>
-            <eventAction>FlipImage</eventAction>
-          </eventActions>
-        </event>
-        <event>
-          <eventType>Timer</eventType>
-          <eventActions>
-            <eventAction>ChangeTimerDelay</eventAction>
-            <eventAction>StopAnimationAndMove</eventAction>
-            <eventAction>ChangeCustomCondition</eventAction>
-          </eventActions>
-          <whenCustomConditionIs>running</whenCustomConditionIs>
-          <newTimerDelay>400</newTimerDelay>
-          <newCustomCondition>stoppped</newCustomCondition>
-        </event>
-        <event>
-          <eventType>Timer</eventType>
-          <eventActions>
-            <eventAction>ChangeTimerDelay</eventAction>
-            <eventAction>ResumeAnimationAndMove</eventAction>
-            <eventAction>ChangeCustomCondition</eventAction>
-          </eventActions>
-          <whenCustomConditionIs>stoppped</whenCustomConditionIs>
-          <newTimerDelay>900</newTimerDelay>
-          <newCustomCondition>running</newCustomCondition>
-        </event>
-        <defaultCustomCondition>running</defaultCustomCondition>
-      </events>
-      <left>152</left>
-      <top>52</top>
-      <speed>1</speed>
-      <id>extrase</id>
-      <disableImage>true</disableImage>
-    </image>
-    <image>
-      <fileName>extrab.png</fileName>
-      <left>133</left>
-      <top>39</top>
-      <events>
-        <event>
-          <eventType>OnClickUp</eventType>
-          <eventType>OnMouseOver</eventType>
-          <eventActions>
-            <eventAction>PlayAudio</eventAction>
-            <eventAction>DisableImage</eventAction>
-          </eventActions>
-          <audioPlayer>
-            <playerID>secretAudio</playerID>
-          </audioPlayer>
-        </event>
-        <event>
-          <eventType>OnClickUp</eventType>
-          <eventType>OnMouseOver</eventType>
-          <eventActions>
-            <eventAction>DisableImage</eventAction>
-          </eventActions>
-          <ids>extrase</ids>
-        </event>
-        <event>
-          <eventType>OnClickUp</eventType>
-          <eventType>OnMouseOver</eventType>
-          <eventActions>
-            <eventAction>RunJavascriptFunction</eventAction>
-          </eventActions>
-          <runJavascriptFunction>secrets(2);</runJavascriptFunction>
-        </event>
-      </events>
-      <id>extradummy</id>
-      <disableImage>true</disableImage>
     </image>
   </images>
 </doc>

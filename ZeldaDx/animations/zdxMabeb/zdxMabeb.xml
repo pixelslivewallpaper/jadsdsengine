@@ -11,15 +11,6 @@
     </canvasResolution>
     <bgColor>#00000000</bgColor>
   </basic>
-  <audioPlayers>
-    <audioPlayer>
-      <playerID>secretAudio</playerID>
-      <audioFile from="loading">secretfound.m4a</audioFile>
-      <autoPlay>false</autoPlay>
-      <volume>1</volume>
-      <loop>false</loop>
-    </audioPlayer>
-  </audioPlayers>
   <globalVariables>
     <variable>
       <id>forCrab1</id>
@@ -2814,46 +2805,6 @@
       <left>260</left>
       <top>440</top>
       <speed>1</speed>
-    </image>
-    <image>
-      <fileName>bikini.png</fileName>
-      <left>880</left>
-      <top>459</top>
-      <id>bikini</id>
-    </image>
-    <image>
-      <fileName>bikinib.png</fileName>
-      <left>850</left>
-      <top>424</top>
-      <events>
-        <event>
-          <eventType>OnClickUp</eventType>
-          <eventType>OnMouseOver</eventType>
-          <eventActions>
-            <eventAction>PlayAudio</eventAction>
-            <eventAction>DisableImage</eventAction>
-          </eventActions>
-          <audioPlayer>
-            <playerID>secretAudio</playerID>
-          </audioPlayer>
-        </event>
-        <event>
-          <eventType>OnClickUp</eventType>
-          <eventType>OnMouseOver</eventType>
-          <eventActions>
-            <eventAction>DisableImage</eventAction>
-          </eventActions>
-          <ids>bikini</ids>
-        </event>
-        <event>
-          <eventType>OnClickUp</eventType>
-          <eventType>OnMouseOver</eventType>
-          <eventActions>
-            <eventAction>RunJavascriptFunction</eventAction>
-          </eventActions>
-          <runJavascriptFunction>secrets(1);</runJavascriptFunction>
-        </event>
-      </events>
     </image>
   </images>
 </doc>

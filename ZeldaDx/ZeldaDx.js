@@ -3,8 +3,6 @@ window.onload = function () {
     loadNewAnimation();
 };
 
-var jadsdsEnginemapzdxTalTalMountainb, jadsdsEnginemapzdxForest, jadsdsEnginemapzdxMabeb;
-
 function loadNewAnimation() {
     document.getElementById("divGameBoy").style.display = "none";
 
@@ -22,7 +20,7 @@ function loadNewAnimation() {
     document.getElementById("divzdxTalTalMountainb").style.left = "960px";
     document.getElementById("divzdxTalTalMountainb").style.top = "50px";
 
-    jadsdsEnginemapzdxTalTalMountainb = new JadsdsEngine('mapzdxTalTalMountainb');
+    var jadsdsEnginemapzdxTalTalMountainb = new JadsdsEngine('mapzdxTalTalMountainb');
     jadsdsEnginemapzdxTalTalMountainb.fixCanvasSize = false;
     jadsdsEnginemapzdxTalTalMountainb.loadAnimationScreen = "zdxTalTalMountainbLoading";
     jadsdsEnginemapzdxTalTalMountainb.stopAnimationWhenIsNotVisible = true;
@@ -44,7 +42,7 @@ function loadNewAnimation() {
     document.getElementById("divzdxForest").style.left = "0px";
     document.getElementById("divzdxForest").style.top = "562px";
 
-    jadsdsEnginemapzdxForest = new JadsdsEngine('mapzdxForest');
+    var jadsdsEnginemapzdxForest = new JadsdsEngine('mapzdxForest');
     jadsdsEnginemapzdxForest.fixCanvasSize = false;
     jadsdsEnginemapzdxForest.loadAnimationScreen = "zdxForestLoading";
     jadsdsEnginemapzdxForest.stopAnimationWhenIsNotVisible = true;
@@ -110,7 +108,7 @@ function loadNewAnimation() {
     document.getElementById("divzdxMabeb").style.left = "0px";
     document.getElementById("divzdxMabeb").style.top = "1570px";
 
-    jadsdsEnginemapzdxMabeb = new JadsdsEngine('mapzdxMabeb');
+    var jadsdsEnginemapzdxMabeb = new JadsdsEngine('mapzdxMabeb');
     jadsdsEnginemapzdxMabeb.fixCanvasSize = false;
     jadsdsEnginemapzdxMabeb.loadAnimationScreen = "zdxMabebLoading";
     jadsdsEnginemapzdxMabeb.stopAnimationWhenIsNotVisible = true;
@@ -140,39 +138,39 @@ function loadNewAnimation() {
 
     //-----------------------------------------------------------------------------------------------------
 
-    //var jadsdsEngineMapzAudioD = new JadsdsEngine('zAudioD');
-    //jadsdsEngineMapzAudioD.loadAnimation('mapzAudio');
+    var jadsdsEngineMapzAudioD = new JadsdsEngine('zAudioD');
+    jadsdsEngineMapzAudioD.loadAnimation('mapzAudio');
 
     //-----------------------------------------------------------------------------------------------------
 }
 
-function changaClasses() {
-    document.getElementById("divzdxTalTalMountainc").className = "divZeldaGameBoy";
-    document.getElementById("divzdxTalTalMountainb").className = "divZeldaGameBoy";
-    document.getElementById("divzdxTalTalMountain").className = "divZeldaGameBoy";
-    document.getElementById("divzdxForest").className = "divZeldaGameBoy";
-    document.getElementById("divzdxCastle").className = "divZeldaGameBoy";
-    document.getElementById("divzdxFalls").className = "divZeldaGameBoy";
-    document.getElementById("divzdxMabe").className = "divZeldaGameBoy";
-    document.getElementById("divzdxUkuku").className = "divZeldaGameBoy";
-    document.getElementById("divzdxFaceShrine").className = "divZeldaGameBoy";
-    document.getElementById("divzdxMabeb").className = "divZeldaGameBoy";
-    document.getElementById("divzdxLake").className = "divZeldaGameBoy";
-    document.getElementById("divzdxDesert").className = "divZeldaGameBoy";
+function changaClasses(newclass) {
+    document.getElementById("divzdxTalTalMountainc").className = newclass;
+    document.getElementById("divzdxTalTalMountainb").className = newclass;
+    document.getElementById("divzdxTalTalMountain").className = newclass;
+    document.getElementById("divzdxForest").className = newclass;
+    document.getElementById("divzdxCastle").className = newclass;
+    document.getElementById("divzdxFalls").className = newclass;
+    document.getElementById("divzdxMabe").className = newclass;
+    document.getElementById("divzdxUkuku").className = newclass;
+    document.getElementById("divzdxFaceShrine").className = newclass;
+    document.getElementById("divzdxMabeb").className = newclass;
+    document.getElementById("divzdxLake").className = newclass;
+    document.getElementById("divzdxDesert").className = newclass;
 }
 
-function secrets(a) {
-    switch (a) {
-        case 1:
-            jadsdsEnginemapzdxForest.runAction("Secret");
-            break;
-        case 2:
-            jadsdsEnginemapzdxTalTalMountainb.runAction("Secret");
-            break;
-        case 3:
-            document.getElementById("divGameBoy").style.display = "";
-            changaClasses();
-            break;
-    }
+
+function color() {
+    document.getElementById("gbColors").className = "imgGBColor"
+    document.getElementById("gbClassic").className = "imgGBClassicb"
+    document.getElementById("divGameBoy").style.display = "none";
+    changaClasses("divZelda");
+}
+
+function yellow() {
+    document.getElementById("gbColors").className = "imgGBColorb"
+    document.getElementById("gbClassic").className = "imgGBClassic"
+    document.getElementById("divGameBoy").style.display = "";
+    changaClasses("divZeldaGameBoy");
 }
 

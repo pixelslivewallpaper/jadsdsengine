@@ -11,28 +11,6 @@
     </canvasResolution>
     <bgColor>#00000000</bgColor>
   </basic>
-  <javaScriptActions>
-    <javaScriptAction>
-      <id>Secret</id>
-      <events>
-        <event>
-          <eventActions>
-            <eventAction>EnableByID</eventAction>
-          </eventActions>
-          <ids>kirby,extradummy</ids>
-        </event>
-      </events>
-    </javaScriptAction>
-  </javaScriptActions>
-  <audioPlayers>
-    <audioPlayer>
-      <playerID>secretAudio</playerID>
-      <audioFile from="loading">youdidit.m4a</audioFile>
-      <autoPlay>false</autoPlay>
-      <volume>1</volume>
-      <loop>false</loop>
-    </audioPlayer>
-  </audioPlayers>
   <images>
     <image>
       <fileName>map.png</fileName>
@@ -1188,80 +1166,6 @@
       <left>620</left>
       <top>400</top>
       <speed>6</speed>
-    </image>
-    
-    
-    
-    
-    <image>
-      <fileName>secr.png</fileName>
-      <moveAnimation>
-        <iniTop>221</iniTop>
-        <maxTop>223</maxTop>
-        <pixelsMoveTop>1</pixelsMoveTop>
-      </moveAnimation>
-      <left>81</left>
-      <top>221</top>
-      <id>kirby</id>
-      <disableImage>true</disableImage>
-    </image>
-    <image>
-      <fileName>extrab.png</fileName>
-      <left>51</left>
-      <top>191</top>
-      <events>
-        <event>
-          <eventType>OnClickUp</eventType>
-          <eventType>OnMouseOver</eventType>
-          <eventActions>
-            <eventAction>PlayAudio</eventAction>
-          </eventActions>
-          <audioPlayer>
-            <playerID>secretAudio</playerID>
-          </audioPlayer>
-        </event>
-        <event>
-          <eventType>OnClickUp</eventType>
-          <eventType>OnMouseOver</eventType>
-          <eventActions>
-            <eventAction>DisableByID</eventAction>
-          </eventActions>
-          <ids>extradummy</ids>
-        </event>
-        <event>
-          <eventType>OnClickUp</eventType>
-          <eventType>OnMouseOver</eventType>
-          <eventActions>
-            <eventAction>EnableByID</eventAction>
-          </eventActions>
-          <ids>mesecret</ids>
-        </event>
-      </events>
-      <id>extradummy</id>
-      <disableImage>true</disableImage>
-    </image>
-    <image>
-      <fileName>messa.png</fileName>
-      <events>
-        <event>
-          <eventType>OnClickUp</eventType>
-          <eventActions>
-            <eventAction>RunJavascriptFunction</eventAction>
-          </eventActions>
-          <runJavascriptFunction>secrets(3);</runJavascriptFunction>
-        </event>
-        <event>
-          <eventType>OnClickUp</eventType>
-          <eventActions>
-            <eventAction>DisableByID</eventAction>
-          </eventActions>
-          <ids>kirby,mesecret</ids>
-        </event>
-      </events>
-      <left>2</left>
-      <top>239</top>
-      <id>mesecret</id>
-      <disableImage>true</disableImage>
     </image>
   </images>
 </doc>
