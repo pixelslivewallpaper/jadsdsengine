@@ -24,6 +24,7 @@
       <pixelsMove>1</pixelsMove>
       <cameraSpeed>1</cameraSpeed>
     </camera>-->
+    <loadingEffect>Melting</loadingEffect>
   </basic>
   <images>
     <image>

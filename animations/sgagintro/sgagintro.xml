@@ -10,6 +10,7 @@
       <maxHeight>294</maxHeight>
     </canvasResolution>
     <bgColor>#ff000000</bgColor>
+    <loadingEffect>Melting</loadingEffect>
   </basic>
   <images>
     <image>
