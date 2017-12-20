@@ -6,9 +6,6 @@ window.onload = function () {
     document.getElementById("TextArea5").value = decodeURIComponent(animationXMLEpartB);
     loadNewAnimationE();
     loadHelpUS("sgagb");
-    miniA();
-    miniB();
-    miniC();
 };
 
 function rotationAni() {
@@ -18,27 +15,6 @@ function rotationAni() {
     jadsdsEngineR.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineR.loadAnimationScreen = "loadingforrotate";
     jadsdsEngineR.loadAnimation('rotatione');
-}
-
-function miniA() {
-    var jadsdsEngineR = new JadsdsEngine('miniA');
-    jadsdsEngineR.fixCanvasSize = false;
-    jadsdsEngineR.stopAnimationWhenIsNotVisible = true;
-    jadsdsEngineR.loadAnimation('minirotateA');
-}
-
-function miniB() {
-    var jadsdsEngineR = new JadsdsEngine('miniB');
-    jadsdsEngineR.fixCanvasSize = false;
-    jadsdsEngineR.stopAnimationWhenIsNotVisible = true;
-    jadsdsEngineR.loadAnimation('minirotateB');
-}
-
-function miniC() {
-    var jadsdsEngineR = new JadsdsEngine('miniC');
-    jadsdsEngineR.fixCanvasSize = false;
-    jadsdsEngineR.stopAnimationWhenIsNotVisible = true;
-    jadsdsEngineR.loadAnimation('minirotateC');
 }
 
 var jadsdsEngineE = new JadsdsEngine('mycanvase');
