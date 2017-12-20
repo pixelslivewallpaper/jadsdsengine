@@ -16,7 +16,7 @@ window.onload = function () {
 
 function loadNewAnimation(nameAni) {
     jadsdsEngine = new JadsdsEngine('mycanvas');
-    jadsdsEngine.fixCanvasSize = false;
+    //jadsdsEngine.fixCanvasSize = false;
     jadsdsEngine.antiAlias = true;
     jadsdsEngine.stopAnimationWhenIsNotVisible = true;
     jadsdsEngine.loadAnimationScreen = "loadingindex";
