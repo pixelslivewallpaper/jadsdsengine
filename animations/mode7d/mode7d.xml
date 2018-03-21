@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>256</width>
+      <height>1280</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>256</maxWidth>
+      <maxHeight>1280</maxHeight>
+    </canvasResolution>
+    <bgColor>#00ffffff</bgColor>
+    <postEffects>
+      <effect>
+        <name>mode7snes</name>
+        <profile>ffvi</profile>
+      </effect>
+      <!--<effect>
+        <name>mode7snes</name>
+        <profile>fzero</profile>
+      </effect>-->
+      <!--<effect>
+        <name>gameBoy</name>
+      </effect>-->
+    </postEffects>
+  </basic>
+  <images>
+    <image>
+      <fileName>ff3map.png</fileName>
+      <moveEndLessAnimation>
+        <direction>Down</direction>
+        <pixelsMove>1</pixelsMove>
+      </moveEndLessAnimation>
+      <left>0</left>
+      <top>0</top>
+      <speed>3</speed>
+    </image>
+  </images>
+</doc>

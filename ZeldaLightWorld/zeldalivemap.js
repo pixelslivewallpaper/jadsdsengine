@@ -297,8 +297,8 @@ function loadNewAnimation() {
 
     //-----------------------------------------------------------------------------------------------------
 
-    //var jadsdsEngineMapzAudioL = new JadsdsEngine('zAudioL');
-    //jadsdsEngineMapzAudioL.loadAnimation('mapzAudioL');
+    var jadsdsEngineMapzAudioL = new JadsdsEngine('zAudioL');
+    jadsdsEngineMapzAudioL.loadAnimation('mapzAudioL');
 
     //-----------------------------------------------------------------------------------------------------
 }

@@ -19,11 +19,18 @@ var animationXMLEpartA = "%3C%3Fxml%20version%3D%221.0%22%3F%3E%0A%3Cdoc%3E";
 var animationXMLEpartB = "%20%20%3Cbasic%20type%3D%22animations%22%3E%0A%20%20%20%20%3CscreenCanvasResolution%3E%0A%20%20%20%20%20%20%3Cwidth%3E240%3C%2Fwidth%3E%0A%20%20%20%20%20%20%3Cheight%3E360%3C%2Fheight%3E%0A%20%20%20%20%3C%2FscreenCanvasResolution%3E%0A%20%20%20%20%3CcanvasResolution%3E%0A%20%20%20%20%20%20%3CmaxWidth%3E144%3C%2FmaxWidth%3E%0A%20%20%20%20%20%20%3CmaxHeight%3E72%3C%2FmaxHeight%3E%0A%20%20%20%20%3C%2FcanvasResolution%3E%0A%20%20%20%20%3CbgColor%3E%23ff000000%3C%2FbgColor%3E%0A%20%20%20%20%3Ccamera%3E%0A%20%20%20%20%20%20%3CautoHorizontalScroll%3Etrue%3C%2FautoHorizontalScroll%3E%0A%20%20%20%20%20%20%3CiniPosition%3E0%3B0%3C%2FiniPosition%3E%0A%20%20%20%20%20%20%3CpixelsMove%3E2%3C%2FpixelsMove%3E%0A%20%20%20%20%20%20%3CcameraSpeed%3E1%3C%2FcameraSpeed%3E%0A%20%20%20%20%3C%2Fcamera%3E%0A%20%20%3C%2Fbasic%3E%0A%20%20%3Cimages%3E%0A%20%20%20%20%3Cimage%3E%0A%20%20%20%20%20%20%3CfileName%3ERushb0.png%3C%2FfileName%3E%0A%20%20%20%20%20%20%3CcreateBackgroundLayer%3E%0A%20%20%20%20%20%20%20%20%3CmaxWidth%3E80%3C%2FmaxWidth%3E%0A%20%20%20%20%20%20%20%20%3CmaxHeight%3E72%3C%2FmaxHeight%3E%0A%20%20%20%20%20%20%3C%2FcreateBackgroundLayer%3E%0A%20%20%20%20%3C%2Fimage%3E%0A%20%20%20%20%3Cimage%3E%0A%20%20%20%20%20%20%3CfileName%3ERushb1.png%3C%2FfileName%3E%0A%20%20%20%20%3C%2Fimage%3E%0A%20%20%3C%2Fimages%3E";
 var animationXMLEpartC = "%3C%2Fdoc%3E";
 
+var animationXMLFpartA = "%3C%3Fxml%20version%3D%221.0%22%3F%3E%0A%3Cdoc%3E%0A%20%20%3Cbasic%20type%3D%22animations%22%3E%0A%20%20%20%20%3CscreenCanvasResolution%3E%0A%20%20%20%20%20%20%3Cwidth%3E256%3C%2Fwidth%3E%0A%20%20%20%20%20%20%3Cheight%3E1280%3C%2Fheight%3E%0A%20%20%20%20%3C%2FscreenCanvasResolution%3E%0A%20%20%20%20%3CcanvasResolution%3E%0A%20%20%20%20%20%20%3CmaxWidth%3E256%3C%2FmaxWidth%3E%0A%20%20%20%20%20%20%3CmaxHeight%3E1280%3C%2FmaxHeight%3E%0A%20%20%20%20%3C%2FcanvasResolution%3E%0A%20%20%20%20%3CbgColor%3E%2300ffffff%3C%2FbgColor%3E";
+var animationXMLFpartB = "%20%20%20%20%3CpostEffects%3E%0A%20%20%20%20%20%20%3Ceffect%3E%0A%20%20%20%20%20%20%20%20%3Cname%3Emode7snes%3C%2Fname%3E%0A%20%20%20%20%20%20%20%20%3Cprofile%3Effvi%3C%2Fprofile%3E%0A%20%20%20%20%20%20%3C%2Feffect%3E%0A%20%20%20%20%20%20%3C!--%3Ceffect%3E%0A%20%20%20%20%20%20%20%20%3Cname%3Emode7snes%3C%2Fname%3E%0A%20%20%20%20%20%20%20%20%3Cprofile%3Efzero%3C%2Fprofile%3E%0A%20%20%20%20%20%20%3C%2Feffect%3E--%3E%0A%20%20%20%20%20%20%3C!--%3Ceffect%3E%0A%20%20%20%20%20%20%20%20%3Cname%3EgameBoy%3C%2Fname%3E%0A%20%20%20%20%20%20%3C%2Feffect%3E--%3E%0A%20%20%20%20%3C%2FpostEffects%3E";
+var animationXMLFpartC = "%20%20%3C%2Fbasic%3E%0A%20%20%3Cimages%3E%0A%20%20%20%20%3Cimage%3E%0A%20%20%20%20%20%20%3CfileName%3Eff3map.png%3C%2FfileName%3E%0A%20%20%20%20%20%20%3CmoveEndLessAnimation%3E%0A%20%20%20%20%20%20%20%20%3Cdirection%3EDown%3C%2Fdirection%3E%0A%20%20%20%20%20%20%20%20%3CpixelsMove%3E1%3C%2FpixelsMove%3E%0A%20%20%20%20%20%20%3C%2FmoveEndLessAnimation%3E%0A%20%20%20%20%20%20%3Cleft%3E0%3C%2Fleft%3E%0A%20%20%20%20%20%20%3Ctop%3E0%3C%2Ftop%3E%0A%20%20%20%20%20%20%3Cspeed%3E3%3C%2Fspeed%3E%0A%20%20%20%20%3C%2Fimage%3E%0A%20%20%3C%2Fimages%3E%0A%3C%2Fdoc%3E";
+
 var jadsdsEngine = new JadsdsEngine('mycanvas');
 var jadsdsEngineB = new JadsdsEngine('mycanvasb');
 var jadsdsEngineC = new JadsdsEngine('mycanvasc');
 var jadsdsEngineD = new JadsdsEngine('mycanvasd');
 var jadsdsEngineE = new JadsdsEngine('mycanvase');
+var jadsdsEngineF = new JadsdsEngine('mysubcanvas');
+
+var jadsdsEngineMode7 = null;
 
 window.onload = function () {
     document.getElementById("TextArea1").value = decodeURIComponent(animationXMLpartB);
@@ -31,12 +38,14 @@ window.onload = function () {
     document.getElementById("TextArea3").value = decodeURIComponent(animationXMLCpartB);
     document.getElementById("TextArea4").value = decodeURIComponent(animationXMLDpartB);
     document.getElementById("TextArea5").value = decodeURIComponent(animationXMLEpartB);
+    document.getElementById("TextArea6").value = decodeURIComponent(animationXMLFpartB);
 
     loadNewAnimationA("testd");
     loadNewAnimationB("colorcycling");
     loadNewAnimationC("rotationb");
     loadNewAnimationD("audiob");
     loadNewAnimationE("parallax");
+    loadNewAnimationF("mode7d");
 };
 
 function loadNewAnimationA(nameAni) {
@@ -89,6 +98,19 @@ function loadNewAnimationE(nameAni) {
     jadsdsEngineE.loadAnimation(nameAni);
 }
 
+function loadNewAnimationF(nameAni) {
+    jadsdsEngineF.unloadAnimation();
+    jadsdsEngineF.loadAnimationByString = decodeURIComponent(animationXMLFpartA) + document.getElementById("TextArea6").value + decodeURIComponent(animationXMLFpartC);
+    jadsdsEngineF.fixCanvasSize = false;
+    jadsdsEngineF.antiAlias = false;
+    jadsdsEngineF.stopAnimationWhenIsNotVisible = true;
+    jadsdsEngineF.runFunctionAfterLoad = function () {
+        mode7Main();
+    }
+
+    jadsdsEngineF.loadAnimation(nameAni);
+}
+
 function resetA() {
     document.getElementById("TextArea1").value = decodeURIComponent(animationXMLpartB);
     loadNewAnimationA('testd');
@@ -112,4 +134,24 @@ function resetD() {
 function resetE() {
     document.getElementById("TextArea5").value = decodeURIComponent(animationXMLEpartB);
     loadNewAnimationE('parallax');
+}
+
+function resetF() {
+    document.getElementById("TextArea6").value = decodeURIComponent(animationXMLFpartB);
+    loadNewAnimationF('mode7d');
+}
+
+
+function mode7Start() {
+
+}
+
+function mode7Main() {
+    if (jadsdsEngineMode7 == null) {
+        jadsdsEngineMode7 = new JadsdsEngine('mycanvasf');
+        jadsdsEngineMode7.antiAlias = false;
+        jadsdsEngineMode7.fixCanvasSize = false;
+        jadsdsEngineMode7.stopAnimationWhenIsNotVisible = true;
+        jadsdsEngineMode7.loadAnimation("mode7c");
+    }
 }
