@@ -526,7 +526,7 @@
         </frameCollection>
       </frames>
       <moveAnimation>
-        <iniTop>70</iniTop>
+        <iniTop>170</iniTop>
         <maxTop>374</maxTop>
         <pixelsMoveLeft>0</pixelsMoveLeft>
         <pixelsMoveTop>2</pixelsMoveTop>
@@ -614,7 +614,7 @@
           <whenCustomConditionIs>toUp</whenCustomConditionIs>
           <changeFrameCollectionIndexTo>3</changeFrameCollectionIndexTo>
           <newMoveAnimation>
-            <iniTop>70</iniTop>
+            <iniTop>170</iniTop>
             <maxTop>374</maxTop>
             <pixelsMoveLeft>0</pixelsMoveLeft>
             <pixelsMoveTop>-2</pixelsMoveTop>
