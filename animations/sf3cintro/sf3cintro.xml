@@ -10,6 +10,12 @@
       <maxHeight>224</maxHeight>
     </canvasResolution>
     <bgColor>#ff000000</bgColor>
+    <postEffects>
+      <effect>
+        <effectName>Melting</effectName>
+        <changeFrameRate>60</changeFrameRate>
+      </effect>
+    </postEffects>	
   </basic>
   <images>
     <image>

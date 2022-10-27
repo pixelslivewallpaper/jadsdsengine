@@ -24,7 +24,12 @@
       <pixelsMove>1</pixelsMove>
       <cameraSpeed>1</cameraSpeed>
     </camera>-->
-    <loadingEffect>Melting</loadingEffect>
+    <postEffects>
+      <effect>
+        <effectName>Melting</effectName>
+        <changeFrameRate>60</changeFrameRate>
+      </effect>
+    </postEffects>
   </basic>
   <images>
     <image>

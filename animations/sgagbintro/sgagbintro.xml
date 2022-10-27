@@ -16,6 +16,12 @@
         <blackLinesLowerTop>220</blackLinesLowerTop>
       </addBlackLines>
     </camera>
+    <postEffects>
+      <effect>
+        <effectName>Melting</effectName>
+        <changeFrameRate>60</changeFrameRate>
+      </effect>
+    </postEffects> 	
   </basic>
   <images>
     <image>
