@@ -25,7 +25,7 @@ function loadNewAnimation(nameAni) {
 
 function getRandomAnimation() {
     var rNum = Math.floor(Math.random() * 4);
-    var aniArray = new Array("sf3cintro", "sgagbintro", "sgagintro", "dcintro");
+    var aniArray = new Array("sf3cintro", "sgagbintro", "sgagintro", "dcintromirror");
     return aniArray[rNum];
 }
 

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>448</width>
+      <height>256</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>448</maxWidth>
+      <maxHeight>256</maxHeight>
+    </canvasResolution>
+    <bgColor>#ffffffff</bgColor>
+    <!-- <postEffects>
+      <effect>
+        <effectName>Distortion</effectName>
+        <distortionType>Wave</distortionType>
+        <waveGapBetweenFrames>4</waveGapBetweenFrames>
+        <wavePattern>d-n-n-n-d-n-d-n-d-n-d-d-n-d-n-d-n-d-n-n-n-d-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-r-n-r-n-r-n-r-n-r-n-r-n-r-n-r-n</wavePattern>
+        <waveFillPattern>true</waveFillPattern>
+      </effect>
+    </postEffects> -->
+  </basic>
+  <images>
+    <!-- <image>
+      <fileName>underb.png</fileName>
+      <left>0</left>
+      <top>0</top>
+      <id>test</id>
+    </image> -->
+    <image>
+      <fileName>underb.png</fileName>
+      <left>96</left>
+      <top>-96</top>
+      <id>test</id>
+      <rotate>90</rotate>
+      <speed>2</speed>
+      <applyAlterations>
+        <postEffects>
+          <effect>
+            <effectName frameByFrame="true">Distortion</effectName>
+            <distortionType>Wave</distortionType>
+            <waveGapBetweenFrames>4</waveGapBetweenFrames>
+            <wavePattern>d-n-n-n-d-n-d-n-d-n-d-d-n-d-n-d-n-d-n-n-n-d-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-r-n-r-n-r-n-r-n-r-n-r-n-r-n-r-n</wavePattern>
+            <waveFillPattern>true</waveFillPattern>
+          </effect>
+        </postEffects>
+      </applyAlterations>
+    </image>
+    <!-- <image>
+      <frames>
+          <createFramesBasedOnPostEffect>
+              <fileName>underb.png</fileName>
+              <postEffects>
+                  <effect>
+                      <effectName>Distortion</effectName>
+                      <distortionType>Wave</distortionType>
+                      <waveGapBetweenFrames>4</waveGapBetweenFrames>
+                      <wavePattern>d-n-n-n-d-n-d-n-d-n-d-d-n-d-n-d-n-d-n-n-n-d-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-n-r-n-r-n-r-n-r-n-r-n-r-n-r-n-r-n</wavePattern>
+                      <waveFillPattern>true</waveFillPattern>
+                  </effect>
+              </postEffects>
+          </createFramesBasedOnPostEffect>
+      </frames>
+      <rotate>90</rotate>
+      <left>96</left>
+      <top>-96</top>
+    </image> -->
+  </images>
+</doc>

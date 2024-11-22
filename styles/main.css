@@ -26,14 +26,14 @@
 }
 
 .tdCircle {
-    background-image: url('images/circle2.png');
+    /*background-image: url('images/circle2.png');*/
     background-repeat: no-repeat;
     background-position: center center;
     height: 370px;
 }
 
 .tdCircleB {
-    background-image: url('images/circle1.png');
+    /*background-image: url('images/circle1.png');*/
     background-repeat: no-repeat;
     background-position: center center;
     height: 370px;
@@ -72,7 +72,7 @@
 }
 
 .mainTable {
-    width: 1210px;
+    width: 90%;
 }
 
 .footer {

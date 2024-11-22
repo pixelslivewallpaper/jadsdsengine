@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>448</width>
+      <height>256</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>448</maxWidth>
+      <maxHeight>256</maxHeight>
+    </canvasResolution>
+    <bgColor>#ffffffff</bgColor>
+    <!-- <postEffects>
+      <effect>
+        <effectName>Distortion</effectName>
+        <distortionType>Billow</distortionType>
+        <billowWaveHeight>4</billowWaveHeight>
+        <billowWaveFrequency>0.07</billowWaveFrequency>
+        <billowWaveSpeed>0.05</billowWaveSpeed>
+        <billowMaxHeight>100</billowMaxHeight>
+      </effect>
+    </postEffects> -->
+  </basic>
+  <images>
+    <!-- <image>
+      <fileName>under.png</fileName>
+      <left>0</left>
+      <top>0</top>
+      <id>test</id>
+    </image> -->
+    <image>
+      <fileName>under.png</fileName>
+      <left>0</left>
+      <top>0</top>
+      <id>test</id>
+      <applyAlterations>
+        <postEffects>
+          <effect>
+            <effectName frameByFrame="true">Distortion</effectName>
+            <distortionType>Billow</distortionType>
+            <billowWaveHeight>4</billowWaveHeight>
+            <billowWaveFrequency>0.07</billowWaveFrequency>
+            <billowWaveSpeed>0.05</billowWaveSpeed>
+          </effect>
+        </postEffects>
+      </applyAlterations>
+    </image>
+    <!-- <image>
+      <frames>
+          <createFramesBasedOnPostEffect>
+              <fileName>under.png</fileName>
+              <postEffects>
+                  <effect>
+                      <effectName>Distortion</effectName>
+                      <distortionType>Billow</distortionType>
+                      <billowWaveHeight>2</billowWaveHeight>
+                      <billowWaveFrequency>0.07</billowWaveFrequency>
+
+
+
+
+                      <billowMaxFrames>4</billowMaxFrames>
+                      <billowMaxHeight>100</billowMaxHeight>
+                      <billowFrames>2</billowFrames>
+                  </effect>
+              </postEffects>
+          </createFramesBasedOnPostEffect>
+      </frames>
+      <left>0</left>
+      <top>0</top>
+      <speed>5</speed>
+    </image> -->
+  </images>
+</doc>
