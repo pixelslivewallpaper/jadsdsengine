@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>256</width>
+      <height>224</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>256</maxWidth>
+      <maxHeight>224</maxHeight>
+    </canvasResolution>
+    <bgColor>#00000000</bgColor>
+    <postEffects>
+      <effect>
+        <effectName>applyNight</effectName>
+        <rulePalette>46%-46%-2%</rulePalette>
+        <!--<rulePalette>56%-56%-2%</rulePalette>-->
+        <avoidTheseColors>247-255-66,255-189-66,255-66-165,107-156-255,57-255-99,165-66-247</avoidTheseColors>
+        <progressive>true</progressive>
+        <speedTransition>200</speedTransition>
+        <returnTo>true</returnTo>
+        <returnToAfter>5000</returnToAfter>
+      </effect>
+    </postEffects>
+  </basic>
+  <images>
+    <image>
+      <frames>
+        <convertImageSequenceInFrames>
+          <filePreName></filePreName>
+          <startNumber>1</startNumber>
+          <endNumber>3</endNumber>
+          <formatNumber>##</formatNumber>
+          <fileNameExtension>png</fileNameExtension>
+        </convertImageSequenceInFrames>
+      </frames>
+      <left>0</left>
+      <top>0</top>
+      <speed>6</speed>
+    </image>
+  </images>
+</doc>
