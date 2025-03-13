@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>320</width>
+      <height>480</height>
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>144</maxWidth>
+      <maxHeight>72</maxHeight>
+    </canvasResolution>
+    <bgColor>#ffffffff</bgColor>
+    <grid>
+      <addGrid>false</addGrid>
+    </grid>
+    <camera>
+      <autoHorizontalScroll>true</autoHorizontalScroll>
+      <iniPosition>0;0</iniPosition>
+      <pixelsMove>2</pixelsMove>
+      <cameraSpeed>1</cameraSpeed>
+    </camera>
+  </basic>
+  <images>
+    <image>
+      <frames>
+        <colorCycling>
+          <fileName>helloworld.png</fileName>
+          <basicPaletteColor>255,0,0,0-255,235,20,46-255,185,0,174-255,68,23,197-255,175,226,255-255,102,122,115-255,30,252,140-255,108,255,0-255,185,179,0-255,235,111,20</basicPaletteColor>
+        </colorCycling>
+      </frames>
+      <left>10</left>
+      <top>30</top>
+    </image>
+  </images>
+</doc>
