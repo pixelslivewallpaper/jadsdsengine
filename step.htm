@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JADSDS</title>
+    <link href="styles/main.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="styles/images/favicon.ico" />
+    <script src="JadsdsEngine_min.js"></script>
+    <script src="basic.js"></script>
+    <script src="step.js"></script>
+</head>
+<body>
+    <table align="center" cellpadding="0" cellspacing="0" class="headerTable">
+        <tr>
+            <td>
+                <table align="center" cellpadding="0" cellspacing="0" class="mainTable">
+                    <tr style="height: 80px;">
+                        <td class="tdHeaderG">&nbsp;<a href="index.htm" class="home"><img alt="logo" class="logoIMG" src="styles/images/logo.png" /></a></td>
+                        <td class="tdHeaderH">
+                            &nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="headerTableb"></div>
+    <table align="center" cellpadding="0" cellspacing="0" class="mainTable">
+        <tr>
+            <td>
+                <img alt="doc" class="docIMG" src="styles/images/documentationtitle.png" /></td>
+        </tr>
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" class="tableContext">
+                    <tr>
+                        <td class="tdHeaderJ" style="vertical-align: top">
+                            <br /><br />
+                            JADSDS engine is a friendly tag based JavaScript animator created to make easier web projects using the
+                            power of HTML5.<br /><br />
+                            At the moment the engine includes features like color cycling, scale and rotation, animated GIF support,
+                            multiple layers for parallax effects, capturing events and trigger actions and much more.<br /><br />
+                            All your web projects run on Android as well, an app is included with the engine allowing you run your
+                            project on an Android device.<br /><br />
+                            This is just the first step, more functions will be included in the future. All will depend if the people fall in
+                            love with the project.
+                            <br /><br />
+                            A pdf file with the complete documentation is available <em><a href="JadsdsEngine.pdf">here</a></em>.
+                                        <br />
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <table align="center" cellpadding="0" cellspacing="0" class="mainTable">
+        <tr>
+            <td>
+                <img alt="let" class="letIMG" src="styles/images/lettitle.png" /></td>
+        </tr>
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" class="tableContext">
+                    <tr>
+                        <td class="tdHeaderJ" style="vertical-align: top">
+                            <h2>How can I open or create xml files?</h2>
+                            All the animations are created using an xml file. It is where all the instructions are stored and used later by the engine. 
+                            Also, it includes the basic settings used to prepare the environment to run your animation.<br /><br />
+                            The easiest way to create or edit these files is using your Windows Notepad, TextEdit on Mac or Visual Studio Code. <br /><br />
+                            Any other text editor will be ok too.<br /><br />
+                            
+                            <h2>Where to save the files?</h2>
+
+                            In HTML, all your animations need to be saved inside a folder named “animations” 
+                            in your website. The name of the folder can be changed but the default will be always “animations”. <br /><br />
+                            Create a another new folder inside "animations" folder, pick a name and include all your images and the xml inside this
+                            folder. The xml file must have the same name as the new folder.<br /><br />
+                            In Android, all your animations need to be saved inside a folder named “JadsdsEngine”. After installing
+                            the app and running it for the first time, the app will create the folder. Inside this folder, an 
+                            animation will be created too. The name of this animation is "main".<br /><br />
+                            Keep in mind that the app will always run first the animation "main". You can't delete this folder and it will be the start animation for all your
+                            projects. Also, inside the folder “JadsdsEngine” you have another folder “loading”. It has the animation
+                            used during the loading times.<br /><br />
+
+                            You can edit the file main.xml (found inside the folder "main") and start making your animation.<br /><br />
+
+                            In HTML or Android, you can create as many folders as you need. You can jump from one animation to another anytime.<br /><br />
+
+                            The xml file used in your animation is divided into sections, where "Basic" and "Images" are the most
+                            important.<br /><br />
+                            Remember all the tags are case sensitive.
+                        </td>
+                    </tr>
+                </table>
+                <table cellpadding="0" cellspacing="0" class="tableContext">
+                    <tr>
+                        <td class="tdHeaderJ" style="vertical-align: top">
+                            <h2>Creating a Hello World animation</h2>
+                            File structure:<br /><br />
+
+                            [Folder] animations<br />
+                            ---[Folder] helloworld<br />
+                            ------[File] helloworld.png<br />
+                            ------[File] helloworld.xml<br />
+                            ---[File] dummy.png<br />
+                            [File] helloworld.htm<br />
+                            [File] JadsdsEngine_min.js<br /><br /><br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdHeaderJ" style="vertical-align: top">
+                            Let's check the files helloword.htm and helloworld.xml<br /><br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdHeaderJ" style="vertical-align: top">
+                            <b>helloword.htm</b><br />
+                            <textarea id="TextArea3" spellcheck='false' class="TextAreaCodeHello" style="height: 400px;">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="JadsdsEngine_min.js"></script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var jadsdsEngine = new JadsdsEngine('mycanvas');
+            jadsdsEngine.loadAnimation("helloworld");
+        };
+    </script>
+</head>
+<body>
+    <canvas id="mycanvas" width="320" height="480" style="border-style: solid; border-width: 1px"></canvas>
+</body>
+</html>
+                            </textarea><br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdHeaderJ" style="vertical-align: top">
+                            Important things here are:<br /><br />
+                            1 - Loading the jadsds engine (JadsdsEngine_min.js).<br />
+                            2 - Adding a tag "canvas".<br />
+                            3 - Loading the animation after the page is fully loaded (you can use window.onload).<br /><br />
+
+                            The way your animation is loaded is by creating an instance of Jadsds engine and loading it with the function "loadAnimation". 
+                            You need the canvas ID to create an instance of Jadsds engine. Also, you can add multiple animations creating multiple instances. 
+                            Each of the instances needs a different canvas ID.<br /><br />
+
+                            Remember the "loadAnimation" function needs the name of your animation. As mentioned before, it is the name of the folder where your animation is stored.<br /><br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdHeaderJ" style="vertical-align: top">
+                            <b>helloword.xml</b><br />
+                            <textarea id="TextArea3" spellcheck='false' class="TextAreaCodeHello" style="height: 600px;">
+<?xml version="1.0"?>
+<doc>
+    <basic type="animations">
+        <screenCanvasResolution>
+            <width>320</width>
+            <height>480</height>
+        </screenCanvasResolution>
+        <canvasResolution>
+            <maxWidth>144</maxWidth>
+            <maxHeight>72</maxHeight>
+        </canvasResolution>
+        <bgColor>#ffffffff</bgColor>
+        <camera>
+            <autoHorizontalScroll>true</autoHorizontalScroll>
+            <iniPosition>0;0</iniPosition>
+            <pixelsMove>2</pixelsMove>
+            <cameraSpeed>1</cameraSpeed>
+        </camera>
+    </basic>
+    <images>
+    <image>
+        <frames>
+        <colorCycling>
+            <fileName>helloworld.png</fileName>
+            <basicPaletteColor>255,0,0,0-255,235,20,46-255,185,0,174-255,68,23,197-255,175,226,255-255,102,122,115-255,30,252,140-255,108,255,0-255,185,179,0-255,235,111,20</basicPaletteColor>
+        </colorCycling>
+        </frames>
+        <left>10</left>
+        <top>30</top>
+    </image>
+    </images>
+</doc>
+                            </textarea><br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdHeaderJ" style="vertical-align: top">
+                            Important things here are:<br /><br />
+                            1 - screenCanvasResolution & canvasResolution tags<br />
+                            2 - At least one image<br /><br />
+
+                            <b>screenCanvasResolution</b> (AKA screenPhoneResolution) is the visible area. It is the size of your canvas tag in html or the screen's resolution in your Android device.<br />
+                            <b>canvasResolution</b> is the size of your animation. Do not confuse it with the html's canvas tag. If your animation is 1024x1024 pixels, only the area declared in "screenCanvasResolution" will be visible. You can use the tag "camera" to move the visible area to any point.<br /><br />
+                            The "image" tag allows you to add an image to your animation. In this Hello World example, it is combined with the tag "colorCycling" to create an animated image.
+                            <br /><br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdHeaderJ" style="vertical-align: top">
+                            <h2>Running your animation</h2>
+
+                            Running the animations on your computer requires installing Visual Studio Code and the extension "Live Server".<br /><br />
+
+                            Open Visual Studio Code, select "open folder" and select the folder where your animation is located.<br /><br />
+                            
+                            Select the file ending in ".htm" (in this case is helloword.htm), open file properties, and in the menu select "Open with Live Server".<br /><br />
+
+                            <br /><br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdHeaderJ" style="vertical-align: top">
+                            <canvas id="mycanvas" width="320" height="480" style="border-style: solid; border-width: 1px"></canvas>
+                            <br /><br />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br /><br /><br />
+    <table align="center" cellpadding="0" cellspacing="0" class="footer" style="background-color: #fafafa">
+        <tr>
+            <td>
+                <table cellpadding="0" align="center" cellspacing="0" class="tableContextB" style="cursor: pointer;" onclick="window.location.assign('indexb.htm#downloadAPK');">
+                    <tr>
+                        <td class="tdHeaderKlogoA" style="text-align: center">&nbsp;</td>
+                        <td class="tdHeaderKlogoAndroid" style="vertical-align: top">&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table align="center" cellpadding="0" cellspacing="0" class="footer">
+        <tr>
+            <td>
+                <table cellpadding="0" align="center" cellspacing="0" class="tableContextB">
+                    <tr>
+                        <td class="tdHeaderKlogoB" style="text-align: center; cursor: pointer;" onclick="window.location.assign('indexb.htm#downloadAPK');">&nbsp;</td>
+                        <td class="tdHeaderJ" style="vertical-align: top">
+                            <a href="indexb.htm#downloadAPK" class="home">
+                                <strong><span class="titles">Android Pixels Live Wallpaper</span></strong><br />
+                            </a>
+                            <br />
+                            Pixels Live Wallpaper is an application that allows you use your projects created with Jadsds engine as live wallpaper in your smartphone.
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
