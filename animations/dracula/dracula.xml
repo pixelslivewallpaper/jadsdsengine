@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<doc>
+  <basic type="animations">
+    <screenCanvasResolution>
+      <width>256</width>
+      <height>224</height>
+      <!-- <width>119</width>
+      <height>257</height> -->
+    </screenCanvasResolution>
+    <canvasResolution>
+      <maxWidth>728</maxWidth>
+      <maxHeight>224</maxHeight>
+    </canvasResolution>
+    <bgColor>#ffffffff</bgColor>
+    <camera>
+      <autoHorizontalScroll>true</autoHorizontalScroll>
+      <iniPosition>0;0</iniPosition>
+    </camera>
+  </basic>
+  <images>
+    <image>
+      <frames>
+          <createFramesBasedOnPostEffect>
+              <fileName>1.png</fileName>
+              <postEffects>
+                  <effect>
+                      <effectName>Distortion</effectName>
+                      <distortionType>Billow</distortionType>
+                      <billowWaveHeight>2</billowWaveHeight>
+                      <billowWaveFrequency>0.2</billowWaveFrequency>
+                      <billowFrames>6</billowFrames>
+                  </effect>
+              </postEffects>
+          </createFramesBasedOnPostEffect>
+      </frames>
+      <createBackgroundLayer>
+        <maxWidth>512</maxWidth>
+        <maxHeight>224</maxHeight>
+      </createBackgroundLayer>
+      <left>0</left>
+      <top>0</top>
+      <speed>3</speed>
+    </image>
+    <!-- <image>
+      <frames>
+          <createFramesBasedOnPostEffect>
+              <fileName>2.png</fileName>
+              <postEffects>
+                  <effect>
+                      <effectName>Distortion</effectName>
+                      <distortionType>Billow</distortionType>
+                      <billowWaveHeight>2</billowWaveHeight>
+                      <billowWaveFrequency>0.2</billowWaveFrequency>
+                      <billowFrames>6</billowFrames>
+                  </effect>
+              </postEffects>
+          </createFramesBasedOnPostEffect>
+      </frames>
+      <createBackgroundLayer>
+        <maxWidth>256</maxWidth>
+        <maxHeight>224</maxHeight>
+      </createBackgroundLayer>
+      <left>0</left>
+      <top>0</top>
+      <alpha>100</alpha>
+    </image> -->
+    <image>
+      <!-- <frames>
+          <createFramesBasedOnPostEffect>
+              <fileName>2b.png</fileName>
+              <postEffects>
+                  <effect>
+                      <effectName>Distortion</effectName>
+                      <distortionType>Billow</distortionType>
+                      <billowWaveHeight>2</billowWaveHeight>
+                      <billowWaveFrequency>0.2</billowWaveFrequency>
+                      <billowFrames>6</billowFrames>
+                  </effect>
+              </postEffects>
+          </createFramesBasedOnPostEffect>
+      </frames> -->
+      <!-- <fileName>2b.png</fileName>
+      <applyAlterations>
+        <postEffects>
+          <effect>
+            <effectName frameByFrame="true">Distortion</effectName>
+            <distortionType>Wave</distortionType>
+            <waveGapBetweenFrames>4</waveGapBetweenFrames>
+            <wavePattern>d-n-d-n-d-n-d-n-d-d-n-d-n-d-n-d-d-n-n-r-n-r-n-r-n-r-n-r-n</wavePattern>
+            <wavePattern>d-d-d-d-d-n-n-d-d-d-n-r-n-r-n-r-n-r-r-n-n</wavePattern>
+            <wavePattern>d-d-d-d-d-n-d-d-d-r-r-r-n-r-r-n-n</wavePattern>
+            <waveFillPattern>true</waveFillPattern>
+          </effect>
+        </postEffects>
+      </applyAlterations> -->
+      <frames>
+          <createFramesBasedOnPostEffect>
+              <fileName>2b.png</fileName>
+              <postEffects>
+                  <effect>
+                      <effectName>Distortion</effectName>
+                      <distortionType>Wave</distortionType>
+                      <waveGapBetweenFrames>4</waveGapBetweenFrames>
+                      <wavePattern>d-d-d-d-d-n-d-d-d-r-r-r-n-r-r-n-n</wavePattern>
+                      <waveFillPattern>true</waveFillPattern>
+                  </effect>
+              </postEffects>
+          </createFramesBasedOnPostEffect>
+      </frames>
+      <createBackgroundLayer>
+        <maxWidth>256</maxWidth>
+        <maxHeight>224</maxHeight>
+      </createBackgroundLayer>
+      <left>36</left>
+      <top>0</top>
+      <rotate>90</rotate>
+      <alpha>100</alpha>
+    </image>
+    <image>
+      <fileName>3.png</fileName>
+      <left>0</left>
+      <top>30</top>
+      <id>test</id>
+    </image>
+  </images>
+</doc>

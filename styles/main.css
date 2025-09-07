@@ -140,11 +140,15 @@
     font-variant: normal;
 }
 
+.tableHeader {
+    width: 100%;
+}
+
 .tdHeaderI {
     vertical-align: middle;
+    width: 100%;
     text-align: center;
-    width: 40%;
-    height: 300px;
+    height: 350px;
 }
 .tdHeaderJ {
     vertical-align: top;

@@ -2,8 +2,8 @@
 <doc>
   <basic type="animations">
     <screenCanvasResolution>
-      <width>196</width>
-      <height>294</height>
+      <width>392</width>
+      <height>448</height>
     </screenCanvasResolution>
     <canvasResolution>
       <maxWidth>875</maxWidth>
@@ -14,12 +14,8 @@
       <addGrid>false</addGrid>
     </grid>
     <camera>
-      <addBlackLines>
-        <blackLinesHeight>38</blackLinesHeight>
-        <blackLinesLowerTop>222</blackLinesLowerTop>
-      </addBlackLines>
       <autoHorizontalScroll>true</autoHorizontalScroll>
-      <iniPosition>1;0</iniPosition>
+      <iniPosition>0;0</iniPosition>
       <pixelsMove>2</pixelsMove>
       <cameraSpeed>1</cameraSpeed>
     </camera>

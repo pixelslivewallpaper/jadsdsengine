@@ -11,6 +11,8 @@ window.onload = function () {
 };
 
 function loadNewAnimationA(nameAni) {
+    jadsdsEngine.fixCanvasSize = false;
+    jadsdsEngine.antiAlias = false;
     jadsdsEngine.stopAnimationWhenIsNotVisible = true;
     jadsdsEngine.loadAnimation(nameAni);
 }
