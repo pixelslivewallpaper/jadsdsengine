@@ -150,6 +150,17 @@
     text-align: center;
     height: 350px;
 }
+.tdHeaderIb {
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    height: 260px;
+}
+.tdHeaderIc {
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+}
 .tdHeaderJ {
     vertical-align: top;
     text-align: left;
@@ -230,6 +241,7 @@
 .buttons {
     background-color: #FFFFFF;
     border: thin solid #000000;
+    width: 5%;
 }
 
 .TextAreaCode {
