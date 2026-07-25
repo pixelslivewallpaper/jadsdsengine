@@ -1,11 +1,13 @@
 ﻿var jadsdsEngine = new JadsdsEngine('mycanvas');
 var jadsdsEngineB = new JadsdsEngine('mycanvasb');
 var jadsdsEngineC = new JadsdsEngine('mycanvasc');
+var jadsdsEngineD = new JadsdsEngine('mycanvasd');
 
 window.onload = function () {
     loadNewAnimationA("sf2newfbf");
     loadNewAnimationB("sf2dj");
     loadNewAnimationC("toy");
+    loadNewAnimationD("disintegrationc");
 };
 
 function loadNewAnimationA(nameAni) {
@@ -27,6 +29,13 @@ function loadNewAnimationC(nameAni) {
     jadsdsEngineC.antiAlias = false;
     jadsdsEngineC.stopAnimationWhenIsNotVisible = true;
     jadsdsEngineC.loadAnimation(nameAni);
+}
+
+function loadNewAnimationD(nameAni) {
+    jadsdsEngineD.fixCanvasSize = false;
+    jadsdsEngineD.antiAlias = false;
+    jadsdsEngineD.stopAnimationWhenIsNotVisible = true;
+    jadsdsEngineD.loadAnimation(nameAni);
 }
 
 
